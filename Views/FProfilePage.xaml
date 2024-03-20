@@ -7,35 +7,30 @@
              x:Class="DayOnes.Views.FProfilePage"
              >
     <Grid>
-        <ScrollView>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+
+        </Grid.RowDefinitions>
+
+
+        <!-- Fan header -->
+        <components:FanSmallHdr
+            Grid.Row="0"
+            />
+
+        <components:FanTitleBar
+            Grid.Row="1"
+                Title="Your Profile"
+                />
+
+        <ScrollView 
+            Grid.Row="2">
         <VerticalStackLayout>
             
-        <!-- Fan header -->
-        <components:FanSmallHdr/>
-        <!-- Background gradient Label -->
-        <Label 
-            Grid.Row="0"
-            Grid.Column="0"
-            Text="Your Profile"
-           FontFamily="SF Pro Text"
-           FontSize="20"
-           FontAttributes="Bold"
-           WidthRequest="600"
-           HeightRequest="50"
-           TextColor="White"
-           HorizontalTextAlignment="Center"
-           VerticalTextAlignment="Center"
-           VerticalOptions="Start"
-            >
-            <Label.Background>
-                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
-                    <GradientStop Color="#3A27BC" Offset="0.0" />
-                    <GradientStop Color="#000000" Offset="0.5" />
-                    <GradientStop Color="#3DC1F9" Offset="1.0" />
-                </LinearGradientBrush>
-            </Label.Background>
-        </Label>
-
+            
         <!--Grid-->
 
         <Grid>
@@ -428,6 +423,8 @@ Padding="80,20"
     </ScrollView>
 
         <components:FanTabBar
+            
+            Grid.Row="3"
             VerticalOptions="End" HorizontalOptions="FillAndExpand"
             />
     </Grid>

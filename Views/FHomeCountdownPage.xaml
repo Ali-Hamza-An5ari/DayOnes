@@ -78,8 +78,8 @@
          Text="Receive Invites" 
          Width="200" 
          Height="60" 
-         Name="btnInvites" 
-                IsEnabled="{Binding IsButtonEnabled}"
+         x:Name="btnInvites" 
+                IsEnabled="False"
          OnClick="btnInvites_Click"
         />
     </VerticalStackLayout>

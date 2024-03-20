@@ -31,6 +31,7 @@ public partial class FHomeCountdownPage : ContentPage
         BindingContext = this;
 
         StartCountdown();
+        this.lblCountDown.Text = RemainingSeconds.ToString();
     }
 
     private async void StartCountdown()
@@ -44,8 +45,9 @@ public partial class FHomeCountdownPage : ContentPage
             {
                 await Task.Delay(1000); // Delay for one second
                 RemainingSeconds--;
+                this.lblCountDown.Text = RemainingSeconds.ToString();
             }
-
+            btnInvites.IsEnabled = true;
             isCountdownRunning = false;
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsButtonEnabled)));
         }
