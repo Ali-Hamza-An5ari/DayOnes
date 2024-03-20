@@ -49,6 +49,7 @@ public partial class FHomeCountdownPage : ContentPage
             }
             btnInvites.IsEnabled = true;
             isCountdownRunning = false;
+            btnInvites.IsVisible = true;
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsButtonEnabled)));
         }
         catch { }

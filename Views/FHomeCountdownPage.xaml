@@ -80,6 +80,7 @@
          Height="60" 
          x:Name="btnInvites" 
                 IsEnabled="False"
+            IsVisible="False"
          OnClick="btnInvites_Click"
         />
     </VerticalStackLayout>
