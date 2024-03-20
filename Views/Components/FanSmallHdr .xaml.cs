@@ -16,4 +16,15 @@ public partial class FanSmallHdr : ContentView
     {
         await Shell.Current.GoToAsync(nameof(FSettingsPage));
     }
+
+    private void profileImage_Clicked(object sender, EventArgs e)
+    {
+        Shell.Current.GoToAsync(nameof(FProfilePage));
+    }
+
+    private void lblSetting_Tapped(object sender, TappedEventArgs e)
+    {
+
+        Shell.Current.GoToAsync(nameof(FSettingsPage));
+    }
 }

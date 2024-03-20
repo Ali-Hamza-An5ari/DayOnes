@@ -7,7 +7,7 @@
             InitializeComponent();
 
             MainPage = new AppShell();
-            // Set up the main page within a navigation page
+           
         }
     }
 }
