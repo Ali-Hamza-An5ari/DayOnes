@@ -10,8 +10,8 @@
 
 
     <ShellContent 
-                  ContentTemplate="{DataTemplate views:LoginPage}"
-                  Route="LoginPage"
+                  ContentTemplate="{DataTemplate views:FSettingsPage}"
+                  Route="FSettingsPage"
         />
     <!--<TabBar
         

@@ -85,6 +85,7 @@
     </VerticalStackLayout>
 
         <components:FanTabBar
+            CurrentPage="1"
             Grid.Row="1"
             VerticalOptions="End" HorizontalOptions="FillAndExpand"
             />

@@ -60,6 +60,7 @@
 
                         <Label 
                             
+      x:Name="lblHomeTitle"
                                Text="Home"
        FontFamily="SF Pro Text"
        FontSize="12"
@@ -92,6 +93,7 @@
 
                         <Label 
                             
+                        x:Name="lblMsgsTitle"
                                Text="Msgs"
        FontFamily="SF Pro Text"
        FontSize="12"
@@ -122,6 +124,7 @@
                         </Label>
                         <Label 
                             
+                        x:Name="lblDMTitle"
                                Text="DM"
        FontFamily="SF Pro Text"
        FontSize="12"
@@ -151,6 +154,7 @@
                         </Label>
                         <Label 
                             
+                        x:Name="lblMyStuffTitle"
                                Text="My Stuff"
        FontFamily="SF Pro Text"
        FontSize="12"
@@ -180,6 +184,7 @@
                         </Label>
                         <Label 
                             
+                        x:Name="lblNotificationTitle"
                                Text="Notification"
        FontFamily="SF Pro Text"
        FontSize="12"
