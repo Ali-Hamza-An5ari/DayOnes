@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DayOnes.Views.FQuickStartPage"
+             xmlns:components="clr-namespace:DayOnes.Views.Components"
+             Background="#000000">
+    <VerticalStackLayout>
+
+        <Image Source="d1logo3.png"
+               WidthRequest="60"
+       Aspect="AspectFit"
+       VerticalOptions="Center"
+       HorizontalOptions="Center"
+       Margin="10,20"/>
+
+        <Frame
+    Margin="0,10,0,0"
+    Padding="10,0"
+    BackgroundColor="#3DC1F9"
+    BorderColor="#000000"
+    CornerRadius="0"
+    HeightRequest="40"
+    WidthRequest="247">
+
+            <Label
+        Text="Quick Start Guides"
+        FontFamily="SF Pro Text"
+        FontSize="24"
+        FontAttributes="Bold"
+        TextColor="#FFFFFF"
+        HorizontalOptions="Center"
+        VerticalOptions="Center" />
+        </Frame>
+        
+        <StackLayout
+    HorizontalOptions="Center"
+    VerticalOptions="Center"
+    Padding="0"
+    Spacing="5"
+    WidthRequest="339.2"
+    HeightRequest="226">
+
+            <!-- Frame for the button label -->
+           
+
+                <Label
+            Text="Fan / Client"
+                    Margin="10,10,0,0"
+            FontFamily="SF Pro Text"
+            FontSize="15"
+            TextColor="#FFFFFF"
+            HorizontalOptions="Center"
+            VerticalOptions="Center" />
+            
+
+            <!-- Container for the background gradient and image -->
+            <Frame
+        WidthRequest="339.2"
+        HeightRequest="201"
+        Padding="0"
+        HasShadow="True"
+        BackgroundColor="Transparent">
+
+               
+
+                <Image
+            Source="im1.png"
+            WidthRequest="332"
+            HeightRequest="201"
+            HorizontalOptions="Start"
+            VerticalOptions="Start"
+            BackgroundColor="Transparent"
+            Aspect="Fill"/>
+            </Frame>
+        </StackLayout>
+
+        <components:GradientButton
+                       
+                      Margin="8,30,0,0"
+                        Width="70"
+Text="Back" 
+Name="btnBack" 
+OnClick="btnBack_Click"
+                        />
+        
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DayOnes.Views.FMessageReceivedPage"
+             Background="#000000"
+             xmlns:components="clr-namespace:DayOnes.Views.Components"
+             >
+    
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+
+
+        <components:FanTitleBar
+    
+    Grid.Row="0"
+            Title="Add a Signature"
+    />
+        
+        <!--Row 2-->
+        
+
+            <Grid Grid.Row="1">
+        <Grid.RowDefinitions>
+            <!--<RowDefinition Height="Auto"/>-->
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="auto"/>
+        </Grid.ColumnDefinitions>
+        <!-- Background gradient Label -->
+        
+
+          
+            
+           
+            <CollectionView
+                 Grid.Row="1"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Margin="30,15"
+                HorizontalOptions="FillAndExpand"
+                
+            x:Name="listMessages" 
+                    >
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <!-- Custom data template for each item -->
+                        <StackLayout Padding="10">
+                            <!-- Top line -->
+                            <BoxView  HeightRequest="2" BackgroundColor="#9747FF"  />
+
+                            <!-- Circle image with text Artist -->
+                            <StackLayout Orientation="Horizontal" Margin="0,10,0,0">
+                                <!--<Image Source="im3.png" WidthRequest="50" HeightRequest="50" />-->
+                            <Frame CornerRadius="25" WidthRequest="50" HeightRequest="50" Padding="0" HasShadow="False"
+                   HorizontalOptions="Start" VerticalOptions="Center">
+                                <Image Source="im3.png" Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+                            </Frame>
+                            <Label 
+                            Margin="10,5"
+                            Text="Artist"
+                            FontFamily="SF Pro Text"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                                
+                            TextColor="#FFFFFF"
+                            VerticalOptions="Center"
+                            />
+                            </StackLayout>
+
+                            <!-- Another line beneath -->
+                        <BoxView  HeightRequest="4" BackgroundColor="#9747FF"  Margin="0,10,0,0" />
+
+                            <!-- Description text -->
+                            <Label 
+                        Text="You received a gift."
+                        FontFamily="Arial"
+                        FontSize="24"
+                        FontAttributes="Bold"
+                        TextColor="#FFFFFF"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        Margin="0,10"/>
+
+                            <!-- Buttons -->
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Margin="0,10,0,0">
+                                <components:GradientButton
+                                   
+                                  Margin="8"
+                                    
+            Text="Accept" 
+            Name="btnAccept" 
+            OnClick="btnAccept_Click"
+                                    />
+                            <Button 
+                                x:Name="btnIgnore"
+                            Text="Ignore"
+                            FontFamily="SF Pro Text"
+                            FontSize="16"
+                                Padding="25,10"
+                                
+                                Margin="8"
+                            FontAttributes="Bold"
+                            BackgroundColor="#979393"
+                                Clicked="btnIgnore_Click"
+                            TextColor="#000000" />
+                            </StackLayout>
+
+                            <!-- Last line -->
+                            <BoxView  HeightRequest="2" BackgroundColor="#9747FF"  Margin="0,10,0,0" />
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+      
+
+    </Grid>
+
+       
+        
+        <components:FanTabBar
+            Grid.Row="2"
+            VerticalOptions="End"
+            />
+
+
+    </Grid>
+</ContentPage>

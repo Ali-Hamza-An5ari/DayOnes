@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DayOnes.Views.FDirectMsgsPage"
+    BackgroundColor="#000000"
+             xmlns:components="clr-namespace:DayOnes.Views.Components"
+             
+             >
+    <Grid>
+        <VerticalStackLayout>
+
+        <components:FanSmallHdr/>
+
+        <Label 
+            Grid.Row="0"
+            Grid.Column="0"
+            Text="Direct Messages"
+           FontFamily="SF Pro Text"
+           FontSize="20"
+           FontAttributes="Bold"
+           WidthRequest="600"
+           HeightRequest="50"
+           TextColor="White"
+           HorizontalTextAlignment="Center"
+           VerticalTextAlignment="Center"
+           VerticalOptions="Start"
+            >
+            <Label.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                    <GradientStop Color="#3A27BC" Offset="0.0" />
+                    <GradientStop Color="#000000" Offset="0.5" />
+                    <GradientStop Color="#3DC1F9" Offset="1.0" />
+                </LinearGradientBrush>
+            </Label.Background>
+        </Label>
+
+
+        <StackLayout Padding="20,20,20,0" HeightRequest="50" HorizontalOptions="FillAndExpand" VerticalOptions="Start">
+
+            <!-- D1 Chat Artist -->
+            <Frame 
+                BackgroundColor="#123544"
+                BorderColor="#9747FF"  
+                CornerRadius="16" 
+                Padding="10" 
+                HeightRequest="50">
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Center">
+
+                    <!-- Fan Picture and Name -->
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Start" VerticalOptions="Center">
+
+                        
+                            <!--<Image Source="im1.jpg" WidthRequest="40" HeightRequest="40" Aspect="AspectFill" />-->
+
+                        <Frame CornerRadius="20" Margin="5" WidthRequest="40" HeightRequest="40" Padding="0" HasShadow="False" BackgroundColor="Transparent">
+                            <Image Source="im4.png" WidthRequest="40" HeightRequest="40" Aspect="AspectFill"  />
+                        </Frame>
+
+                        <Label Text="Fan Name" FontSize="16" FontAttributes="Bold" TextColor="#FFFFFF" VerticalOptions="Center" />
+                    </StackLayout>
+
+                    <!-- Likes Frame -->
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand" VerticalOptions="Center" Padding="0,0,20,0" Spacing="8">
+                        <Image Source="heart.png" WidthRequest="13.33" HeightRequest="12.23" />
+                        <Label Text="10.8k" FontSize="12" FontAttributes="Bold" TextColor="#FFFFFF" VerticalOptions="Center" />
+                    </StackLayout>
+
+                </StackLayout>
+            </Frame>
+
+        </StackLayout>
+    </VerticalStackLayout>
+
+        <components:FanTabBar
+            VerticalOptions="End" HorizontalOptions="FillAndExpand"
+            />
+    </Grid>
+</ContentPage>

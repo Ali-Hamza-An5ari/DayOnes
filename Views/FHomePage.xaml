@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:components="clr-namespace:DayOnes.Views.Components"
+             x:Class="DayOnes.Views.FHomePage"
+             Background="#000000"
+             >
+
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+    <VerticalStackLayout  
+        Grid.Row="0"
+        VerticalOptions="FillAndExpand" 
+        HorizontalOptions="FillAndExpand" 
+        >
+        <!-- Background gradient -->
+        <components:FanSmallHdr/>
+
+        <!-- Add Signature -->
+            <components:FanTitleBar
+            
+            Title="Add a Signature"
+            />
+
+            <!-- Auto Layout -->
+        <StackLayout Orientation="Horizontal"
+                             Spacing="10"
+                             HorizontalOptions="FillAndExpand"
+                             VerticalOptions="Center"
+                             Grid.Column="1">
+            <!-- Your other content here -->
+        </StackLayout>
+        <!-- NoInvitesYetFrame -->
+        <Frame BorderColor="#9747FF"
+               CornerRadius="30"
+               Padding="10,16,10,0"
+               
+               
+               HorizontalOptions="Center"
+               VerticalOptions="Start"
+       BackgroundColor="Black"
+               Margin="11,20,0,0">
+
+            <StackLayout Spacing="24" VerticalOptions="Center" HorizontalOptions="Center">
+
+                <!-- UpperText -->
+                <Label Text="No Invites Yet"
+                       FontFamily="SF Pro Text"
+                       FontAttributes="Bold"
+                       FontSize="32"
+                       TextColor="#FFFFFF"
+                       LineBreakMode="TailTruncation"
+                       HorizontalOptions="Center"/>
+
+                <!-- LowerText2 -->
+                <Label Text="A receive button will appear when you have an incoming invite!"
+                       FontFamily="SF Pro Text"
+                       FontSize="20"
+               HorizontalTextAlignment="Center"
+                       TextColor="#FFFFFF"
+                       LineBreakMode="WordWrap"
+                       HorizontalOptions="Center"/>
+            </StackLayout>
+
+        </Frame>
+        <Image Source="d1logo3.png"
+               WidthRequest="60"
+       Aspect="AspectFit"
+       VerticalOptions="Center"
+       HorizontalOptions="Center"
+       Margin="10,20"/>
+
+        <components:GradientButton
+           
+            Text="Receive Invites" 
+            Width="200" 
+            Height="60" 
+            Name="btnInvites" 
+            OnClick="btnInvites_Click"
+           />
+    </VerticalStackLayout>
+
+
+        <components:FanTabBar
+            Grid.Row="1"
+            VerticalOptions="End" HorizontalOptions="FillAndExpand"
+            />
+    
+        
+    </Grid>
+</ContentPage>

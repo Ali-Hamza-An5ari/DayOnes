@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DayOnes.Views.FMyPicsLrgPage"
+             xmlns:components="clr-namespace:DayOnes.Views.Components"
+             Background="#000000"
+             >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+
+        </Grid.RowDefinitions>
+        
+        <components:FanSmallHdr
+            Grid.Row="0"
+            
+            />
+
+        <components:FanTitleBar
+            Title="My Collections"
+            Grid.Row="1"
+            />
+        
+        <ScrollView Grid.Row="2">
+
+
+            <Grid VerticalOptions="CenterAndExpand" >
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+
+                </Grid.RowDefinitions>
+
+                <Image
+                Grid.Row="0"
+                Source="im3.png" 
+               HeightRequest="294" WidthRequest="220" />
+
+
+                <!-- Radio buttons with text -->
+                <RadioButton 
+                Grid.Row="1"
+                Content="Email" TextColor="White" GroupName="PhotoAction"  
+                        Margin="40,1,0,0"/>
+                <RadioButton 
+                Grid.Row="2" Content="Your device Photo library" TextColor="White" GroupName="PhotoAction"   Margin="40,1,0,0"/>
+                <RadioButton 
+                Grid.Row="3" Content="Text message" TextColor="White" GroupName="PhotoAction"   Margin="40,1,0,0"/>
+
+                <!-- Delete button -->
+                <StackLayout 
+                Grid.Row="4" Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+                    <Label Text="&#xf2ed;"  FontFamily="FAS"  HeightRequest="20" WidthRequest="20" TextColor="#E70971" />
+                    <Button Text="Delete This Photo" FontSize="12" BackgroundColor="#000000" FontFamily="Arial" TextColor="White" />
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+        
+        <components:FanTabBar
+            Grid.Row="3"
+            VerticalOptions="End" HorizontalOptions="FillAndExpand"
+            />
+    </Grid>
+</ContentPage>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="DayOnes.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:DayOnes"
+    xmlns:views="clr-namespace:DayOnes.Views"
+    BackgroundColor="#000000"
+    Shell.FlyoutBehavior="Disabled"  >
+
+
+    <ShellContent 
+                  ContentTemplate="{DataTemplate views:LoginPage}"
+                  Route="LoginPage"
+        />
+    <!--<TabBar
+        
+        >
+
+        
+        <ShellContent 
+                  ContentTemplate="{DataTemplate views:FHomePage}"
+                  Route="FHomePage">
+            <ShellContent.Icon>
+                <FontImageSource Glyph="&#xe3af;" Color="Blue" Size="30" FontFamily="FAS" />
+            </ShellContent.Icon>
+        </ShellContent>
+
+        --><!--//////////--><!--
+
+        <ShellContent 
+                  ContentTemplate="{DataTemplate views:LoginPage}"
+                  Route="LoginPage">
+            <ShellContent.Icon>
+                <FontImageSource Glyph="&#xf249;" Color="Blue" Size="30" FontFamily="FAS" />
+            </ShellContent.Icon>
+        </ShellContent>
+
+        --><!--//////////--><!--
+
+        <ShellContent 
+                  ContentTemplate="{DataTemplate views:FMessageReceivedPage}"
+                  Route="FMessageReceivedPage">
+            <ShellContent.Icon>
+                <FontImageSource Glyph="&#xf27a;" Color="Blue" Size="30" FontFamily="FAS" />
+            </ShellContent.Icon>
+        </ShellContent>
+
+        --><!--//////////--><!--
+
+        <ShellContent 
+                  ContentTemplate="{DataTemplate views:FMyCollocationPage}"
+                  Route="FMyCollocationPage">
+            <ShellContent.Icon>
+                <FontImageSource Glyph="&#xf302;" Color="Blue" Size="30" FontFamily="FAS" />
+            </ShellContent.Icon>
+        </ShellContent>
+
+        --><!--//////////--><!--
+
+        <ShellContent 
+                  ContentTemplate="{DataTemplate views:FDirectMsgsPage}"
+                  Route="FDirectMsgsPage">
+            <ShellContent.Icon>
+                <FontImageSource Glyph="&#xf0f3;" Color="White" Size="30" FontFamily="FAS" />
+            </ShellContent.Icon>
+        </ShellContent>
+    </TabBar>-->
+
+</Shell>

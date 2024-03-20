@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:components="clr-namespace:DayOnes.Views.Components"
+             x:Class="DayOnes.Views.FHomeCountdownPage"
+             Background="#000000"
+             >
+
+    <Grid>
+
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+    <VerticalStackLayout  
+        Grid.Row="0"
+     VerticalOptions="FillAndExpand" 
+     HorizontalOptions="FillAndExpand" 
+     >
+
+        <!-- Fan Head -->
+        <components:FanSmallHdr/>
+
+        <!-- Add Signature -->
+        <Label Text="Add a Signature"
+                    FontFamily="SF Pro Text"
+                    FontSize="20"
+                    FontAttributes="Bold"
+                    WidthRequest="400"
+            HeightRequest="50"
+                    TextColor="White"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center"
+            
+                    VerticalOptions="Center"
+                    Grid.Column="0">
+
+            <Label.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                    <GradientStop Color="#3A27BC" Offset="0.0" />
+                    <GradientStop Color="#000000" Offset="0.5" />
+                    <GradientStop Color="#3DC1F9" Offset="1.0" />
+                </LinearGradientBrush>
+            </Label.Background>
+
+        </Label>
+
+        <!-- Auto Layout -->
+        <StackLayout Orientation="Horizontal"
+                          Spacing="10"
+                          HorizontalOptions="FillAndExpand"
+                          VerticalOptions="Center"
+                          Grid.Column="1">
+            <!-- Your other content here -->
+        </StackLayout>
+
+        <!-- UpperText -->
+        <Label 
+            x:Name="lblCountDown"
+            Text="{Binding CountdownText}"
+                    FontFamily="SF Pro Text"
+                    FontSize="32"
+                    TextColor="#FFFFFF"
+                    LineBreakMode="TailTruncation"
+                    HorizontalOptions="Center"/>
+        
+        <Image Source="d1logo3.png"
+            WidthRequest="60"
+    Aspect="AspectFit"
+    VerticalOptions="Center"
+    HorizontalOptions="Center"
+    Margin="10,20"/>
+
+        <components:GradientButton
+        
+         Text="Receive Invites" 
+         Width="200" 
+         Height="60" 
+         Name="btnInvites" 
+                IsEnabled="{Binding IsButtonEnabled}"
+         OnClick="btnInvites_Click"
+        />
+    </VerticalStackLayout>
+
+        <components:FanTabBar
+            Grid.Row="1"
+            VerticalOptions="End" HorizontalOptions="FillAndExpand"
+            />
+    </Grid>
+</ContentPage>
