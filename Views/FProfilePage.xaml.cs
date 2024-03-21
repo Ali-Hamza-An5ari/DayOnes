@@ -5,7 +5,11 @@ public partial class FProfilePage : ContentPage
 	public FProfilePage()
 	{
 		InitializeComponent();
-	}
+        Shell.SetBackButtonBehavior(this, new BackButtonBehavior
+        {
+            IsVisible = false
+        });
+    }
 
     private void btnAddChange_Click(object sender, EventArgs e)
     {

@@ -7,6 +7,9 @@
     xmlns:views="clr-namespace:DayOnes.Views"
     BackgroundColor="#000000"
     Shell.FlyoutBehavior="Disabled"  >
+    <Shell.BackButtonBehavior>
+        <BackButtonBehavior IsVisible="False" IsEnabled="False" />
+    </Shell.BackButtonBehavior>
 
 
     <ShellContent 

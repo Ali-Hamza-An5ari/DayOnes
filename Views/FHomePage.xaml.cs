@@ -5,7 +5,11 @@ public partial class FHomePage : ContentPage
 	public FHomePage()
 	{
 		InitializeComponent();
-	}
+        Shell.SetBackButtonBehavior(this, new BackButtonBehavior
+        {
+            IsVisible = false
+        });
+    }
 
     private void btnInvites_Click(object sender, EventArgs e)
     {

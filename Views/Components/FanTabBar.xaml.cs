@@ -14,7 +14,7 @@ public partial class FanTabBar : ContentView
             switch (Convert.ToInt32(value))
             {
                 case 1:
-                    lblHome.TextColor = Color.FromHex("#E70971");
+                    //lblHome.TextColor = Color.FromHex("#E70971");
                     lblHomeTitle.TextColor = Color.FromHex("#E70971");
                     break;
                 case 2:
@@ -42,38 +42,14 @@ public partial class FanTabBar : ContentView
     public FanTabBar()
 	{
 		InitializeComponent();
-        //switch (Convert.ToInt32(CurrentPage))
-        //{
-        //    case 1:
-        //        lblHome.TextColor = Color.FromHex("#E70971");
-        //        lblHomeTitle.TextColor = Color.FromHex("#E70971");
-        //        break;
-        //    case 2:
-        //        lblMsgs.TextColor = Color.FromHex("#E70971");
-        //        lblMsgsTitle.TextColor = Color.FromHex("#E70971");
-        //        break;
-        //    case 3:
-        //        lblDM.TextColor = Color.FromHex("#E70971");
-        //        lblDMTitle.TextColor = Color.FromHex("#E70971");
-        //        break;
-        //    case 4:
-        //        lblMyStuff.TextColor = Color.FromHex("#E70971");
-        //        lblMyStuffTitle.TextColor = Color.FromHex("#E70971");
-        //        break;
-        //    case 5:
-        //        lblNotification.TextColor = Color.FromHex("#E70971");
-        //        lblNotificationTitle.TextColor = Color.FromHex("#E70971");
-        //        break;
-        //    default:
-        //        break;
-        //}
+        
     }
 
     private void lblHome_Tapped(object sender, TappedEventArgs e)
     {
 
         Shell.Current.GoToAsync(nameof(FHomePage));
-        lblHome.TextColor = Color.FromHex("#E70971");
+        //lblHome.TextColor = Color.FromHex("#E70971");
         this.CurrentPage = "1";
     }
 

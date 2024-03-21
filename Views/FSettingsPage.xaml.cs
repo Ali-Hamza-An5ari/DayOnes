@@ -5,7 +5,11 @@ public partial class FSettingsPage : ContentPage
 	public FSettingsPage()
 	{
 		InitializeComponent();
-	}
+        Shell.SetBackButtonBehavior(this, new BackButtonBehavior
+        {
+            IsVisible = false
+        });
+    }
 
     private void OnToggled(object sender, ToggledEventArgs e)
     {

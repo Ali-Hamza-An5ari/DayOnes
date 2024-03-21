@@ -11,39 +11,56 @@
 
         <Image Source="d1logo3" WidthRequest="57" HeightRequest="80">
             </Image>
+        
         <!--///////////Entry 1///////////-->
         
-        <Frame
-    Margin="25,10"
-        
-    Padding="1"
+
+            <Frame
+    Margin="10"
+   Padding="0,0,0,0"
     BackgroundColor="Transparent"
     BorderColor="#9747FF"
+            ZIndex="0"
     HeightRequest="52"
     CornerRadius="20">
-            <Frame.Background>
-                <RadialGradientBrush>
-                    <GradientStop Color="#4B0981" Offset="0" />
-                    <GradientStop Color="Transparent" Offset="1" />
-                </RadialGradientBrush>
-            </Frame.Background>
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto" />
-                    <RowDefinition Height="*" />
-                </Grid.RowDefinitions>
-                <Label
-            Text="Full Name"
-            FontFamily="SF Pro Text"
-            FontSize="10"
-            TextColor="#979393"
-            HorizontalOptions="Start"
-            VerticalOptions="Start"
-            Padding="5,0,0,0"
-            Margin="10,-5,0,0"
-                    />
-                <Entry
+                <Frame.Background>
+                    <RadialGradientBrush>
+                        <GradientStop Color="#4B0981" Offset="0" />
+                        <GradientStop Color="Transparent" Offset="1" />
+                    </RadialGradientBrush>
+                </Frame.Background>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Frame HeightRequest="20"
+                           Padding="0"
+                           Margin="10,-6"
+                           ZIndex="1"
+                           WidthRequest="60"
+                           VerticalOptions="Start"
+                           HorizontalOptions="Start"
+                           BorderColor="Black"
+                           BackgroundColor="Black"
+                           >
+                        <Label
+Text="Full Name"
+        ZIndex="1"
+FontFamily="SF Pro Text"
+FontSize="10"
+TextColor="#979393"
+                            HorizontalOptions="Center"
+                            HorizontalTextAlignment="Center"
+                            VerticalOptions="Center"
+                            VerticalTextAlignment="Center"
+
+        />
+                    </Frame>
+                    <Entry
             Grid.Row="1"
+                    Margin="15,0,0,0"
+                    IsPassword="True"
             Placeholder="Full Name"
             BackgroundColor="Transparent"
             TextColor="White"
@@ -51,41 +68,55 @@
             FontAttributes="Bold"
             HorizontalOptions="FillAndExpand"
             VerticalOptions="FillAndExpand" />
-            </Grid>
-        </Frame>
+                </Grid>
+            </Frame>
 
-        <!--////////////Entry 2//////////-->
+            <!--////////////Entry 2//////////-->
 
-        <Frame
-    Margin="25,10"
-   
-    Padding="1"
+
+            <Frame
+    Margin="10"
+    Padding="0,0,0,0"
     BackgroundColor="Transparent"
     BorderColor="#9747FF"
     HeightRequest="52"
     CornerRadius="20">
-            <Frame.Background>
-                <RadialGradientBrush>
-                    <GradientStop Color="#4B0981" Offset="0" />
-                    <GradientStop Color="Transparent" Offset="1" />
-                </RadialGradientBrush>
-            </Frame.Background>
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto" />
-                    <RowDefinition Height="*" />
-                </Grid.RowDefinitions>
-                <Label
-            Text="Username"
-            FontFamily="SF Pro Text"
-            FontSize="10"
-            TextColor="#979393"
-            HorizontalOptions="Start"
-            VerticalOptions="Start"
-            Padding="5,0,0,0"
-            Margin="10,-5,0,0"
-                    />
-                <Entry
+                <Frame.Background>
+                    <RadialGradientBrush>
+                        <GradientStop Color="#4B0981" Offset="0" />
+                        <GradientStop Color="Transparent" Offset="1.0" />
+                    </RadialGradientBrush>
+                </Frame.Background>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Frame HeightRequest="15"
+                           Padding="0"
+                           Margin="10,-5"
+                           WidthRequest="40"
+                           VerticalOptions="Start"
+                           HorizontalOptions="Start"
+                           BorderColor="Transparent"
+                           BackgroundColor="Black"
+                           >
+                        <Label
+Text="Username"
+        
+FontFamily="SF Pro Text"
+FontSize="10"
+TextColor="#979393"
+                            HorizontalOptions="Center"
+                            HorizontalTextAlignment="Center"
+                            VerticalOptions="Center"
+                            VerticalTextAlignment="Center"
+
+        />
+                    </Frame>
+
+                    <Entry
+                    Margin="15,0,0,0"
             Grid.Row="1"
             Placeholder="Username"
             BackgroundColor="Transparent"
@@ -94,41 +125,54 @@
             FontAttributes="Bold"
             HorizontalOptions="FillAndExpand"
             VerticalOptions="FillAndExpand" />
-            </Grid>
-        </Frame>
+                </Grid>
+            </Frame>
 
-        <!--///////////Entry 3///////////-->
+            <!--///////////Entry 3///////////-->
 
-        <Frame
-        Margin="25,10"
-
-    Padding="1"
+            <Frame
+    Margin="10"
+    Padding="0,0,0,0"
     BackgroundColor="Transparent"
     BorderColor="#9747FF"
     HeightRequest="52"
     CornerRadius="20">
-            <Frame.Background>
-                <RadialGradientBrush>
-                    <GradientStop Color="#4B0981" Offset="0" />
-                    <GradientStop Color="Transparent" Offset="1" />
-                </RadialGradientBrush>
-            </Frame.Background>
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto" />
-                    <RowDefinition Height="*" />
-                </Grid.RowDefinitions>
-                <Label
-            Text="Email"
-            FontFamily="SF Pro Text"
-            FontSize="10"
-            TextColor="#979393"
-            HorizontalOptions="Start"
-            VerticalOptions="Start"
-            Padding="5,0,0,0"
-            Margin="10,-5,0,0"
-                    />
-                <Entry
+                <Frame.Background>
+                    <RadialGradientBrush>
+                        <GradientStop Color="#4B0981" Offset="0" />
+                        <GradientStop Color="Transparent" Offset="1.0" />
+                    </RadialGradientBrush>
+                </Frame.Background>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Frame HeightRequest="15"
+                           Padding="0"
+                           Margin="10,-5"
+                           WidthRequest="40"
+                           VerticalOptions="Start"
+                           HorizontalOptions="Start"
+                           BorderColor="Transparent"
+                           BackgroundColor="Black"
+                           >
+                        <Label
+Text="Email"
+        
+FontFamily="SF Pro Text"
+FontSize="10"
+TextColor="#979393"
+                            HorizontalOptions="Center"
+                            HorizontalTextAlignment="Center"
+                            VerticalOptions="Center"
+                            VerticalTextAlignment="Center"
+
+        />
+                    </Frame>
+
+                    <Entry
+                    Margin="15,0,0,0"
             Grid.Row="1"
             Placeholder="Email"
             BackgroundColor="Transparent"
@@ -137,41 +181,55 @@
             FontAttributes="Bold"
             HorizontalOptions="FillAndExpand"
             VerticalOptions="FillAndExpand" />
-            </Grid>
-        </Frame>
+                </Grid>
+            </Frame>
 
-        <!--///////////Entry 4///////////-->
+            <!--///////////Entry 4///////////-->
 
-        <Frame
-     Margin="25,10"
 
-    Padding="1"
+            <Frame
+    Margin="10"
+    Padding="0,0,0,0"
     BackgroundColor="Transparent"
     BorderColor="#9747FF"
     HeightRequest="52"
     CornerRadius="20">
-            <Frame.Background>
-                <RadialGradientBrush>
-                    <GradientStop Color="#4B0981" Offset="0" />
-                    <GradientStop Color="Transparent" Offset="1" />
-                </RadialGradientBrush>
-            </Frame.Background>
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto" />
-                    <RowDefinition Height="*" />
-                </Grid.RowDefinitions>
-                <Label
-            Text="Phone"
-            FontFamily="SF Pro Text"
-            FontSize="10"
-            TextColor="#979393"
-            HorizontalOptions="Start"
-            VerticalOptions="Start"
-            Padding="5,0,0,0"
-            Margin="10,-5,0,0"
-                    />
-                <Entry
+                <Frame.Background>
+                    <RadialGradientBrush>
+                        <GradientStop Color="#4B0981" Offset="0" />
+                        <GradientStop Color="Transparent" Offset="1.0" />
+                    </RadialGradientBrush>
+                </Frame.Background>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Frame HeightRequest="15"
+                           Padding="0"
+                           Margin="10,-5"
+                           WidthRequest="40"
+                           VerticalOptions="Start"
+                           HorizontalOptions="Start"
+                           BorderColor="Transparent"
+                           BackgroundColor="Black"
+                           >
+                        <Label
+Text="Phone"
+        
+FontFamily="SF Pro Text"
+FontSize="10"
+TextColor="#979393"
+                            HorizontalOptions="Center"
+                            HorizontalTextAlignment="Center"
+                            VerticalOptions="Center"
+                            VerticalTextAlignment="Center"
+
+        />
+                    </Frame>
+
+                    <Entry
+                    Margin="15,0,0,0"
             Grid.Row="1"
             Placeholder="Phone"
             BackgroundColor="Transparent"
@@ -180,42 +238,59 @@
             FontAttributes="Bold"
             HorizontalOptions="FillAndExpand"
             VerticalOptions="FillAndExpand" />
-            </Grid>
-        </Frame>
+                </Grid>
+            </Frame>
 
-        <!--//////////////////////-->
 
-        <Frame
-       Margin="25,10"
+            <!--/////////////Entry 5/////////-->
 
-    Padding="1"
+
+            <Frame
+    Margin="10"
+   Padding="0,0,0,0"
     BackgroundColor="Transparent"
     BorderColor="#9747FF"
+            ZIndex="0"
     HeightRequest="52"
     CornerRadius="20">
-            <Frame.Background>
-                <RadialGradientBrush>
-                    <GradientStop Color="#4B0981" Offset="0" />
-                    <GradientStop Color="Transparent" Offset="1" />
-                </RadialGradientBrush>
-            </Frame.Background>
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto" />
-                    <RowDefinition Height="*" />
-                </Grid.RowDefinitions>
-                <Label
-            Text="Password"
-            FontFamily="SF Pro Text"
-            FontSize="10"
-            TextColor="#979393"
-            HorizontalOptions="Start"
-            VerticalOptions="Start"
-            Padding="5,0,0,0"
-            Margin="10,-5,0,0"
-                    />
-                <Entry
+                <Frame.Background>
+                    <RadialGradientBrush>
+                        <GradientStop Color="#4B0981" Offset="0" />
+                        <GradientStop Color="Transparent" Offset="1" />
+                    </RadialGradientBrush>
+                </Frame.Background>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Frame HeightRequest="20"
+                           Padding="0"
+                           Margin="10,-6"
+                           ZIndex="1"
+                           WidthRequest="60"
+                           VerticalOptions="Start"
+                           HorizontalOptions="Start"
+                           BorderColor="Black"
+                           BackgroundColor="Black"
+                           >
+                        <Label
+Text="Password"
+        ZIndex="1"
+FontFamily="SF Pro Text"
+FontSize="10"
+TextColor="#979393"
+                            HorizontalOptions="Center"
+                            HorizontalTextAlignment="Center"
+                            VerticalOptions="Center"
+                            VerticalTextAlignment="Center"
+
+        />
+                    </Frame>
+                    <Entry
             Grid.Row="1"
+                    Margin="15,0,0,0"
+                    IsPassword="True"
             Placeholder="Password"
             BackgroundColor="Transparent"
             TextColor="White"
@@ -223,42 +298,60 @@
             FontAttributes="Bold"
             HorizontalOptions="FillAndExpand"
             VerticalOptions="FillAndExpand" />
-            </Grid>
-        </Frame>
+                </Grid>
+            </Frame>
 
-        <!--////////////Entry 6//////////-->
 
-        <Frame
-       Margin="25,10"
+            <!--////////////Entry 6//////////-->
 
-    Padding="1"
+
+
+            <Frame
+    Margin="10"
+   Padding="0,0,0,0"
     BackgroundColor="Transparent"
     BorderColor="#9747FF"
+            ZIndex="0"
     HeightRequest="52"
     CornerRadius="20">
-            <Frame.Background>
-                <RadialGradientBrush>
-                    <GradientStop Color="#4B0981" Offset="0" />
-                    <GradientStop Color="Transparent" Offset="1" />
-                </RadialGradientBrush>
-            </Frame.Background>
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto" />
-                    <RowDefinition Height="*" />
-                </Grid.RowDefinitions>
-                <Label
-            Text="Confirm Password"
-            FontFamily="SF Pro Text"
-            FontSize="10"
-            TextColor="#979393"
-            HorizontalOptions="Start"
-            VerticalOptions="Start"
-            Padding="5,0,0,0"
-            Margin="10,-5,0,0"
-                    />
-                <Entry
+                <Frame.Background>
+                    <RadialGradientBrush>
+                        <GradientStop Color="#4B0981" Offset="0" />
+                        <GradientStop Color="Transparent" Offset="1" />
+                    </RadialGradientBrush>
+                </Frame.Background>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Frame HeightRequest="20"
+                           Padding="0"
+                           Margin="10,-6"
+                           ZIndex="1"
+                           WidthRequest="60"
+                           VerticalOptions="Start"
+                           HorizontalOptions="Start"
+                           BorderColor="Black"
+                           BackgroundColor="Black"
+                           >
+                        <Label
+Text="Password"
+        ZIndex="1"
+FontFamily="SF Pro Text"
+FontSize="10"
+TextColor="#979393"
+                            HorizontalOptions="Center"
+                            HorizontalTextAlignment="Center"
+                            VerticalOptions="Center"
+                            VerticalTextAlignment="Center"
+
+        />
+                    </Frame>
+                    <Entry
             Grid.Row="1"
+                    Margin="15,0,0,0"
+                    IsPassword="True"
             Placeholder="Confirm Password"
             BackgroundColor="Transparent"
             TextColor="White"
@@ -266,10 +359,10 @@
             FontAttributes="Bold"
             HorizontalOptions="FillAndExpand"
             VerticalOptions="FillAndExpand" />
-            </Grid>
-        </Frame>
+                </Grid>
+            </Frame>
 
-        <!--/////////////-->
+            <!--/////////////-->
 
         <StackLayout
         Orientation="Horizontal"

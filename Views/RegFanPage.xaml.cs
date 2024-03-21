@@ -6,7 +6,11 @@ public partial class RegFanPage : ContentPage
 	public RegFanPage()
 	{
 		InitializeComponent();
-	}
+        Shell.SetBackButtonBehavior(this, new BackButtonBehavior
+        {
+            IsVisible = false
+        });
+    }
 
     private void btnRegister_ClickAsync(object sender, EventArgs e)
     {

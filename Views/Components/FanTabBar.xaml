@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"  
              x:Class="DayOnes.Views.Components.FanTabBar">
     
     <!--A Custom tabbar to be manually render on pages-->
@@ -49,16 +49,18 @@
                         Grid.Column="0"
                         >
 
-                        <Label 
+                        <Image 
       x:Name="lblHome"
-      Text="&#xe3af;" TextColor="White" FontSize="30" FontFamily="FAS">
+      Source="homeic.png"  WidthRequest="66"
+                           HeightRequest="46.72" 
+                            >
 
-                            <Label.GestureRecognizers>
+                            <Image.GestureRecognizers>
                                 <TapGestureRecognizer Tapped="lblHome_Tapped" />
-                            </Label.GestureRecognizers>
-                        </Label>
+                            </Image.GestureRecognizers>
+                        </Image>
 
-                        <Label 
+                        <!--<Label 
                             
       x:Name="lblHomeTitle"
                                Text="Home"
@@ -72,7 +74,7 @@
        LineHeight="40"
        TextDecorations="None"
        TextTransform="None"
-                               />
+                               />-->
 
                     </VerticalStackLayout>
 
@@ -146,6 +148,7 @@
                         >
                         <Label 
                         x:Name="lblMyStuff"
+                            HorizontalOptions="Center"
                         Text="&#xf302;" TextColor="White" FontSize="30" FontFamily="FAS">
 
                             <Label.GestureRecognizers>
@@ -176,7 +179,9 @@
                         >
                         <Label 
                         x:Name="lblNotification"
-                        Text="&#xf0f3;" TextColor="White" FontSize="30" FontFamily="FAS">
+                            HorizontalOptions="Center"
+                        Text="&#xf0f3;" TextColor="White" FontSize="30"
+                            FontFamily="FAS">
 
                             <Label.GestureRecognizers>
                                 <TapGestureRecognizer Tapped="lblNotification_Tapped" />

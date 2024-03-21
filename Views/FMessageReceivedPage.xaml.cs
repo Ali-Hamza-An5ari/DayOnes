@@ -5,7 +5,11 @@ public partial class FMessageReceivedPage : ContentPage
 	public FMessageReceivedPage()
 	{
 		InitializeComponent();
-		var messages = new List<Message>()
+        Shell.SetBackButtonBehavior(this, new BackButtonBehavior
+        {
+            IsVisible = false
+        });
+        var messages = new List<Message>()
 		{
 			new Message() {Artist="Artist", Title="You have Received a gift!"},
 			new Message() {Artist="Artist", Title="You have Received a gift!"},

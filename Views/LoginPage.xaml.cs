@@ -4,7 +4,11 @@ public partial class LoginPage : ContentPage
 {
 	public LoginPage()
 	{
-		InitializeComponent(); 
+		InitializeComponent();
+        Shell.SetBackButtonBehavior(this, new BackButtonBehavior
+        {
+            IsVisible = false
+        });
     }
     private bool IsLoginOrRegisterPage()
     {

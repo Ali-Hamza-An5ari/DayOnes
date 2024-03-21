@@ -5,7 +5,11 @@ public partial class FMyCollocationPage : ContentPage
 	public FMyCollocationPage()
 	{
 		InitializeComponent();
-		var images = new List<Im>();
+        Shell.SetBackButtonBehavior(this, new BackButtonBehavior
+        {
+            IsVisible = false
+        });
+        var images = new List<Im>();
         images.Add(new Im() { Source = "im2.png" });
         images.Add(new Im() { Source = "im1.PNG" });
         images.Add(new Im() { Source = "im3.png" });

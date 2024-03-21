@@ -24,7 +24,7 @@
         <components:FanSmallHdr/>
 
         <!-- Add Signature -->
-        <Label Text="Add a Signature"
+            <Label Text="Receive Invites"
                     FontFamily="SF Pro Text"
                     FontSize="20"
                     FontAttributes="Bold"

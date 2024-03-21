@@ -28,6 +28,10 @@ public partial class FHomeCountdownPage : ContentPage
     public FHomeCountdownPage()
 	{
 		InitializeComponent();
+        Shell.SetBackButtonBehavior(this, new BackButtonBehavior
+        {
+            IsVisible = false
+        });
         BindingContext = this;
 
         StartCountdown();
