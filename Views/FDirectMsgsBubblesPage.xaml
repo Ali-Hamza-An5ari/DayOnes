@@ -69,6 +69,7 @@
         Text="Baby Doll"
         FontSize="12"
         FontFamily="SF Pro Text"
+                Margin="10,20"
         TextColor="White"
                 />
                 <Frame

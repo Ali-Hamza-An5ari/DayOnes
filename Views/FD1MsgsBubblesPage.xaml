@@ -63,7 +63,7 @@
 
                 <!--Profile text-->
                 <Label 
-                Margin="10"
+                Margin="10,20"
                 Grid.Column="1"
                 
         Text="Baby Doll"
