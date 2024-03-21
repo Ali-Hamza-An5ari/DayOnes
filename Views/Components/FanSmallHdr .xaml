@@ -27,21 +27,18 @@
                 <Grid.RowDefinitions >
                     <RowDefinition Height="65"/>
                 </Grid.RowDefinitions>
-            <Label 
-                    Padding="10,20,0,0"
+                
+            <Image 
+                Source="setting.png"
             Grid.Column="0"
                     Grid.Row="0"
-            Text="&#xf013;"
-                    
-            FontSize="25"
-            FontFamily="FAS"
-            TextColor="White"
+                
             Margin="10,0,0,0"
                     >
-                <Label.GestureRecognizers>
+                <Image.GestureRecognizers>
                     <TapGestureRecognizer Tapped="lblSetting_Tapped"></TapGestureRecognizer>
-                </Label.GestureRecognizers>
-            </Label>
+                </Image.GestureRecognizers>
+            </Image>
 
             <!--Column 2-->
                 <Image

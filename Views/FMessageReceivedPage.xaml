@@ -18,7 +18,7 @@
         <components:FanTitleBar
     
     Grid.Row="0"
-            Title="Add a Signature"
+            Title="Receive Invites"
     />
         
         <!--Row 2-->

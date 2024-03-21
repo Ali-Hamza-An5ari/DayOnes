@@ -84,16 +84,20 @@
                     <VerticalStackLayout 
                         Grid.Column="1"
                         >
-                        <Label 
+                        <Image 
                         x:Name="lblMsgs"
-                        Text="&#xf249;" TextColor="White" FontSize="30" FontFamily="FAS">
+                        
+      Source="msgsic.png"  WidthRequest="72"
+                           HeightRequest="48" 
+                            
+                            >
 
-                            <Label.GestureRecognizers>
+                            <Image.GestureRecognizers>
                                 <TapGestureRecognizer Tapped="lblMsgs_Tapped" />
-                            </Label.GestureRecognizers>
-                        </Label>
+                            </Image.GestureRecognizers>
+                        </Image>
 
-                        <Label 
+                        <!--<Label 
                             
                         x:Name="lblMsgsTitle"
                                Text="Msgs"
@@ -107,7 +111,7 @@
        LineHeight="40"
        TextDecorations="None"
        TextTransform="None"
-                               />
+                               />-->
                     </VerticalStackLayout>
 
                     <!--Menu 3-->
@@ -116,15 +120,26 @@
                     <VerticalStackLayout 
                         Grid.Column="2"
                         >
-                        <Label 
+                        <Image 
+ x:Name="lblDM"
+                            
+      Source="dmic.png"  WidthRequest="54"
+                           HeightRequest="50" 
+                            >
+
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="lblDM_Tapped" />
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <!--<Label 
                         x:Name="lblDM"
                         Text="&#xf27a;" TextColor="White" FontSize="30" FontFamily="FAS">
 
                             <Label.GestureRecognizers>
                                 <TapGestureRecognizer Tapped="lblDM_Tapped" />
                             </Label.GestureRecognizers>
-                        </Label>
-                        <Label 
+                        </Label>-->
+                        <!--<Label 
                             
                         x:Name="lblDMTitle"
                                Text="DM"
@@ -138,7 +153,7 @@
        LineHeight="40"
        TextDecorations="None"
        TextTransform="None"
-                               />
+                               />-->
                     </VerticalStackLayout>
 
                     <!--Menu 4-->
@@ -146,7 +161,18 @@
                     <VerticalStackLayout 
                         Grid.Column="3"
                         >
-                        <Label 
+                        <Image 
+ x:Name="lblMyStuff"
+                            
+      Source="mystuffic.png"  WidthRequest="72"
+                           HeightRequest="52" 
+                            >
+
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="lblMyStuff_Tapped" />
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <!--<Label 
                         x:Name="lblMyStuff"
                             HorizontalOptions="Center"
                         Text="&#xf302;" TextColor="White" FontSize="30" FontFamily="FAS">
@@ -169,7 +195,7 @@
        LineHeight="40"
        TextDecorations="None"
        TextTransform="None"
-                               />
+                               />-->
                     </VerticalStackLayout>
 
                     <!--Menu 5-->
@@ -177,7 +203,18 @@
                     <VerticalStackLayout 
                         Grid.Column="4"
                         >
-                        <Label 
+                        <Image 
+x:Name="lblNotification"
+      Source="notificationic.png"  WidthRequest="66"
+                           HeightRequest="49.72" 
+                            
+                            >
+
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="lblNotification_Tapped" />
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <!--<Label 
                         x:Name="lblNotification"
                             HorizontalOptions="Center"
                         Text="&#xf0f3;" TextColor="White" FontSize="30"
@@ -201,7 +238,7 @@
        LineHeight="40"
        TextDecorations="None"
        TextTransform="None"
-                               />
+                               />-->
                     </VerticalStackLayout>
 
                 </Grid>

@@ -13,7 +13,7 @@ public partial class FDirectMsgsBubblesPage : ContentPage
 
     private void btnBack_Click(object sender, EventArgs e)
     {
-
+        Shell.Current.GoToAsync(nameof(FDirectMsgsPage));
     }
 
     private void sendButton_Tapped(object sender, TappedEventArgs e)

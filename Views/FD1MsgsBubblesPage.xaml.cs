@@ -13,7 +13,7 @@ public partial class FD1MsgsBubblesPage : ContentPage
 
     private void btnBack_Click(object sender, EventArgs e)
     {
-
+        Shell.Current.GoToAsync(nameof(FD1MsgsPage));
     }
 
     private void sendButton_Tapped(object sender, TappedEventArgs e)

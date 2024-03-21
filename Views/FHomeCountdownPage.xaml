@@ -16,45 +16,19 @@
 
     <VerticalStackLayout  
         Grid.Row="0"
-     VerticalOptions="FillAndExpand" 
+     VerticalOptions="Center" 
      HorizontalOptions="FillAndExpand" 
      >
 
         <!-- Fan Head -->
         <components:FanSmallHdr/>
-
-        <!-- Add Signature -->
-            <Label Text="Receive Invites"
-                    FontFamily="SF Pro Text"
-                    FontSize="20"
-                    FontAttributes="Bold"
-                    WidthRequest="400"
-            HeightRequest="50"
-                    TextColor="White"
-            HorizontalTextAlignment="Center"
-            VerticalTextAlignment="Center"
-            
-                    VerticalOptions="Center"
-                    Grid.Column="0">
-
-            <Label.Background>
-                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
-                    <GradientStop Color="#3A27BC" Offset="0.0" />
-                    <GradientStop Color="#000000" Offset="0.5" />
-                    <GradientStop Color="#3DC1F9" Offset="1.0" />
-                </LinearGradientBrush>
-            </Label.Background>
-
-        </Label>
+            <components:FanTitleBar
+    Title="Receive Invites"
+    />
+          
 
         <!-- Auto Layout -->
-        <StackLayout Orientation="Horizontal"
-                          Spacing="10"
-                          HorizontalOptions="FillAndExpand"
-                          VerticalOptions="Center"
-                          Grid.Column="1">
-            <!-- Your other content here -->
-        </StackLayout>
+        
 
         <!-- UpperText -->
         <Label 

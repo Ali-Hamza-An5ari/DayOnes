@@ -7,7 +7,9 @@
 
     <ScrollView>
 
-    <VerticalStackLayout>
+    <VerticalStackLayout
+        Padding="15,25,15,25"
+        >
 
         <Image Source="d1logo3" WidthRequest="57" HeightRequest="80">
             </Image>
@@ -95,7 +97,7 @@ TextColor="#979393"
                     <Frame HeightRequest="15"
                            Padding="0"
                            Margin="10,-5"
-                           WidthRequest="40"
+                           WidthRequest="60"
                            VerticalOptions="Start"
                            HorizontalOptions="Start"
                            BorderColor="Transparent"
@@ -103,7 +105,8 @@ TextColor="#979393"
                            >
                         <Label
 Text="Username"
-        
+        ZIndex="1"
+          LineBreakMode="TailTruncation"
 FontFamily="SF Pro Text"
 FontSize="10"
 TextColor="#979393"
@@ -393,7 +396,7 @@ TextColor="#979393"
             Toggled="OnToggled" />
         </StackLayout>
 
-            <BoxView HeightRequest="1" WidthRequest="340" Color="#9747FF" Margin="0,0,0,10"/>
+            <BoxView HeightRequest="1" WidthRequest="291" Color="#9747FF" Margin="0,0,0,10"/>
 
             <!--/////////////////-->
         
@@ -416,7 +419,8 @@ TextColor="#979393"
     FontSize="16"
     LineHeight="40"
     TextColor="#FFFFFF"
-    WidthRequest="198"
+    WidthRequest="220"
+          LineBreakMode="TailTruncation"
     HeightRequest="40"
     HorizontalOptions="Center"
     VerticalOptions="Center" />

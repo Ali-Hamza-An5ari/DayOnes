@@ -129,9 +129,9 @@ VerticalOptions="Center">
             <!--Row 4-->
 
             <Image
-                    Margin="0,0,0,0"
+                    Margin="0,7,0,0"
                 Grid.Row="3"
-                Source="im1.png" 
+                Source="im3.png" 
                HeightRequest="294" WidthRequest="220" />
 
         </Grid>
@@ -220,9 +220,10 @@ VerticalOptions="Center">
                        WidthRequest="282" HeightRequest="40">-->
                     <Frame 
 BackgroundColor="#FFFFFF"
+                        VerticalOptions="Center"
                                WidthRequest="282" HeightRequest="40"
                              CornerRadius="16.5" 
-                           Padding="0,0,0,0"
+                           Padding="5,8,5,8"
                                >
 
                         <Grid 
@@ -251,8 +252,10 @@ BackgroundColor="#FFFFFF"
                     <!-- Record Icon -->
 
                     <!-- Microphone Icon -->
-                    <Image Source="mic.png" WidthRequest="20" HeightRequest="20" />
-                    <Image Source="send.png" WidthRequest="20" HeightRequest="20" VerticalOptions="Center" HorizontalOptions="End">
+                    <!--<Image Source="mic.png" WidthRequest="20" HeightRequest="20" />-->
+                    <Image Source="send.png" WidthRequest="20" HeightRequest="20" VerticalOptions="Center" 
+                           Margin="10"
+                           HorizontalOptions="End">
                         <Image.GestureRecognizers>
                             <TapGestureRecognizer Tapped="sendButton_Tapped" />
                         </Image.GestureRecognizers>

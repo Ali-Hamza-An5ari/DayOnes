@@ -5,6 +5,41 @@
              xmlns:components="clr-namespace:DayOnes.Views.Components"
              Background="#000000"
              >
+
+    <!--<ContentPage.Resources>
+        <ControlTemplate x:Key="CustomRadioButtonTemplate" TargetType="RadioButton">
+            <Grid>
+                --><!-- Custom circle shape for the RadioButton --><!--
+                <Ellipse x:Name="Circle"
+                         WidthRequest="20"
+                         HeightRequest="20"
+                         HorizontalOptions="Start"
+                         VerticalOptions="Center"
+                         Stroke="White"
+                         StrokeThickness="2"
+                         Margin="5">
+                    --><!-- Change the Fill color of the circle here --><!--
+                    <Ellipse.Fill>
+                        <SolidColorBrush Color="{TemplateBinding BackgroundColor}" />
+                    </Ellipse.Fill>
+                </Ellipse>
+                --><!-- Label for the RadioButton --><!--
+                <Label x:Name="Label"
+                       HorizontalOptions="Start"
+                       VerticalOptions="Center"
+                       Text="{TemplateBinding Content}"
+                       TextColor="White"
+                       Margin="30,0,0,0"/>
+            </Grid>
+            <ControlTemplate.Triggers>
+                <Trigger TargetType="RadioButton" Property="IsChecked" Value="True">
+                    <Setter TargetName="Circle" Property="Fill" Value="DodgerBlue" />
+                    --><!-- Change the color when RadioButton is checked --><!--
+                </Trigger>
+                --><!-- Add more triggers as needed --><!--
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+    </ContentPage.Resources>-->
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -45,15 +80,91 @@
 
 
                 <!-- Radio buttons with text -->
-                <RadioButton 
-                Grid.Row="1"
-                Content="Email" TextColor="White" GroupName="PhotoAction"  
-                        Margin="40,1,0,0"/>
-                <RadioButton 
-                Grid.Row="2" Content="Your device Photo library" TextColor="White" GroupName="PhotoAction"   Margin="40,1,0,0"/>
-                <RadioButton 
-                Grid.Row="3" Content="Text message" TextColor="White" GroupName="PhotoAction"   Margin="40,1,0,0"/>
+                <!--Rb1-->
+                <Grid Grid.Row="1" Margin="54,1,0,0" >
 
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="54"/>
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Image
+                        Grid.Column="0"
+                        Grid.Row="0"
+                        x:Name="imgSelected1"
+                        Source="selectedrb.png"
+                        WidthRequest="40"
+                        HeightRequest="33"
+                        HorizontalOptions="End"
+                        IsVisible="False"
+                        />
+
+                    <RadioButton 
+                        Grid.Column="1"
+                        Grid.Row="0"
+                        
+    CheckedChanged="EmailRadioButton_CheckedChanged"
+    x:Name="emailRadioButton"
+                Content="Email" TextColor="White" GroupName="PhotoAction"  
+                        
+                        />
+                    
+                
+                <!--Rb 2-->
+                
+
+                <Image
+                    
+                        Grid.Column="0"
+                        Grid.Row="1"
+          x:Name="imgSelected2"
+          Source="selectedrb.png"
+          IsVisible="False"
+                        WidthRequest="40"
+                        HeightRequest="33"
+          />
+
+                    <RadioButton
+                        
+                        Grid.Column="1"
+                        Grid.Row="1"
+                        Content="Your device Photo library" 
+                        
+                    CheckedChanged="DeviceRadioButton_CheckedChanged"
+                        TextColor="White" GroupName="PhotoAction"   />
+                
+
+                <!--Rb 3-->
+
+
+            <Image
+                
+                        Grid.Column="0"
+                        Grid.Row="2"
+          x:Name="imgSelected3"
+          Source="selectedrb.png"
+                        WidthRequest="40"
+                        HeightRequest="33"
+          IsVisible="False"
+          />
+                    <RadioButton  
+                        BorderColor="#FFFFFF"
+                        
+                        Grid.Column="1"
+                        Grid.Row="2"
+                    CheckedChanged="TextRadioButton_CheckedChanged"
+                        Content="Text message" TextColor="#FFFFFF" GroupName="PhotoAction" 
+                        />
+
+                </Grid>
+                
                 <!-- Delete button -->
                 <StackLayout 
                 Grid.Row="4" Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">

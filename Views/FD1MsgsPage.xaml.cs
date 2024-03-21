@@ -15,4 +15,9 @@ public partial class FD1MsgsPage : ContentPage
     {
 		await Shell.Current.GoToAsync(nameof(FD1MsgsBubblesPage));
     }
+
+    private void FrameTapped(object sender, TappedEventArgs e)
+    {
+        Shell.Current.GoToAsync(nameof(FD1MsgsBubblesPage));
+    }
 }

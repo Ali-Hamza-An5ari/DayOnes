@@ -45,6 +45,9 @@
                 Padding="10" 
                 HeightRequest="50">
 
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="FrameTapped" />
+                    </Frame.GestureRecognizers>
                 <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Center">
 
                     <!-- Fan Picture and Name -->

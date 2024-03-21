@@ -32,13 +32,13 @@
         <!-- NoInvitesYetFrame -->
         <Frame BorderColor="#9747FF"
                CornerRadius="30"
-               Padding="10,16,10,0"
+               Padding="5,10,5,10"
                
                
                HorizontalOptions="Center"
                VerticalOptions="Start"
        BackgroundColor="Black"
-               Margin="11,20,0,0">
+               Margin="11,20,11,0">
 
             <StackLayout Spacing="24" VerticalOptions="Center" HorizontalOptions="Center">
 

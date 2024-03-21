@@ -39,12 +39,15 @@
 
                 <!-- D1 Chat Artist -->
                 <Frame 
+                    
                 BackgroundColor="#123544"
                 BorderColor="#9747FF"  
                 CornerRadius="16" 
                 Padding="10" 
                 HeightRequest="50">
-
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="FrameTapped" />
+                    </Frame.GestureRecognizers>
                     <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Center">
 
                         <!-- Fan Picture and Name -->
@@ -67,9 +70,9 @@
                         </StackLayout>
 
                     </StackLayout>
-                    <Frame.GestureRecognizers>
+                    <!--<Frame.GestureRecognizers>
                         <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"></TapGestureRecognizer>
-                    </Frame.GestureRecognizers>
+                    </Frame.GestureRecognizers>-->
                 </Frame>
 
             </StackLayout>

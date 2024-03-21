@@ -10,4 +10,9 @@ public partial class FDirectMsgsPage : ContentPage
             IsVisible = false
         });
     }
+
+    private void FrameTapped(object sender, TappedEventArgs e)
+    {
+        Shell.Current.GoToAsync(nameof(FDirectMsgsBubblesPage));
+    }
 }
