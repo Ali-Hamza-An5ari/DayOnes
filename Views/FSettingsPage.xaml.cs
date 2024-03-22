@@ -1,3 +1,6 @@
+using Microsoft.Maui;
+using System.Runtime.InteropServices;
+
 namespace DayOnes.Views;
 
 public partial class FSettingsPage : ContentPage
@@ -29,5 +32,14 @@ public partial class FSettingsPage : ContentPage
     private void lblQuickStart_Tapped(object sender, TappedEventArgs e)
     {
         Shell.Current.GoToAsync(nameof(FQuickStartPage));
+    }
+
+    private void btnLogout_Click(object sender, EventArgs e)
+    {
+        /* a.Launch a iOS Alert pop-up asking of the user really wants to quit the app
+i.Yes – exit the app
+ii.No - close the Alert Box *
+         
+         */
     }
 }

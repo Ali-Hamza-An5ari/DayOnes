@@ -10,13 +10,12 @@
 
 
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
 
     <VerticalStackLayout  
         Grid.Row="0"
-     VerticalOptions="Center" 
      HorizontalOptions="FillAndExpand" 
      >
 
@@ -25,36 +24,38 @@
             <components:FanTitleBar
     Title="Receive Invites"
     />
-          
 
-        <!-- UpperText -->
-        <Label 
-            Margin="0,60,0,30"
-            x:Name="lblCountDown"
-            Text="{Binding CountdownText}"
-                    FontFamily="SF Pro Text"
-                    FontSize="32"
-                    TextColor="#FFFFFF"
-                    LineBreakMode="TailTruncation"
-                    HorizontalOptions="Center"/>
-        
-        <Image Source="d1logo3.png"
-            WidthRequest="60"
-    Aspect="AspectFit"
-    VerticalOptions="Center"
-    HorizontalOptions="Center"
-    Margin="10,20"/>
+            <StackLayout VerticalOptions="CenterAndExpand">
+                <!-- UpperText -->
+                <Label 
+        Margin="0,60,0,30"
+        x:Name="lblCountDown"
+        Text="{Binding CountdownText}"
+                FontFamily="SF Pro Text"
+                FontSize="32"
+                TextColor="#FFFFFF"
+                LineBreakMode="TailTruncation"
+                HorizontalOptions="Center"/>
 
-        <components:GradientButton
-        
-         Text="Receive Invites" 
-         Width="200" 
-         Height="60" 
-         x:Name="btnInvites" 
-                IsEnabled="False"
-            IsVisible="False"
-         OnClick="btnInvites_Click"
-        />
+                <Image Source="d1logo3.png"
+        WidthRequest="130"
+Aspect="AspectFit"
+VerticalOptions="Center"
+HorizontalOptions="Center"
+Margin="10,20"/>
+
+                <components:GradientButton
+    
+     Text="Receive Invites" 
+     Width="200" 
+     Height="60" 
+     x:Name="btnInvites" 
+            IsEnabled="False"
+        IsVisible="False"
+     OnClick="btnInvites_Click"
+    />
+            </StackLayout>
+       
     </VerticalStackLayout>
 
         <components:FanTabBar

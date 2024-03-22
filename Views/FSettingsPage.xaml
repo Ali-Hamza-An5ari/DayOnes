@@ -41,6 +41,8 @@
             </Grid.RowDefinitions>
 
             <Frame Grid.Row="0"
+                   Margin="0,20,0,0"
+                   Padding="5,5,0,5"
         WidthRequest="342"
         BorderColor="#9747FF"
         CornerRadius="0"
@@ -64,16 +66,17 @@
                     <Image
                         Grid.Column="1"
 Source="chevswitchdown.png"
+                        Rotation="180"
 HeightRequest="27.14"
-                        
+                        HorizontalOptions="End"
 WidthRequest="64"
 VerticalOptions="CenterAndExpand"
-HorizontalOptions="Center" />
+ />
                 </Grid>
             </Frame>
 
             <Frame
-        
+        Padding="10,5"
             Grid.Row="1"
 WidthRequest="342"
 BorderColor="#9747FF"
@@ -160,11 +163,11 @@ HasShadow="False">
                 </Grid>
             </Frame>
             
-            <VerticalStackLayout Grid.Row="2" Margin="0,4,0,0">
+            <VerticalStackLayout Grid.Row="2" Margin="20,10,20,0">
                 <BoxView HeightRequest="1" WidthRequest="340" Color="#9747FF"/>
 
-                <Grid>
-                    <Grid.ColumnDefinitions>
+                    <Grid Margin="0,5">
+                        <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="190"/>
                         <ColumnDefinition />
                     </Grid.ColumnDefinitions>
@@ -196,11 +199,11 @@ HasShadow="False">
             
             <!--Row 4-->
 
-            <VerticalStackLayout Grid.Row="3" Margin="0,4,0,0">
-                <BoxView HeightRequest="1" WidthRequest="340" Color="#9747FF"/>
+                <VerticalStackLayout Grid.Row="3" Margin="20,10,20,0">
+                    <BoxView HeightRequest="1" WidthRequest="340" Color="#9747FF"/>
 
-                <Grid>
-                    <Grid.ColumnDefinitions>
+                    <Grid Margin="0,5">
+                        <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="150"/>
                         <ColumnDefinition />
                     </Grid.ColumnDefinitions>
@@ -232,12 +235,12 @@ HorizontalOptions="End" />
 
             <!--Row 5-->
 
-            <VerticalStackLayout Grid.Row="4" Margin="0,4,0,0">
-                <BoxView HeightRequest="1" WidthRequest="340" Color="#9747FF"/>
+                <VerticalStackLayout Grid.Row="4" Margin="20,10,20,0">
+                    <BoxView HeightRequest="1" WidthRequest="340" Color="#9747FF"/>
 
 
-                <Grid>
-                    <Grid.ColumnDefinitions>
+                    <Grid Margin="0,5">
+                        <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="150"/>
                         <ColumnDefinition />
                     </Grid.ColumnDefinitions>
@@ -273,10 +276,10 @@ HorizontalOptions="End" />
             
             <!--Row 6-->
 
-            <VerticalStackLayout Grid.Row="5" Margin="0,4,0,0">
-                <BoxView HeightRequest="1" WidthRequest="340" Color="#9747FF"/>
+                <VerticalStackLayout Grid.Row="5" Margin="20,10,20,0">
+                    <BoxView HeightRequest="1" WidthRequest="340" Color="#9747FF"/>
 
-                <Grid>
+                <Grid Margin="0,5">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="150"/>
                         <ColumnDefinition />
@@ -311,10 +314,12 @@ HorizontalOptions="End" />
         </Grid>
 
         <components:GradientButton
+            x:Name="btnLogout"
             Text="Logout"
             FontSize="30"
             Width="130"
             Margin="0,10"
+            OnClick="btnLogout_Click"
             />
     </VerticalStackLayout>
         

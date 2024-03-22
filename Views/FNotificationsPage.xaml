@@ -6,25 +6,25 @@
              xmlns:components="clr-namespace:DayOnes.Views.Components"
              >
 
-    <Grid>
-        <VerticalStackLayout>
+    <Grid RowDefinitions="auto,*,auto">
 
+        <StackLayout>
             <components:FanSmallHdr/>
 
             <Label 
-            Grid.Row="0"
-            Grid.Column="0"
-            Text="Notifications"
-           FontFamily="SF Pro Text"
-           FontSize="20"
-           FontAttributes="Bold"
-           WidthRequest="600"
-           HeightRequest="50"
-           TextColor="White"
-           HorizontalTextAlignment="Center"
-           VerticalTextAlignment="Center"
-           VerticalOptions="Start"
-            >
+ Grid.Row="0"
+ Grid.Column="0"
+ Text="Notifications"
+FontFamily="SF Pro Text"
+FontSize="20"
+FontAttributes="Bold"
+WidthRequest="600"
+HeightRequest="50"
+TextColor="White"
+HorizontalTextAlignment="Center"
+VerticalTextAlignment="Center"
+VerticalOptions="Start"
+ >
                 <Label.Background>
                     <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
                         <GradientStop Color="#3A27BC" Offset="0.0" />
@@ -33,47 +33,108 @@
                     </LinearGradientBrush>
                 </Label.Background>
             </Label>
+        </StackLayout>
+
+        <Grid RowDefinitions="*,*" Grid.Row="1">
+            <VerticalStackLayout>
+
+              
+
+                    <StackLayout Padding="15,20,0,0" WidthRequest="356" HeightRequest="50" HorizontalOptions="Start" VerticalOptions="Start">
+                    <Label Text="DayOnes Messages" FontFamily="SF Pro Text"
+FontSize="26"
+TextColor="White"
+                           HorizontalOptions="Start"
+                           HorizontalTextAlignment="Start"
+VerticalOptions="Start"></Label>
+                    <BoxView HeightRequest="1" Color="#9747FF" Margin="0,0,0,10"></BoxView>
+                    <!-- D1 Chat Artist -->
+                    <Frame 
+     BackgroundColor="#123544"
+     BorderColor="HotPink"  
+                  Margin="15,0"     
+     CornerRadius="16" 
+     Padding="10" 
+     HeightRequest="60">
+
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Center">
+
+                            <!-- Fan Picture and Name -->
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="Start" VerticalOptions="Center">
 
 
-            <StackLayout Padding="15,20,0,0" WidthRequest="356" HeightRequest="50" HorizontalOptions="Start" VerticalOptions="Start">
+                                <!--<Image Source="im1.jpg" WidthRequest="40" HeightRequest="40" Aspect="AspectFill" />-->
 
-                <!-- D1 Chat Artist -->
-                <Frame 
-                BackgroundColor="#123544"
-                BorderColor="#9747FF"  
-                CornerRadius="16" 
-                Padding="10" 
-                WidthRequest="330" 
-                HeightRequest="50">
+                                <Frame CornerRadius="20" Margin="5" WidthRequest="40" HeightRequest="40" Padding="0" HasShadow="False" BackgroundColor="Transparent">
+                                    <Image Source="im4.png" WidthRequest="40" HeightRequest="40" Aspect="AspectFill"  />
+                                </Frame>
 
-                    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Center">
+                                <Label Text="Artist" FontSize="16" FontAttributes="Bold" TextColor="#FFFFFF" VerticalOptions="Center" />
+                            </StackLayout>
 
-                        <!-- Fan Picture and Name -->
-                        <StackLayout Orientation="Horizontal" HorizontalOptions="Start" VerticalOptions="Center">
+                            <!-- Likes Frame -->
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand" VerticalOptions="Center" Padding="0,0,20,0" Spacing="8">
+                                <Image Source="heart.png" WidthRequest="13.33" HeightRequest="12.23" />
+                                <Label Text="10.8k" FontSize="12" FontAttributes="Bold" TextColor="#FFFFFF" VerticalOptions="Center" />
+                            </StackLayout>
 
-
-                            <!--<Image Source="im1.jpg" WidthRequest="40" HeightRequest="40" Aspect="AspectFill" />-->
-
-                            <Frame CornerRadius="20" Margin="5" WidthRequest="40" HeightRequest="40" Padding="0" HasShadow="False" BackgroundColor="Transparent">
-                                <Image Source="im4.png" WidthRequest="40" HeightRequest="40" Aspect="AspectFill"  />
-                            </Frame>
-
-                            <Label Text="Fan Name" FontSize="16" FontAttributes="Bold" TextColor="#FFFFFF" VerticalOptions="Center" />
                         </StackLayout>
+                    </Frame>
 
-                        <!-- Likes Frame -->
-                        <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand" VerticalOptions="Center" Padding="0,0,20,0" Spacing="8">
-                            <Image Source="heart.png" WidthRequest="13.33" HeightRequest="12.23" />
-                            <Label Text="10.8k" FontSize="12" FontAttributes="Bold" TextColor="#FFFFFF" VerticalOptions="Center" />
+                </StackLayout>
+            </VerticalStackLayout>
+            <VerticalStackLayout Grid.Row="1">
+
+
+
+                <StackLayout Padding="15,20,0,0" WidthRequest="356" HeightRequest="50" HorizontalOptions="Start" VerticalOptions="Start">
+                    <Label Text="Direct Messages" FontFamily="SF Pro Text"
+FontSize="26"
+TextColor="White"
+                           HorizontalOptions="Start"
+                           HorizontalTextAlignment="Start"
+VerticalOptions="Start"></Label>
+                    <BoxView HeightRequest="1" Color="#9747FF" Margin="0,0,0,10"></BoxView>
+                    <!-- D1 Chat Artist -->
+                    <Frame 
+     BackgroundColor="#123544"
+     BorderColor="HotPink"  
+     CornerRadius="16" 
+                  Margin="15,0"     
+                        
+     Padding="10" 
+     HeightRequest="60">
+
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Center">
+
+                            <!-- Fan Picture and Name -->
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="Start" VerticalOptions="Center">
+
+
+                                <!--<Image Source="im1.jpg" WidthRequest="40" HeightRequest="40" Aspect="AspectFill" />-->
+
+                                <Frame CornerRadius="20" Margin="5" WidthRequest="40" HeightRequest="40" Padding="0" HasShadow="False" BackgroundColor="Transparent">
+                                    <Image Source="im4.png" WidthRequest="40" HeightRequest="40" Aspect="AspectFill"  />
+                                </Frame>
+
+                                <Label Text="Artist" FontSize="16" FontAttributes="Bold" TextColor="#FFFFFF" VerticalOptions="Center" />
+                            </StackLayout>
+
+                            <!-- Likes Frame -->
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand" VerticalOptions="Center" Padding="0,0,20,0" Spacing="8">
+                                <Image Source="heart.png" WidthRequest="13.33" HeightRequest="12.23" />
+                                <Label Text="10.8k" FontSize="12" FontAttributes="Bold" TextColor="#FFFFFF" VerticalOptions="Center" />
+                            </StackLayout>
+
                         </StackLayout>
+                    </Frame>
 
-                    </StackLayout>
-                </Frame>
+                </StackLayout>
+            </VerticalStackLayout>
+        </Grid>
+            
 
-            </StackLayout>
-        </VerticalStackLayout>
-
-        <components:FanTabBar
+        <components:FanTabBar Grid.Row="2"
             VerticalOptions="End" HorizontalOptions="FillAndExpand"
             />
     </Grid>

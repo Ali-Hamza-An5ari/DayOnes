@@ -9,6 +9,11 @@ public partial class FD1MsgsBubblesPage : ContentPage
         {
             IsVisible = false
         });
+
+        /* Invoke AWS API: GetHostPost
+a. Pass the ChatPostID. The API will return a lot
+of data
+*/
     }
 
     private void btnBack_Click(object sender, EventArgs e)
@@ -18,6 +23,12 @@ public partial class FD1MsgsBubblesPage : ContentPage
 
     private void sendButton_Tapped(object sender, TappedEventArgs e)
     {
+        /*
+         collect the message passing it and the
+ChatPostID and timestamp to API: SendD1Msg
 
+With success, display the message in a purple
+message bubble.
+         */
     }
 }

@@ -34,7 +34,8 @@
                     Grid.Row="0"
                 WidthRequest="35"
                 HeightRequest="35"
-            Margin="-45,5,0,0"
+            Margin="-70,5,0,0"
+                ZIndex="1"
                     >
                 <Image.GestureRecognizers>
                     <TapGestureRecognizer Tapped="lblSetting_Tapped"></TapGestureRecognizer>

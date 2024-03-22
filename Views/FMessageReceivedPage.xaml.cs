@@ -1,3 +1,5 @@
+using static ABI.System.Windows.Input.ICommand_Delegates;
+
 namespace DayOnes.Views;
 
 public partial class FMessageReceivedPage : ContentPage
@@ -9,7 +11,13 @@ public partial class FMessageReceivedPage : ContentPage
         {
             IsVisible = false
         });
-        var messages = new List<Message>()
+
+        /*
+        Call AWS API: GiftsReceived
+a.Returns True, put up an item in a vertical List view that
+the user has received a gift*/
+
+        var messages = new List<Message>() //This is just a testing data
 		{
 			new Message() {Artist="Artist", Title="You have Received a gift!"},
 			new Message() {Artist="Artist", Title="You have Received a gift!"},
@@ -20,13 +28,21 @@ public partial class FMessageReceivedPage : ContentPage
 
     private void btnAccept_Click(object sender, EventArgs e)
     {
+        /*1.  Execute API: GiftAcpt
+ 2.Pause for 1 second
+ 3.Navigate to: Page - F - MyCollocations*/
 
+        // Add a one-second delay
+         Task.Delay(1000);
         Shell.Current.GoToAsync(nameof(FMyCollocationPage));
     }
 
     private void btnIgnore_Click(object sender, EventArgs e)
     {
-		Shell.Current.GoToAsync(nameof(FHomePage));
+
+
+        //– navigate to Page F-HOME
+        Shell.Current.GoToAsync(nameof(FHomePage));
     }
 
 }

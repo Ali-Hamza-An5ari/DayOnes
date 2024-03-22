@@ -105,11 +105,17 @@
                         HeightRequest="33"
                         HorizontalOptions="End"
                         IsVisible="False"
-                        />
+                        
+          >
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer  Tapped="onSend_Tapped" />
+                        </Image.GestureRecognizers>
+                    </Image>
 
                     <RadioButton 
                         Grid.Column="1"
                         Grid.Row="0"
+                        BorderColor="#E70971"
                         
     CheckedChanged="EmailRadioButton_CheckedChanged"
     x:Name="emailRadioButton"
@@ -130,9 +136,15 @@
           IsVisible="False"
                         WidthRequest="40"
                         HeightRequest="33"
-          />
+          
+          >
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer  Tapped="onSend_Tapped" />
+                        </Image.GestureRecognizers>
+                    </Image>
 
                     <RadioButton
+                        BorderColor="#E70971"
                         
                         Grid.Column="1"
                         Grid.Row="1"
@@ -145,7 +157,7 @@
                 <!--Rb 3-->
 
 
-            <Image
+                    <Image
                 
                         Grid.Column="0"
                         Grid.Row="2"
@@ -154,10 +166,13 @@
                         WidthRequest="40"
                         HeightRequest="33"
           IsVisible="False"
-          />
+          >
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer  Tapped="onSend_Tapped" />
+                        </Image.GestureRecognizers>
+                    </Image>
                     <RadioButton  
-                        BorderColor="#FFFFFF"
-                        
+                        BorderColor="#E70971"
                         Grid.Column="1"
                         Grid.Row="2"
                     CheckedChanged="TextRadioButton_CheckedChanged"
