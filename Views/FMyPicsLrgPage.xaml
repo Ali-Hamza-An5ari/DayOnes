@@ -74,6 +74,7 @@
                 </Grid.RowDefinitions>
 
                 <Image
+                    Margin="0,10,0,0"
                 Grid.Row="0"
                 Source="im3.png" 
                HeightRequest="294" WidthRequest="220" />
@@ -135,7 +136,7 @@
                         
                         Grid.Column="1"
                         Grid.Row="1"
-                        Content="Your device Photo library" 
+                        Content="Your Device Photo Library" 
                         
                     CheckedChanged="DeviceRadioButton_CheckedChanged"
                         TextColor="White" GroupName="PhotoAction"   />
@@ -160,7 +161,7 @@
                         Grid.Column="1"
                         Grid.Row="2"
                     CheckedChanged="TextRadioButton_CheckedChanged"
-                        Content="Text message" TextColor="#FFFFFF" GroupName="PhotoAction" 
+                        Content="SMS Text" TextColor="#FFFFFF" GroupName="PhotoAction" 
                         />
 
                 </Grid>

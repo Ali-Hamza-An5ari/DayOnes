@@ -10,7 +10,7 @@
 
 
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto" />
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
@@ -27,11 +27,9 @@
     />
           
 
-        <!-- Auto Layout -->
-        
-
         <!-- UpperText -->
         <Label 
+            Margin="0,60,0,30"
             x:Name="lblCountDown"
             Text="{Binding CountdownText}"
                     FontFamily="SF Pro Text"

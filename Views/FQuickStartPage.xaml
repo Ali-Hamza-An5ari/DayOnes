@@ -25,6 +25,7 @@
             <Label
         Text="Quick Start Guides"
         FontFamily="SF Pro Text"
+                
         FontSize="24"
         FontAttributes="Bold"
         TextColor="#FFFFFF"
@@ -64,7 +65,7 @@
                
 
                 <Image
-            Source="im1.png"
+            Source="quickstartpage.png"
             WidthRequest="332"
             HeightRequest="201"
             HorizontalOptions="Start"
@@ -77,8 +78,8 @@
         <components:GradientButton
                        
                       Margin="8,30,0,0"
-                        Width="100"
-            Height="30"
+                        Width="120"
+            Height="50"
             FontSize="16"
 Text="Back" 
 Name="btnBack" 
