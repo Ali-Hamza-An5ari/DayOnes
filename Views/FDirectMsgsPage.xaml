@@ -35,45 +35,48 @@
         </Label>
 
 
-        <StackLayout Padding="20,20,20,0" HeightRequest="50" HorizontalOptions="FillAndExpand" VerticalOptions="Start">
+            <StackLayout Padding="20,20,20,0" HeightRequest="50" HorizontalOptions="FillAndExpand" VerticalOptions="Start">
 
-            <!-- D1 Chat Artist -->
-            <Frame 
+                <!-- D1 Chat Artist -->
+                <Frame 
+                    
                 BackgroundColor="#123544"
                 BorderColor="#9747FF"  
                 CornerRadius="16" 
                 Padding="10" 
-                HeightRequest="50">
-
+                HeightRequest="60">
                     <Frame.GestureRecognizers>
                         <TapGestureRecognizer Tapped="FrameTapped" />
                     </Frame.GestureRecognizers>
-                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Center">
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Center">
 
-                    <!-- Fan Picture and Name -->
-                    <StackLayout Orientation="Horizontal" HorizontalOptions="Start" VerticalOptions="Center">
+                        <!-- Fan Picture and Name -->
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Start" VerticalOptions="Center">
 
-                        
+
                             <!--<Image Source="im1.jpg" WidthRequest="40" HeightRequest="40" Aspect="AspectFill" />-->
 
-                        <Frame CornerRadius="20" Margin="5" WidthRequest="40" HeightRequest="40" Padding="0" HasShadow="False" BackgroundColor="Transparent">
-                            <Image Source="im4.png" WidthRequest="40" HeightRequest="40" Aspect="AspectFill"  />
-                        </Frame>
+                            <Frame CornerRadius="100" Margin="5" WidthRequest="50" HeightRequest="50" HasShadow="False" Padding="0" BackgroundColor="Transparent">
+                                <Image Source="im4.png" Aspect="AspectFill"  />
+                            </Frame>
 
-                        <Label Text="Fan Name" FontSize="16" FontAttributes="Bold" TextColor="#FFFFFF" VerticalOptions="Center" />
+                            <Label Text="Artist" FontSize="16" FontAttributes="Bold" TextColor="#FFFFFF" VerticalOptions="Center" />
+                        </StackLayout>
+
+                        <!-- Likes Frame -->
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand" VerticalOptions="Center" Padding="0,0,20,0" Spacing="8">
+                            <Image Source="heart.png" WidthRequest="13.33" HeightRequest="12.23" />
+                            <Label Text="10.8k" FontSize="12" FontAttributes="Bold" TextColor="#FFFFFF" VerticalOptions="Center" />
+                        </StackLayout>
+
                     </StackLayout>
+                    <!--<Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"></TapGestureRecognizer>
+                    </Frame.GestureRecognizers>-->
+                </Frame>
 
-                    <!-- Likes Frame -->
-                    <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand" VerticalOptions="Center" Padding="0,0,20,0" Spacing="8">
-                        <Image Source="heart.png" WidthRequest="13.33" HeightRequest="12.23" />
-                        <Label Text="10.8k" FontSize="12" FontAttributes="Bold" TextColor="#FFFFFF" VerticalOptions="Center" />
-                    </StackLayout>
-
-                </StackLayout>
-            </Frame>
-
-        </StackLayout>
-    </VerticalStackLayout>
+            </StackLayout>
+        </VerticalStackLayout>
 
         <components:FanTabBar
             VerticalOptions="End" HorizontalOptions="FillAndExpand"

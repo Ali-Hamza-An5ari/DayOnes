@@ -14,7 +14,7 @@
             <Label 
             Grid.Row="0"
             Grid.Column="0"
-            Text="Direct Messages"
+            Text="DayOnes Chats"
            FontFamily="SF Pro Text"
            FontSize="20"
            FontAttributes="Bold"
@@ -44,7 +44,7 @@
                 BorderColor="#9747FF"  
                 CornerRadius="16" 
                 Padding="10" 
-                HeightRequest="50">
+                HeightRequest="70">
                     <Frame.GestureRecognizers>
                         <TapGestureRecognizer Tapped="FrameTapped" />
                     </Frame.GestureRecognizers>
@@ -56,11 +56,11 @@
 
                             <!--<Image Source="im1.jpg" WidthRequest="40" HeightRequest="40" Aspect="AspectFill" />-->
 
-                            <Frame CornerRadius="20" Margin="5" WidthRequest="40" HeightRequest="40" Padding="0" HasShadow="False" BackgroundColor="Transparent">
-                                <Image Source="im4.png" WidthRequest="40" HeightRequest="40" Aspect="AspectFill"  />
+                            <Frame CornerRadius="100" Margin="5" WidthRequest="50" HeightRequest="50" HasShadow="False" Padding="0" BackgroundColor="Transparent">
+                                <Image Source="im4.png" Aspect="AspectFill"  />
                             </Frame>
 
-                            <Label Text="Fan Name" FontSize="16" FontAttributes="Bold" TextColor="#FFFFFF" VerticalOptions="Center" />
+                            <Label Text="Artist" FontSize="16" FontAttributes="Bold" TextColor="#FFFFFF" VerticalOptions="Center" />
                         </StackLayout>
 
                         <!-- Likes Frame -->

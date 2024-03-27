@@ -53,7 +53,7 @@
                         <!-- Custom data template for each item -->
                         <StackLayout Padding="10">
                             <!-- Top line -->
-                            <BoxView  HeightRequest="2" BackgroundColor="#9747FF"  />
+                            <BoxView  HeightRequest="1" BackgroundColor="#9747FF" Color="#9747FF"  />
 
                             <!-- Circle image with text Artist -->
                             <StackLayout Orientation="Horizontal" Margin="0,10,0,0">
@@ -75,7 +75,7 @@
                             </StackLayout>
 
                             <!-- Another line beneath -->
-                        <BoxView  HeightRequest="4" BackgroundColor="#9747FF"  Margin="0,10,0,0" />
+                            <BoxView  HeightRequest="1" BackgroundColor="#9747FF" Color="#9747FF" Margin="0,10,0,0" />
 
                             <!-- Description text -->
                             <Label 
@@ -113,7 +113,7 @@
                             </StackLayout>
 
                             <!-- Last line -->
-                            <BoxView  HeightRequest="2" BackgroundColor="#9747FF"  Margin="0,10,0,0" />
+                            <BoxView  HeightRequest="1" BackgroundColor="#9747FF" Color="#9747FF"  Margin="0,10,0,0" />
                         </StackLayout>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>

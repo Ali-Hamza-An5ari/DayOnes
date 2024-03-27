@@ -233,7 +233,7 @@ BackgroundColor="#FFFFFF"
                             </Grid.ColumnDefinitions>
 
                             <Entry
-                                
+                                x:Name="txtMessage"
                                     Grid.Column="0"
                                     Text="Message" FontFamily="SF Pro Text" FontSize="17" TextColor="#000000"
                                FontAttributes="None"

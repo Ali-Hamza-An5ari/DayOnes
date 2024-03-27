@@ -94,6 +94,7 @@
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="*"/>
+                        <RowDefinition Height="auto"></RowDefinition>
                     </Grid.RowDefinitions>
 
                     <Image
@@ -105,11 +106,17 @@
                         HeightRequest="33"
                         HorizontalOptions="End"
                         IsVisible="False"
-                        />
+                        
+          >
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer  Tapped="onSend_Tapped" />
+                        </Image.GestureRecognizers>
+                    </Image>
 
                     <RadioButton 
                         Grid.Column="1"
                         Grid.Row="0"
+                        BorderColor="#E70971"
                         
     CheckedChanged="EmailRadioButton_CheckedChanged"
     x:Name="emailRadioButton"
@@ -130,9 +137,15 @@
           IsVisible="False"
                         WidthRequest="40"
                         HeightRequest="33"
-          />
+          
+          >
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer  Tapped="onSend_Tapped" />
+                        </Image.GestureRecognizers>
+                    </Image>
 
                     <RadioButton
+                        BorderColor="#E70971"
                         
                         Grid.Column="1"
                         Grid.Row="1"
@@ -145,7 +158,7 @@
                 <!--Rb 3-->
 
 
-            <Image
+                    <Image
                 
                         Grid.Column="0"
                         Grid.Row="2"
@@ -154,10 +167,13 @@
                         WidthRequest="40"
                         HeightRequest="33"
           IsVisible="False"
-          />
+          >
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer  Tapped="onSend_Tapped" />
+                        </Image.GestureRecognizers>
+                    </Image>
                     <RadioButton  
-                        BorderColor="#FFFFFF"
-                        
+                        BorderColor="#E70971"
                         Grid.Column="1"
                         Grid.Row="2"
                     CheckedChanged="TextRadioButton_CheckedChanged"
@@ -168,15 +184,23 @@
                 
                 <!-- Delete button -->
                 <StackLayout 
-                Grid.Row="4" Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+                Grid.Row="3" Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
                     <Label Text="&#xf2ed;"  FontFamily="FAS"  HeightRequest="20" WidthRequest="20" TextColor="#E70971" />
                     <Button Text="Delete This Photo" FontSize="12" BackgroundColor="#000000" FontFamily="Arial" TextColor="White" />
                 </StackLayout>
+                <components:GradientButton 
+     Grid.Row="4"
+        Text="Send" 
+        Width="200" 
+        Height="60" 
+        Name="btnSignup" 
+Margin="10"
+Padding="10" />
             </Grid>
         </ScrollView>
         
         <components:FanTabBar
-            Grid.Row="3"
+            Grid.Row="5"
             VerticalOptions="End" HorizontalOptions="FillAndExpand"
             />
     </Grid>

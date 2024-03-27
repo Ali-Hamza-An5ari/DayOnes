@@ -60,9 +60,10 @@ TextColor="#979393"
         />
                     </Frame>
                     <Entry
+                        x:Name="txtFullName"
             Grid.Row="1"
                     Margin="15,0,0,0"
-                    IsPassword="True"
+                        
             Placeholder="Full Name"
             BackgroundColor="Transparent"
             TextColor="White"
@@ -120,6 +121,7 @@ TextColor="#979393"
 
                     <Entry
                     Margin="15,0,0,0"
+                        x:Name="txtUsername"
             Grid.Row="1"
             Placeholder="Username"
             BackgroundColor="Transparent"
@@ -176,6 +178,7 @@ TextColor="#979393"
 
                     <Entry
                     Margin="15,0,0,0"
+                        x:Name="txtEmail"
             Grid.Row="1"
             Placeholder="Email"
             BackgroundColor="Transparent"
@@ -234,6 +237,7 @@ TextColor="#979393"
                     <Entry
                     Margin="15,0,0,0"
             Grid.Row="1"
+                        x:Name="txtPhone"
             Placeholder="Phone"
             BackgroundColor="Transparent"
             TextColor="White"
@@ -293,6 +297,7 @@ TextColor="#979393"
                     <Entry
             Grid.Row="1"
                     Margin="15,0,0,0"
+                        x:Name="txtPassword"
                     IsPassword="True"
             Placeholder="Password"
             BackgroundColor="Transparent"
@@ -355,6 +360,7 @@ TextColor="#979393"
             Grid.Row="1"
                     Margin="15,0,0,0"
                     IsPassword="True"
+                        x:Name="txtConfirmPassword"
             Placeholder="Confirm Password"
             BackgroundColor="Transparent"
             TextColor="White"
@@ -407,7 +413,7 @@ TextColor="#979393"
             Margin="0,0,0,20"
             Height="40" 
             Name="btnRegister" 
-            OnClick="btnRegister_ClickAsync" 
+            OnClick="btnRegister_Click" 
             />
 
 

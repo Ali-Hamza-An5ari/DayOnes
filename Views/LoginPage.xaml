@@ -57,6 +57,7 @@ TextColor="#979393"
                 <Entry
                     Margin="15,0,0,0"
             Grid.Row="1"
+                    x:Name="txtEmail"
             Placeholder="Email"
             BackgroundColor="Transparent"
             TextColor="White"
@@ -112,6 +113,7 @@ TextColor="#979393"
                     </Frame>
                     <Entry
             Grid.Row="1"
+                        x:Name="txtPassword"
                     Margin="15,0,0,0"
                     IsPassword="True"
             Placeholder="Password"

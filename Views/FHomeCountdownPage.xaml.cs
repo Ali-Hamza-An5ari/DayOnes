@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.ComponentModel;
 
 namespace DayOnes.Views;
@@ -35,7 +36,10 @@ public partial class FHomeCountdownPage : ContentPage
         BindingContext = this;
 
         StartCountdown();
-        this.lblCountDown.Text = RemainingSeconds.ToString();
+
+
+
+        this.lblCountDown.Text = RemainingSeconds.ToString();//This is just a testing data.
     }
 
     private async void StartCountdown()
@@ -61,6 +65,14 @@ public partial class FHomeCountdownPage : ContentPage
 
     private void btnInvites_Click(object sender, EventArgs e)
     {
-		Shell.Current.GoToAsync(nameof(FMessageReceivedPage));
+        /*
+         If the countdown completes to zero, the user will press the
+Receive Invites again, and the countdown begins again.
+2. During the countdown, the app should be ready to receive a
+message indicating a gif has arrived.
+a. When that message arrives at the app, the app should
+navigate to Page - F-Message receive
+         */
+        Shell.Current.GoToAsync(nameof(FMessageReceivedPage));
     }
 }
