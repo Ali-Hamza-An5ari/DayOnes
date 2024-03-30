@@ -1,12 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="DayOnes.Views.Components.FanSmallHdr">
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+    x:Class="DayOnes.Views.Components.FanSmallHdr">
 
     <!--<ContentView.Content>-->
         <Frame BorderColor="#3A27BC"
        HasShadow="True" CornerRadius="0"
-       WidthRequest="400"
+       WidthRequest="430"
        HeightRequest="70">
             <Frame.Background>
                 <RadialGradientBrush Center="0.0,0.0">
@@ -65,7 +66,9 @@
                     Margin="60,5,-5,0"
             HorizontalOptions="Start"
             VerticalOptions="Center">
-                    <ImageButton Padding="{OnPlatform Android='0',iOS='5'}"
+
+                <toolkit:AvatarView>
+                <ImageButton Padding="{OnPlatform Android='0',iOS='5'}"
                         Clicked="profileImage_Clicked"
                 Source="im2.png" Aspect="AspectFit"
                 WidthRequest="38"
@@ -73,7 +76,8 @@
                 BackgroundColor="Transparent"
                 HorizontalOptions="Center"
                 VerticalOptions="Center" />
-                </Frame>
+                </toolkit:AvatarView>
+            </Frame>
             </Grid>
         </Frame>
 

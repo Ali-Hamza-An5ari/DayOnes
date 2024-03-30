@@ -1,4 +1,5 @@
-﻿using DayOnes.Views;
+﻿using CommunityToolkit.Maui;
+using DayOnes.Views;
 using Microsoft.Extensions.Logging;
 using Syncfusion.Maui.Core.Hosting;
 
@@ -9,7 +10,10 @@ namespace DayOnes
         public static MauiApp CreateMauiApp()
         {
             var builder = MauiApp.CreateBuilder();
-
+            builder
+            .UseMauiApp<App>()
+            // Initialize the .NET MAUI Community Toolkit by adding the below line of code
+            .UseMauiCommunityToolkit();
             builder.Services.AddTransient<FSettingsPage>();
 
             Microsoft.Maui.Handlers.EntryHandler.Mapper.AppendToMapping(nameof(Entry), (handler, view) =>
