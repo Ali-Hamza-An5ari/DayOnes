@@ -122,14 +122,8 @@ VerticalOptions="Start"></Label>
                                 <Frame CornerRadius="20" Margin="5" WidthRequest="40" HeightRequest="40" Padding="0" HasShadow="False" BackgroundColor="Transparent">
                                     <Image Source="im4.png" WidthRequest="40" HeightRequest="40" Aspect="AspectFill"  />
                                 </Frame>
-<<<<<<< HEAD
-                                </toolkit:AvatarView>
-                                <Label Text="Artist" FontSize="16" FontAttributes="Bold" TextColor="#FFFFFF" VerticalOptions="Center" />
-=======
 
-                                <Label Text="Artist" FontSize="16" 
-                                FontFamily="SF Pro Text" FontAttributes="Bold" TextColor="#FFFFFF" VerticalOptions="Center" />
->>>>>>> 1c301a1 (some Host pages)
+                                <Label Text="Artist" FontSize="16" FontAttributes="Bold" TextColor="#FFFFFF" VerticalOptions="Center" />
                             </StackLayout>
 
                             <!-- Likes Frame -->
