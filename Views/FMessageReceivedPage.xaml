@@ -83,7 +83,7 @@
                             <!-- Description text -->
                             <Label 
                         Text="You received a gift."
-                        FontFamily="Arial"
+                                FontFamily="SF Pro Text"
                         FontSize="24"
                         FontAttributes="Bold"
                         TextColor="#FFFFFF"
