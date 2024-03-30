@@ -6,6 +6,40 @@
              Background="#000000"
              >
 
+    <!--<ContentPage.Resources>
+        <ControlTemplate x:Key="CustomRadioButtonTemplate" TargetType="RadioButton">
+            <Grid>
+                --><!-- Custom circle shape for the RadioButton --><!--
+                <Ellipse x:Name="Circle"
+                         WidthRequest="20"
+                         HeightRequest="20"
+                         HorizontalOptions="Start"
+                         VerticalOptions="Center"
+                         Stroke="White"
+                         StrokeThickness="2"
+                         Margin="5">
+                    --><!-- Change the Fill color of the circle here --><!--
+                    <Ellipse.Fill>
+                        <SolidColorBrush Color="{TemplateBinding BackgroundColor}" />
+                    </Ellipse.Fill>
+                </Ellipse>
+                --><!-- Label for the RadioButton --><!--
+                <Label x:Name="Label"
+                       HorizontalOptions="Start"
+                       VerticalOptions="Center"
+                       Text="{TemplateBinding Content}"
+                       TextColor="White"
+                       Margin="30,0,0,0"/>
+            </Grid>
+            <ControlTemplate.Triggers>
+                <Trigger TargetType="RadioButton" Property="IsChecked" Value="True">
+                    <Setter TargetName="Circle" Property="Fill" Value="DodgerBlue" />
+                    --><!-- Change the color when RadioButton is checked --><!--
+                </Trigger>
+                --><!-- Add more triggers as needed --><!--
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+    </ContentPage.Resources>-->
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>

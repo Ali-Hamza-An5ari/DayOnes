@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="DayOnes.Views.Components.FanSmallHdr">
 
     <!--<ContentView.Content>-->
         <Frame BorderColor="#3A27BC"
-       HasShadow="True"
+       HasShadow="True" CornerRadius="0"
        WidthRequest="400"
        HeightRequest="70">
             <Frame.Background>
@@ -65,14 +65,14 @@
                     Margin="60,5,-5,0"
             HorizontalOptions="Start"
             VerticalOptions="Center">
-                    <ImageButton
+                    <ImageButton Padding="{OnPlatform Android='0',iOS='5'}"
                         Clicked="profileImage_Clicked"
-                Source="im2.png"
-                WidthRequest="50"
-                HeightRequest="50"
+                Source="im2.png" Aspect="AspectFit"
+                WidthRequest="38"
+                HeightRequest="30"
                 BackgroundColor="Transparent"
-                HorizontalOptions="Start"
-                VerticalOptions="Start" />
+                HorizontalOptions="Center"
+                VerticalOptions="Center" />
                 </Frame>
             </Grid>
         </Frame>
