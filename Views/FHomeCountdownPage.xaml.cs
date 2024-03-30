@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using System.ComponentModel;
-using Windows.System;
 
 namespace DayOnes.Views;
 

@@ -153,7 +153,8 @@ TextColor="#979393"
 
         />
                         </Frame>
-                        <Entry
+                            <Entry 
+                                FontFamily="SF Pro Text"
             Grid.Row="1"
                     Margin="15,0,0,0"
                             x:Name="txtUsername"
@@ -213,6 +214,7 @@ TextColor="#979393"
                         </Frame>
 
                             <Entry
+                                FontFamily="SF Pro Text"
                             x:Name="txtEmail"
                     Margin="15,0,0,0"
             Grid.Row="1"
@@ -271,7 +273,8 @@ TextColor="#979393"
         />
                         </Frame>
 
-                        <Entry
+                            <Entry
+                                FontFamily="SF Pro Text"
                     Margin="15,0,0,0"
                             x:Name="txtUsernameOrEmail"
             Grid.Row="1"
@@ -332,6 +335,7 @@ TextColor="#979393"
                         </Frame>
 
                             <Entry
+                                FontFamily="SF Pro Text"
                             x:Name="txtCurrentPassword"
                     Margin="15,0,0,0"
             Grid.Row="1"
@@ -396,6 +400,7 @@ TextColor="#979393"
         />
                         </Frame>
                             <Entry
+                                FontFamily="SF Pro Text"
                             x:Name="txtNewPassword"
             Grid.Row="1"
                     Margin="15,0,0,0"
@@ -459,7 +464,8 @@ TextColor="#979393"
 
         />
                         </Frame>
-                        <Entry
+                            <Entry
+                                FontFamily="SF Pro Text"
             Grid.Row="1"
                             x:Name="txtConfirmPassword"
                     Margin="15,0,0,0"
