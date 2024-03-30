@@ -56,7 +56,6 @@ TextColor="#979393"
                
                 <Entry
                     Margin="15,0,0,0"
-                                FontFamily="SF Pro Text"
             Grid.Row="1"
                     x:Name="txtEmail"
             Placeholder="Email"
@@ -113,7 +112,6 @@ TextColor="#979393"
         />
                     </Frame>
                     <Entry
-                                FontFamily="SF Pro Text"
             Grid.Row="1"
                         x:Name="txtPassword"
                     Margin="15,0,0,0"
@@ -150,7 +148,7 @@ Padding="10"/>
         OnClick="btnSignup_Click"
 Margin="10"
 Padding="10" />
-            <Label  FontFamily="SF Pro Text" Text="New Account Registration" HorizontalOptions="Center" HorizontalTextAlignment="Center"></Label>
+            <Label Text="New Account Registration" HorizontalOptions="Center" HorizontalTextAlignment="Center"></Label>
         </StackLayout>
         
     </VerticalStackLayout>

@@ -60,6 +60,22 @@
                             </Image.GestureRecognizers>
                         </Image>
 
+                        <!--<Label 
+                            
+      x:Name="lblHomeTitle"
+                               Text="Home"
+       FontFamily="SF Pro Text"
+       FontSize="12"
+       FontAttributes="None"
+       TextColor="#FFFFFF"
+       HorizontalOptions="Start"
+       VerticalOptions="Center"
+       LineBreakMode="TailTruncation"
+       LineHeight="40"
+       TextDecorations="None"
+       TextTransform="None"
+                               />-->
+
                     </VerticalStackLayout>
 
 
@@ -81,6 +97,21 @@
                             </Image.GestureRecognizers>
                         </Image>
 
+                        <!--<Label 
+                            
+                        x:Name="lblMsgsTitle"
+                               Text="Msgs"
+       FontFamily="SF Pro Text"
+       FontSize="12"
+       FontAttributes="None"
+       TextColor="#FFFFFF"
+       HorizontalOptions="Start"
+       VerticalOptions="Center"
+       LineBreakMode="TailTruncation"
+       LineHeight="40"
+       TextDecorations="None"
+       TextTransform="None"
+                               />-->
                     </VerticalStackLayout>
 
                     <!--Menu 3-->
@@ -100,6 +131,29 @@
                                 <TapGestureRecognizer Tapped="lblDM_Tapped" />
                             </Image.GestureRecognizers>
                         </Image>
+                        <!--<Label 
+                        x:Name="lblDM"
+                        Text="&#xf27a;" TextColor="White" FontSize="30" FontFamily="FAS">
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="lblDM_Tapped" />
+                            </Label.GestureRecognizers>
+                        </Label>-->
+                        <!--<Label 
+                            
+                        x:Name="lblDMTitle"
+                               Text="DM"
+       FontFamily="SF Pro Text"
+       FontSize="12"
+       FontAttributes="None"
+       TextColor="#FFFFFF"
+       HorizontalOptions="Start"
+       VerticalOptions="Center"
+       LineBreakMode="TailTruncation"
+       LineHeight="40"
+       TextDecorations="None"
+       TextTransform="None"
+                               />-->
                     </VerticalStackLayout>
 
                     <!--Menu 4-->
@@ -118,6 +172,30 @@
                                 <TapGestureRecognizer Tapped="lblMyStuff_Tapped" />
                             </Image.GestureRecognizers>
                         </Image>
+                        <!--<Label 
+                        x:Name="lblMyStuff"
+                            HorizontalOptions="Center"
+                        Text="&#xf302;" TextColor="White" FontSize="30" FontFamily="FAS">
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="lblMyStuff_Tapped" />
+                            </Label.GestureRecognizers>
+                        </Label>
+                        <Label 
+                            
+                        x:Name="lblMyStuffTitle"
+                               Text="My Stuff"
+       FontFamily="SF Pro Text"
+       FontSize="12"
+       FontAttributes="None"
+       TextColor="#FFFFFF"
+       HorizontalOptions="Start"
+       VerticalOptions="Center"
+       LineBreakMode="TailTruncation"
+       LineHeight="40"
+       TextDecorations="None"
+       TextTransform="None"
+                               />-->
                     </VerticalStackLayout>
 
                     <!--Menu 5-->
@@ -136,6 +214,31 @@ x:Name="lblNotification"
                                 <TapGestureRecognizer Tapped="lblNotification_Tapped" />
                             </Image.GestureRecognizers>
                         </Image>
+                        <!--<Label 
+                        x:Name="lblNotification"
+                            HorizontalOptions="Center"
+                        Text="&#xf0f3;" TextColor="White" FontSize="30"
+                            FontFamily="FAS">
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="lblNotification_Tapped" />
+                            </Label.GestureRecognizers>
+                        </Label>
+                        <Label 
+                            
+                        x:Name="lblNotificationTitle"
+                               Text="Notification"
+       FontFamily="SF Pro Text"
+       FontSize="12"
+       FontAttributes="None"
+       TextColor="#FFFFFF"
+       HorizontalOptions="Start"
+       VerticalOptions="Center"
+       LineBreakMode="TailTruncation"
+       LineHeight="40"
+       TextDecorations="None"
+       TextTransform="None"
+                               />-->
                     </VerticalStackLayout>
 
                 </Grid>

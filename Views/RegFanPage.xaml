@@ -1,14 +1,14 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:components="clr-namespace:DayOnes.Views.Components"
              x:Class="DayOnes.Views.RegFanPage" Background="#000000"
              >
 
-    <ScrollView>
+    
 
-    <VerticalStackLayout
-        Padding="15,25,15,25"
+    <StackLayout
+       
         >
 
         <Image Source="d1logo3" WidthRequest="57" HeightRequest="80">
@@ -61,7 +61,6 @@ TextColor="#979393"
                     </Frame>
                     <Entry
                         x:Name="txtFullName"
-                                FontFamily="SF Pro Text"
             Grid.Row="1"
                     Margin="15,0,0,0"
                         
@@ -122,7 +121,6 @@ TextColor="#979393"
 
                     <Entry
                     Margin="15,0,0,0"
-                                FontFamily="SF Pro Text"
                         x:Name="txtUsername"
             Grid.Row="1"
             Placeholder="Username"
@@ -181,7 +179,6 @@ TextColor="#979393"
                     <Entry
                     Margin="15,0,0,0"
                         x:Name="txtEmail"
-                                FontFamily="SF Pro Text"
             Grid.Row="1"
             Placeholder="Email"
             BackgroundColor="Transparent"
@@ -239,7 +236,6 @@ TextColor="#979393"
 
                     <Entry
                     Margin="15,0,0,0"
-                                FontFamily="SF Pro Text"
             Grid.Row="1"
                         x:Name="txtPhone"
             Placeholder="Phone"
@@ -300,7 +296,6 @@ TextColor="#979393"
                     </Frame>
                     <Entry
             Grid.Row="1"
-                                FontFamily="SF Pro Text"
                     Margin="15,0,0,0"
                         x:Name="txtPassword"
                     IsPassword="True"
@@ -364,7 +359,6 @@ TextColor="#979393"
                     <Entry
             Grid.Row="1"
                     Margin="15,0,0,0"
-                                FontFamily="SF Pro Text"
                     IsPassword="True"
                         x:Name="txtConfirmPassword"
             Placeholder="Confirm Password"
@@ -379,25 +373,25 @@ TextColor="#979393"
 
             <!--/////////////-->
 
-        <StackLayout
+        <!--<StackLayout
         Orientation="Horizontal"
         Padding="10"
-        HorizontalOptions="Center"
-        VerticalOptions="Center">
-            <!-- Label -->
+        
+        >
+             Label 
             <Label
             Text="Are you an Entertainer/Host?"
-            FontFamily="SF Pro Text"
+            
             FontSize="16"
             LineHeight="40"
             TextColor="#FFFFFF"
             VerticalOptions="Center" />
 
-            <!-- Toggle Switch -->
+             Toggle Switch 
             <Switch
             x:Name="toggleSwitch"
-            WidthRequest="72"
-            HeightRequest="24"
+           
+           
             HorizontalOptions="End"
             VerticalOptions="Center"
             ThumbColor="#E615DE"
@@ -406,8 +400,29 @@ TextColor="#979393"
             
             BackgroundColor="#000000"
             Toggled="OnToggled" />
-        </StackLayout>
+        </StackLayout>-->
+        <HorizontalStackLayout Spacing="10" HorizontalOptions="CenterAndExpand" Margin="10">
+            <Label
+            Text="Are you an Entertainer/Host?"
+            
+            FontSize="16"
+           
+            TextColor="#FFFFFF"
+            VerticalOptions="Center" />
+            <Switch
+            x:Name="toggleSwitch"
+           
+           
+            HorizontalOptions="End"
+            VerticalOptions="Center"
+            ThumbColor="#E615DE"
+            OnColor="White"
+            
+            
+            BackgroundColor="#000000"
+            Toggled="OnToggled" />
 
+        </HorizontalStackLayout>
             <BoxView HeightRequest="1" WidthRequest="291" Color="#9747FF" Margin="0,0,0,10"/>
 
             <!--/////////////////-->
@@ -416,7 +431,7 @@ TextColor="#979393"
             
             Text="Register" 
             Width="110" 
-            Margin="0,0,0,20"
+            Margin="0,10,0,20"
             Height="40" 
             Name="btnRegister" 
             OnClick="btnRegister_Click" 
@@ -425,15 +440,16 @@ TextColor="#979393"
 
         <!--/////////////////-->
         
-        <Label
+        <Label Margin="10"
     Text="Already Have an Account?"
-    FontFamily="SF Pro Text"
+    
+
     FontSize="16"
-    LineHeight="40"
+    
     TextColor="#FFFFFF"
     WidthRequest="220"
           LineBreakMode="TailTruncation"
-    HeightRequest="40"
+   
     HorizontalOptions="Center"
     VerticalOptions="Center" />
 
@@ -443,13 +459,13 @@ TextColor="#979393"
         <components:GradientButton
             
             Text="Login" 
-            Width="110" 
+            Width="110"  Margin="10"
 Height="40"  
             Name="btnLogin" 
             OnClick="btnLogin_Click" 
             />
 
-    </VerticalStackLayout>
+    </StackLayout>
 
-    </ScrollView>
+    
 </ContentPage>
