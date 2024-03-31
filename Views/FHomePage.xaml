@@ -20,7 +20,7 @@
         HorizontalOptions="FillAndExpand" 
         >
         <!-- Background gradient -->
-        <components:FanSmallHdr/>
+        <components:FanSmallHdr HorizontalOptions="FillAndExpand"/>
 
         <!-- Add Signature -->
             <components:FanTitleBar

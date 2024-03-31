@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="DayOnes.Views.FMyPicsLrgPage"
@@ -82,7 +82,7 @@
                     <RadioButton 
                         Grid.Column="1"
                         Grid.Row="0"
-                        BorderColor="#E70971"
+                        
                         
     CheckedChanged="EmailRadioButton_CheckedChanged"
     x:Name="emailRadioButton"
@@ -111,10 +111,10 @@
                     </Image>
 
                     <RadioButton
-                        BorderColor="#E70971"
+                        BorderColor="Transparent"
                         
                         Grid.Column="1"
-                        Grid.Row="1"
+                        Grid.Row="1" 
                         Content="Your Device Photo Library" 
                         
                     CheckedChanged="DeviceRadioButton_CheckedChanged"
@@ -139,7 +139,7 @@
                         </Image.GestureRecognizers>
                     </Image>
                     <RadioButton  
-                        BorderColor="#E70971"
+                        BorderColor="Transparent"
                         Grid.Column="1"
                         Grid.Row="2"
                     CheckedChanged="TextRadioButton_CheckedChanged"
