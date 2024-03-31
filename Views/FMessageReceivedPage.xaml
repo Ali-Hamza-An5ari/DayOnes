@@ -59,7 +59,10 @@
                             <!-- Circle image with text Artist -->
                             <StackLayout Orientation="Horizontal" Margin="0,10,0,0">
                                 <!--<Image Source="im3.png" WidthRequest="50" HeightRequest="50" />-->
-                                <toolkit:AvatarView>
+
+                                <toolkit:AvatarView
+                      CornerRadius="75"
+                    >
                                     <Frame CornerRadius="25" WidthRequest="50" HeightRequest="50" Padding="0" HasShadow="False"
                    HorizontalOptions="Start" VerticalOptions="Center">
                                         <Image Source="im3.png" Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />

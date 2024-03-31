@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"  NavigationPage.HasBackButton="False"
              x:Class="DayOnes.Views.FD1MsgsBubblesPage"
     BackgroundColor="#000000"
@@ -43,7 +44,9 @@
                 </Grid.ColumnDefinitions>
 
                 <!-- Ellipse Image -->
-                <Frame 
+                <toolkit.AvatarView
+                      CornerRadius="75">
+                    <Frame 
         Grid.Column="0"
         CornerRadius="25"
         WidthRequest="50"
@@ -52,15 +55,16 @@
         HasShadow="False"
         HorizontalOptions="Start"
         VerticalOptions="Center">
-                    <Image
+                        <Image
             Source="im2.png"
             WidthRequest="50"
             HeightRequest="50"
             BackgroundColor="Transparent"
             HorizontalOptions="Start"
             VerticalOptions="Start" />
-                </Frame>
+                    </Frame>
 
+                </toolkit.AvatarView>
                 <!--Profile text-->
                 <Label 
                 Margin="0,20,10,20"

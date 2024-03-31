@@ -66,7 +66,8 @@ VerticalOptions="Start"></Label>
 
                                 <!--<Image Source="im1.jpg" WidthRequest="40" HeightRequest="40" Aspect="AspectFill" />-->
 
-                                <toolkit:AvatarView>
+                                <toolkit:AvatarView
+                      CornerRadius="75">
                                 <Frame CornerRadius="20" Margin="5" WidthRequest="40" HeightRequest="40" Padding="0" HasShadow="False" BackgroundColor="Transparent">
                                     <Image Source="im4.png" WidthRequest="40" HeightRequest="40" Aspect="AspectFill"  />
                                     </Frame>
@@ -118,10 +119,12 @@ VerticalOptions="Start"></Label>
 
                                 <!--<Image Source="im1.jpg" WidthRequest="40" HeightRequest="40" Aspect="AspectFill" />-->
 
-                                <toolkit:AvatarView>
-                                <Frame CornerRadius="20" Margin="5" WidthRequest="40" HeightRequest="40" Padding="0" HasShadow="False" BackgroundColor="Transparent">
-                                    <Image Source="im4.png" WidthRequest="40" HeightRequest="40" Aspect="AspectFill"  />
-                                </Frame>
+                                <toolkit:AvatarView
+                      CornerRadius="75">
+                                    <Frame CornerRadius="20" Margin="5" WidthRequest="40" HeightRequest="40" Padding="0" HasShadow="False" BackgroundColor="Transparent">
+                                        <Image Source="im4.png" WidthRequest="40" HeightRequest="40" Aspect="AspectFill"  />
+                                    </Frame>
+                                </toolkit:AvatarView>
 
                                 <Label Text="Artist" FontSize="16" FontAttributes="Bold" TextColor="#FFFFFF" VerticalOptions="Center" />
                             </StackLayout>

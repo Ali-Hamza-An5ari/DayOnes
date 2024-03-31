@@ -57,7 +57,8 @@
 
                             <!--<Image Source="im1.jpg" WidthRequest="40" HeightRequest="40" Aspect="AspectFill" />-->
 
-                            <toolkit:AvatarView>
+                            <toolkit:AvatarView
+                      CornerRadius="75">
                                 <Frame CornerRadius="100" Margin="5" WidthRequest="50" HeightRequest="50" HasShadow="False" Padding="0" BackgroundColor="Transparent">
                                     <Image Source="im4.png" Aspect="AspectFill"  />
                                 </Frame>

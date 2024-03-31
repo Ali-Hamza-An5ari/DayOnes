@@ -61,7 +61,10 @@
                         </Grid.ColumnDefinitions>
 
                         <!-- Ellipse Image -->
-                        <toolkit:AvatarView>
+                        <toolkit:AvatarView
+                     HeightRequest="150"
+                      WidthRequest="150"
+                      CornerRadius="75">
                             <Frame 
                         Margin="0,10,0,0"
             Grid.Column="0"

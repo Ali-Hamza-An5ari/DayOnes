@@ -67,7 +67,11 @@
             HorizontalOptions="Start"
             VerticalOptions="Center">
 
-                <toolkit:AvatarView>
+                <toolkit:AvatarView
+                     HeightRequest="150"
+                      WidthRequest="150"
+                      CornerRadius="75"
+                    >
                 <ImageButton Padding="{OnPlatform Android='0',iOS='5'}"
                         Clicked="profileImage_Clicked"
                 Source="im2.png" Aspect="AspectFit"
