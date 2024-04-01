@@ -33,10 +33,4 @@ message bubble.
          */
     }
 
-    private void imgMicrophone_Tapped(object sender, TappedEventArgs e)
-    {
-        //this should all use the iOS voice-to-text
-        //feature to fill the message area with text the that user is
-        //saying
-    }
 }

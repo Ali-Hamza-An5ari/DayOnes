@@ -254,10 +254,9 @@ BackgroundColor="#FFFFFF"
                     <!--<Image Source="mic.png" WidthRequest="20" HeightRequest="20" />-->
                     <Image Source="send.png" WidthRequest="20" HeightRequest="20" VerticalOptions="Center" 
                            Margin="10"
-                           x:Name="imgMicrophone"
                            HorizontalOptions="End">
                         <Image.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="imgMicrophone_Tapped" />
+                            <TapGestureRecognizer Tapped="sendButton_Tapped" />
                         </Image.GestureRecognizers>
                     </Image>
                     <!-- Text Counter -->
