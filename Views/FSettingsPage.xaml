@@ -59,7 +59,7 @@
                     FontFamily="SF Pro Text"
                     FontSize="20"
                     TextColor="#FFFFFF"
-                    Opacity="0.9"
+                    Opacity="0.9" 
                     VerticalOptions="Center" />
                     <!-- Chevron -->
 
