@@ -56,6 +56,7 @@
 	  <None Remove="Resources\Fonts\Brands-Regular-400.otf" />
 	  <None Remove="Resources\Fonts\Free-Regular-400.otf" />
 	  <None Remove="Resources\Fonts\Free-Solid-900.otf" />
+	  <None Remove="Resources\Fonts\SF-Pro-Text-Regular.otf" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -79,22 +80,22 @@
 	  <Compile Update="Views\Components\FanSmallHdr .xaml.cs">
 	    <DependentUpon>FanSmallHdr .xaml</DependentUpon>
 	  </Compile>
-	  <Compile Update="Views\FHomePage.xaml.cs">
+	  <Compile Update="Views\FanPages\FHomePage.xaml.cs">
 	    <DependentUpon>FHomePage.xaml</DependentUpon>
 	  </Compile>
-	  <Compile Update="Views\HHomeUploadedPage.xaml.cs">
+	  <Compile Update="Views\HostPages\HHomeUploadedPage.xaml.cs">
 	    <DependentUpon>HHomeUploadedPage.xaml</DependentUpon>
 	  </Compile>
-	  <Compile Update="Views\HSettingsPage.xaml.cs">
+	  <Compile Update="Views\HostPages\HSettingsPage.xaml.cs">
 	    <DependentUpon>HSettingsPage.xaml</DependentUpon>
 	  </Compile>
 	  <Compile Update="Views\LoginPage.xaml.cs">
 	    <DependentUpon>LoginPage.xaml</DependentUpon>
 	  </Compile>
-	  <Compile Update="Views\FD1MsgsBubblesPage.xaml.cs">
+	  <Compile Update="Views\FanPages\FD1MsgsBubblesPage.xaml.cs">
 	    <DependentUpon>FD1MsgsBubblesPage.xaml</DependentUpon>
 	  </Compile>
-	  <Compile Update="Views\RegFanPage.xaml.cs">
+	  <Compile Update="Views\FanPages\RegFanPage.xaml.cs">
 	    <DependentUpon>RegFanPage.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
@@ -121,91 +122,97 @@
 	  <MauiXaml Update="Styles\ResourceDictionary.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\Components\HostSmallHdr.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\Components\TextBox.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\FD1MsgsPage.xaml">
+	  <MauiXaml Update="Views\FanPages\FD1MsgsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\FDirectMsgsBubblesPage.xaml">
+	  <MauiXaml Update="Views\FanPages\FDirectMsgsBubblesPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\FDirectMsgsPage.xaml">
+	  <MauiXaml Update="Views\FanPages\FDirectMsgsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\FHomePage.xaml">
+	  <MauiXaml Update="Views\FanPages\FHomePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\FHomeCountdownPage.xaml">
+	  <MauiXaml Update="Views\FanPages\FHomeCountdownPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\FMessageReceivedPage.xaml">
+	  <MauiXaml Update="Views\FanPages\FMessageReceivedPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\FMyCollocationPage.xaml">
+	  <MauiXaml Update="Views\FanPages\FMyCollocationPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\FMyPicsLrgPage.xaml">
+	  <MauiXaml Update="Views\FanPages\FMyPicsLrgPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\FNotificationsPage.xaml">
+	  <MauiXaml Update="Views\FanPages\FNotificationsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\FProfilePage.xaml">
+	  <MauiXaml Update="Views\FanPages\FProfilePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\FQuickStartPage.xaml">
+	  <MauiXaml Update="Views\FanPages\FQuickStartPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\FSettingsPage.xaml">
+	  <MauiXaml Update="Views\FanPages\FSettingsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\HDM DetailsPage.xaml">
+	  <MauiXaml Update="Views\HostPages\HDM DetailsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\HNewALLPostPage.xaml">
+	  <MauiXaml Update="Views\HostPages\HHomePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\HNewGrpPostPage.xaml">
+	  <MauiXaml Update="Views\HostPages\HNewALLPostPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\HNotificationsPage.xaml">
+	  <MauiXaml Update="Views\HostPages\HNewGrpPostPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\HPageHSigPenColorEditPage.xaml">
+	  <MauiXaml Update="Views\HostPages\HNotificationsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\HPostDetailsPage.xaml">
+	  <MauiXaml Update="Views\HostPages\HPageHSigPenColorEditPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\HPOSTURSentMsgsPage.xaml">
+	  <MauiXaml Update="Views\HostPages\HPostDetailsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\HProfilePage.xaml">
+	  <MauiXaml Update="Views\HostPages\HPOSTURSentMsgsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\HQuickStartPage.xaml">
+	  <MauiXaml Update="Views\HostPages\HProfilePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\HSettingsPage.xaml">
+	  <MauiXaml Update="Views\HostPages\HQuickStartPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\HUPLPhotoChooseSigPage.xaml">
+	  <MauiXaml Update="Views\HostPages\HSettingsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\HUPLSeePhotoPage.xaml">
+	  <MauiXaml Update="Views\HostPages\HUPLPhotoChooseSigPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\HostPages\HUPLSeePhotoPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\LoginPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\FD1MsgsBubblesPage.xaml">
+	  <MauiXaml Update="Views\FanPages\FD1MsgsBubblesPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\NHAssetsNManagementPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\RegFanPage.xaml">
+	  <MauiXaml Update="Views\FanPages\RegFanPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

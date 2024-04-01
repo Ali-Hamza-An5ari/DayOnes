@@ -1,3 +1,5 @@
+using DayOnes.Views.HostPages;
+
 namespace DayOnes.Views;
 
 public partial class LoginPage : ContentPage

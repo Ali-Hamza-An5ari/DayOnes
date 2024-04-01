@@ -2,21 +2,23 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
-             x:Class="DayOnes.Views.FD1MsgsPage"
+             x:Class="DayOnes.Views.FDirectMsgsPage"
     BackgroundColor="#000000"
              xmlns:components="clr-namespace:DayOnes.Views.Components"
+             
              >
-
     <Grid>
         <VerticalStackLayout>
 
-            <components:FanSmallHdr/>
-
-            <Label 
+        <components:FanSmallHdr/>
+            <components:FanTitleBar
+        Title="Direct Messages"
+/>
+            <!--<Label 
             Grid.Row="0"
             Grid.Column="0"
-            Text="DayOnes Chats"
-           FontFamily="SF Pro Text"
+            Text="Direct Messages"
+           FontFamily="SFProText"
            FontSize="20"
            FontAttributes="Bold"
            WidthRequest="600"
@@ -26,14 +28,14 @@
            VerticalTextAlignment="Center"
            VerticalOptions="Start"
             >
-                <Label.Background>
-                    <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
-                        <GradientStop Color="#3A27BC" Offset="0.0" />
-                        <GradientStop Color="#000000" Offset="0.5" />
-                        <GradientStop Color="#3DC1F9" Offset="1.0" />
-                    </LinearGradientBrush>
-                </Label.Background>
-            </Label>
+            <Label.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                    <GradientStop Color="#3A27BC" Offset="0.0" />
+                    <GradientStop Color="#000000" Offset="0.5" />
+                    <GradientStop Color="#3DC1F9" Offset="1.0" />
+                </LinearGradientBrush>
+            </Label.Background>
+        </Label>-->
 
 
             <StackLayout Padding="20,20,20,0" HeightRequest="50" HorizontalOptions="FillAndExpand" VerticalOptions="Start">
@@ -45,7 +47,7 @@
                 BorderColor="#9747FF"  
                 CornerRadius="16" 
                 Padding="10" 
-                HeightRequest="70">
+                HeightRequest="60">
                     <Frame.GestureRecognizers>
                         <TapGestureRecognizer Tapped="FrameTapped" />
                     </Frame.GestureRecognizers>
@@ -56,21 +58,22 @@
 
 
                             <!--<Image Source="im1.jpg" WidthRequest="40" HeightRequest="40" Aspect="AspectFill" />-->
-
                             <toolkit:AvatarView
                       CornerRadius="75">
-                                <Frame CornerRadius="100" Margin="5" WidthRequest="50" HeightRequest="50" HasShadow="False" Padding="0" BackgroundColor="Transparent">
-                                    <Image Source="im4.png" Aspect="AspectFill"  />
+                            <Frame CornerRadius="100" Margin="5" WidthRequest="50" HeightRequest="50" HasShadow="False" Padding="0" BackgroundColor="Transparent">
+                                <Image Source="im4.png" Aspect="AspectFill"  />
                                 </Frame>
                             </toolkit:AvatarView>
 
-                            <Label Text="Artist" FontSize="16" FontAttributes="Bold" TextColor="#FFFFFF" VerticalOptions="Center" />
+                            <Label Text="Artist" 
+                                FontFamily="SFProText" FontSize="16" FontAttributes="Bold" TextColor="#FFFFFF" VerticalOptions="Center" />
                         </StackLayout>
 
                         <!-- Likes Frame -->
                         <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand" VerticalOptions="Center" Padding="0,0,20,0" Spacing="8">
                             <Image Source="heart.png" WidthRequest="13.33" HeightRequest="12.23" />
-                            <Label Text="10.8k" FontSize="12" FontAttributes="Bold" TextColor="#FFFFFF" VerticalOptions="Center" />
+                            <Label Text="10.8k" 
+                                FontFamily="SFProText" FontSize="12" FontAttributes="Bold" TextColor="#FFFFFF" VerticalOptions="Center" />
                         </StackLayout>
 
                     </StackLayout>

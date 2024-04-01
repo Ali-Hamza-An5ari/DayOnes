@@ -71,7 +71,7 @@
                                 <Label 
                             Margin="10,5"
                             Text="Artist"
-                            FontFamily="SF Pro Text"
+                            FontFamily="SFProText"
                             FontSize="16"
                             FontAttributes="Bold"
                                 
@@ -86,7 +86,7 @@
                             <!-- Description text -->
                             <Label 
                         Text="You received a gift."
-                                FontFamily="SF Pro Text"
+                                FontFamily="SFProText"
                         FontSize="24"
                         FontAttributes="Bold"
                         TextColor="#FFFFFF"
@@ -107,7 +107,7 @@
                             <Button 
                                 x:Name="btnIgnore"
                             Text="Ignore"
-                            FontFamily="SF Pro Text"
+                            FontFamily="SFProText"
                             FontSize="16"
                                 Padding="25,10"
                                 

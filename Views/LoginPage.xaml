@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="DayOnes.Views.LoginPage"
              xmlns:components="clr-namespace:DayOnes.Views.Components"
-              Background="#000000"
+              Background="{StaticResource DefaultBlack}"
              >
     <VerticalStackLayout 
         Margin="10,40"
@@ -56,6 +56,7 @@ TextColor="#979393"
                 <Entry
                     Margin="15,0,0,0"
             Grid.Row="1"
+                    FontFamily="SFProText"
                     x:Name="txtEmail"
             Placeholder="Email"
             BackgroundColor="Transparent"
@@ -100,7 +101,7 @@ TextColor="#979393"
                         <Label
 Text="Password"
         ZIndex="1" BackgroundColor="Black"
-FontFamily="SF Pro Text"
+                    FontFamily="SFProText"
 FontSize="10"
 TextColor="#979393"
                             HorizontalOptions="Center"
@@ -117,6 +118,7 @@ TextColor="#979393"
                     IsPassword="True"
             Placeholder="Password"
             BackgroundColor="Transparent"
+                    FontFamily="SFProText"
             TextColor="White"
             FontSize="16"
             FontAttributes="Bold"
@@ -147,7 +149,8 @@ Padding="10"/>
         OnClick="btnSignup_Click"
 Margin="10"
 Padding="10" />
-            <Label Text="New Account Registration" HorizontalOptions="Center" HorizontalTextAlignment="Center"></Label>
+            <Label Text="New Account Registration" 
+                    FontFamily="SFProText" HorizontalOptions="Center" HorizontalTextAlignment="Center"></Label>
         </StackLayout>
         
     </VerticalStackLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DayOnes.Views.HostPages.HHomePage"
+             Background="{StaticResource DefaultBlack}"
+             xmlns:components="clr-namespace:DayOnes.Views.Components"
+         
+             >
+    <Grid>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        
+        <!--<components:HostSmallHdr Grid.Row="0"/>-->
+
+
+        <components:FanTitleBar
+             Grid.Row="1"
+        Title="Autographs  Invites"
+/>
+
+        <StackLayout  Grid.Row="2" Padding="15" Spacing="20" WidthRequest="357" HeightRequest="155">
+            <!-- UpperHdr -->
+            <StackLayout  Spacing="16">
+                <!-- Header Frame -->
+                <Frame WidthRequest="357" HeightRequest="135" BackgroundColor="#000000" BorderColor="#3DC1F9" CornerRadius="20" Padding="10,0,10,0">
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center" Spacing="10" >
+                        <!-- Home HostHeader3 -->
+                        <Frame Padding="10" WidthRequest="162" HeightRequest="115" BackgroundColor="#123544" BorderColor="#3DC1F9" CornerRadius="20">
+                            <StackLayout HorizontalOptions="Center" VerticalOptions="Center" Spacing="10">
+                                <!-- Interior -->
+                                <StackLayout Padding="5" Spacing="10">
+                                    <BoxView WidthRequest="25" HeightRequest="23.33" />
+                                    <Label Text="Click Selfie" FontFamily="SF Pro Text" FontAttributes="Bold" FontSize="20" TextColor="#FFFFFF" HorizontalTextAlignment="Center" />
+                                </StackLayout>
+                            </StackLayout>
+                        </Frame>
+                        <!-- Home HostHeader3 -->
+                        <Frame Padding="10" WidthRequest="162" HeightRequest="115" BackgroundColor="#123544" BorderColor="#3DC1F9" CornerRadius="20">
+                            <StackLayout HorizontalOptions="Center" VerticalOptions="Center" Spacing="10">
+                                <!-- Interior -->
+                                <StackLayout Padding="5" Spacing="10">
+                                    <BoxView WidthRequest="25" HeightRequest="25" />
+                                    <Label Text="Upload Pic" FontFamily="SF Pro Text" FontAttributes="Bold" FontSize="20" TextColor="#FFFFFF" HorizontalTextAlignment="Center" />
+                                </StackLayout>
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                </Frame>
+
+            </StackLayout>
+        </StackLayout>
+
+
+        <StackLayout Grid.Row="3" Padding="20" >
+            <Label Text="Choose Distance:" FontSize="20" FontFamily="SF Pro Text" TextColor="#FFFFFF"/>
+            <Slider 
+                x:Name="distanceSlider" 
+                MinimumTrackColor="#e451ff" 
+                ThumbColor="#e70971" 
+                
+                Maximum="100" 
+                Minimum="0" 
+                ValueChanged="sliderDistance_ValueChanged" />
+            <Grid HorizontalOptions="Center" VerticalOptions="Start" >
+                <Grid.ColumnDefinitions >
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0" x:Name="label1" Text="2000ft" FontFamily="SF Pro Text" Margin="0,-10,20,0" FontSize="16" TextColor="#FFFFFF" />
+                <Label Grid.Column="1" x:Name="label2" Text="610m" FontFamily="SF Pro Text" Margin="0,-10,20,0" FontSize="16" TextColor="#FFFFFF" />
+            </Grid>
+            <Label x:Name="distanceLabel" Text="0" FontSize="20" />
+        </StackLayout>
+
+        <Grid Grid.Row="0">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <!--Row 1-->
+            <Label Grid.Row="0" Text="Choose what to send:" FontFamily="SF Pro Text" FontAttributes="Italic" FontSize="20" TextColor="#9747FF" Margin="20,20,0,0" />
+
+            <!--Row 2-->
+            <Frame Grid.Row="1"
+                   Background="{StaticResource DefaultBlack}" 
+                   BorderColor="{StaticResource PickerBorderColor}" 
+                   HeightRequest="60"
+                   Padding="-10">
+                <Picker x:Name="drpAction" TextColor="{StaticResource PickerTextColor}" SelectedItem="Option 2">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Option 1</x:String>
+                            <x:String>Option 2</x:String>
+                            <x:String>Option 3</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+            </Frame>
+
+            <!--<Frame  Grid.Row="1"  BorderColor="{StaticResource PickerBorderColor}" Background="#000000">-->
+            <!--<Picker x:Name="drpAction" Grid.Row="1" TextColor="{StaticResource PickerTextColor}" SelectedItem="Option 2" >
+                
+                
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Option 1</x:String>
+                        <x:String>Option 2</x:String>
+                        <x:String>Option 3</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+                </Picker>-->
+            <!--</Frame>-->
+        </Grid>
+
+    </Grid>
+</ContentPage>

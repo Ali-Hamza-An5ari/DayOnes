@@ -9,7 +9,7 @@
             HeightRequest="60"
                                 Padding="25,10"
            
-            FontFamily="SF Pro Text"
+                    FontFamily="SFProText"
             TextColor="#FFFFFF"
                 >
             <Button.Background>

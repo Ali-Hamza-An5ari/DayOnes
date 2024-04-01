@@ -24,7 +24,7 @@
 
             <Label
         Text="Quick Start Guides"
-        FontFamily="SF Pro Text"
+        FontFamily="SFProText"
                 
         FontSize="24"
         FontAttributes="Bold"
@@ -47,7 +47,7 @@
                 <BoxView HeightRequest="1" WidthRequest="100" Color="#3DC1F9"/>
                 <Label
   Text="Fan / Client"
-  FontFamily="SF Pro Text"
+  FontFamily="SFProText"
   FontSize="15"
   TextColor="#FFFFFF"
   HorizontalOptions="Center"

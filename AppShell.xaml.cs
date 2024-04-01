@@ -1,4 +1,5 @@
 ﻿using DayOnes.Views;
+using DayOnes.Views.HostPages;
 
 namespace DayOnes
 {
@@ -7,6 +8,8 @@ namespace DayOnes
         public AppShell()
         {
             InitializeComponent();
+
+            //Fan Page Navigation routes registration
             Routing.RegisterRoute(nameof(LoginPage), typeof(LoginPage));
             Routing.RegisterRoute(nameof(RegFanPage), typeof(RegFanPage));
             Routing.RegisterRoute(nameof(FHomePage), typeof(FHomePage));
@@ -22,6 +25,10 @@ namespace DayOnes
             Routing.RegisterRoute(nameof(FProfilePage), typeof(FProfilePage));
             Routing.RegisterRoute(nameof(FQuickStartPage), typeof(FQuickStartPage));
             Routing.RegisterRoute(nameof(FSettingsPage), typeof(FSettingsPage));
+
+            //
+
+            Routing.RegisterRoute(nameof(HHomePage), typeof(HHomePage));
         }
     }
 }

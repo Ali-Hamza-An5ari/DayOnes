@@ -4,11 +4,18 @@
              xmlns:local="clr-namespace:DayOnes"
              x:Class="DayOnes.App">
     <Application.Resources>
+        
         <ResourceDictionary>
+
+            
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
+                
             </ResourceDictionary.MergedDictionaries>
+            <Color x:Key="DefaultBlack">#000000</Color>
+            <Color x:Key="PickerTextColor">#3DC1F9</Color>
+            <Color x:Key="PickerBorderColor">#7236bf</Color>
         </ResourceDictionary>
         
         

@@ -32,6 +32,7 @@ namespace DayOnes
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+                    fonts.AddFont("SF-Pro-Text-Regular.otf", "SFProText");
 
                     fonts.AddFont("Brands-Regular-400.otf", "FAB");
                     fonts.AddFont("Free-Regular-400.otf", "FAR");

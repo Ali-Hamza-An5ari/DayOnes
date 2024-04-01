@@ -44,7 +44,7 @@
 
                 <!-- UpperText -->
                 <Label Text="No Invites Yet"
-                       FontFamily="SF Pro Text"
+                       FontFamily="SFProText"
                        FontAttributes="Bold"
                        FontSize="32"
                        TextColor="#FFFFFF"
@@ -53,7 +53,7 @@
 
                 <!-- LowerText2 -->
                 <Label Text="A receive button will appear when you have an incoming invite!"
-                       FontFamily="SF Pro Text"
+                       FontFamily="SFProText"
                        FontSize="20"
                HorizontalTextAlignment="Center"
                        TextColor="#FFFFFF"

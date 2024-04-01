@@ -31,7 +31,7 @@
         Margin="0,60,0,30"
         x:Name="lblCountDown"
         Text="{Binding CountdownText}"
-                FontFamily="SF Pro Text"
+                FontFamily="SFProText"
                 FontSize="32"
                 TextColor="#FFFFFF"
                 LineBreakMode="TailTruncation"

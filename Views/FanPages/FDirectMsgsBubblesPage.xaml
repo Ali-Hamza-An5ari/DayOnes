@@ -87,7 +87,7 @@ VerticalOptions="Center">
 
                     <Label
     Text="0310.Chicago"
-    FontFamily="SF Pro Text"
+    FontFamily="SFProText"
     FontAttributes="Bold"
     FontSize="12"
     TextColor="#FFFFFF"
@@ -120,7 +120,7 @@ VerticalOptions="Center">
             <Label
                     Grid.Row="2"
     Text="March 5"
-    FontFamily="SF Pro Text"
+    FontFamily="SFProText"
     FontSize="12"
     LineHeight="14"
     VerticalTextAlignment="Center"
@@ -165,10 +165,10 @@ VerticalOptions="Center">
                         <StackLayout>
 
                             <!-- Message Text -->
-                            <Label Text="Your message here" FontFamily="SF Pro Text" FontSize="17" TextColor="#22282B" />
+                            <Label Text="Your message here" FontFamily="SFProText" FontSize="17" TextColor="#22282B" />
 
                             <!-- Message Time -->
-                            <Label Text="2:00pm" FontFamily="SF Pro Text" FontSize="12" TextColor="#000000" HorizontalOptions="End" />
+                            <Label Text="2:00pm" FontFamily="SFProText" FontSize="12" TextColor="#000000" HorizontalOptions="End" />
 
                         </StackLayout>
                     </Frame>
@@ -193,10 +193,10 @@ VerticalOptions="Center">
                         <StackLayout>
 
                             <!-- Message Text -->
-                            <Label Text="Your message here" FontFamily="SF Pro Text" FontSize="17" TextColor="#FFFFFF" />
+                            <Label Text="Your message here" FontFamily="SFProText" FontSize="17" TextColor="#FFFFFF" />
 
                             <!-- Message Time -->
-                            <Label Text="2:00pm" FontFamily="SF Pro Text" FontSize="12" TextColor="#FFFFFF" HorizontalOptions="End" />
+                            <Label Text="2:00pm" FontFamily="SFProText" FontSize="12" TextColor="#FFFFFF" HorizontalOptions="End" />
 
                         </StackLayout>
                     </Frame>
@@ -239,7 +239,7 @@ BackgroundColor="#FFFFFF"
                             <Entry
                                 x:Name="txtMessage"
                                     Grid.Column="0"
-                                    Text="Message" FontFamily="SF Pro Text" FontSize="17" TextColor="#000000"
+                                    Text="Message" FontFamily="SFProText" FontSize="17" TextColor="#000000"
                                FontAttributes="None"
                                     />
 
@@ -255,7 +255,6 @@ BackgroundColor="#FFFFFF"
                     <!-- Record Icon -->
 
                     <!-- Microphone Icon -->
-                    <Image Source="mic.png" WidthRequest="20" HeightRequest="20" />
                     <Image Source="send.png" WidthRequest="20" HeightRequest="20" VerticalOptions="Center" HorizontalOptions="End">
                         <Image.GestureRecognizers>
                             <TapGestureRecognizer Tapped="sendButton_Tapped" />

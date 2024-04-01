@@ -6,7 +6,7 @@
 
         <Label 
     x:Name="lblTitle"
-   FontFamily="SF Pro Text"
+   FontFamily="SFProText"
    FontSize="20"
    FontAttributes="Bold"
   

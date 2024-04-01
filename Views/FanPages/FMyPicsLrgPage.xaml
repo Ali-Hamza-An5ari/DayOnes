@@ -152,7 +152,7 @@
                 <StackLayout 
                 Grid.Row="3" Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
                     <Label Text="&#xf2ed;"  FontFamily="FAS"  HeightRequest="20" WidthRequest="20" TextColor="#E70971" />
-                    <Button Text="Delete This Photo" FontSize="12" BackgroundColor="#000000" FontFamily="SF Pro Text" TextColor="#FFFFFF" />
+                    <Button Text="Delete This Photo" FontSize="12" BackgroundColor="#000000" FontFamily="SFProText" TextColor="#FFFFFF" />
                 </StackLayout>
                 <components:GradientButton 
      Grid.Row="4"

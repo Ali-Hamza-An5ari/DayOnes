@@ -16,7 +16,7 @@
  Grid.Row="0"
  Grid.Column="0"
  Text="Notifications"
-FontFamily="SF Pro Text"
+FontFamily="SFProText"
 FontSize="20"
 FontAttributes="Bold"
 WidthRequest="600"
@@ -42,7 +42,7 @@ VerticalOptions="Start"
               
 
                     <StackLayout Padding="15,20,0,0" WidthRequest="356" HeightRequest="50" HorizontalOptions="Start" VerticalOptions="Start">
-                    <Label Text="DayOnes Messages" FontFamily="SF Pro Text"
+                    <Label Text="DayOnes Messages" FontFamily="SFProText"
 FontSize="26"
 TextColor="White"
                            HorizontalOptions="Start"
@@ -74,14 +74,14 @@ VerticalOptions="Start"></Label>
                                 </toolkit:AvatarView>
 
                                 <Label Text="Artist" 
-                                FontFamily="SF Pro Text" FontSize="16" FontAttributes="Bold" TextColor="#FFFFFF" VerticalOptions="Center" />
+                                FontFamily="SFProText" FontSize="16" FontAttributes="Bold" TextColor="#FFFFFF" VerticalOptions="Center" />
                             </StackLayout>
 
                             <!-- Likes Frame -->
                             <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand" VerticalOptions="Center" Padding="0,0,20,0" Spacing="8">
                                 <Image Source="heart.png" WidthRequest="13.33" HeightRequest="12.23" />
                                 <Label Text="10.8k" 
-                                FontFamily="SF Pro Text" FontSize="12" FontAttributes="Bold" TextColor="#FFFFFF" VerticalOptions="Center" />
+                                FontFamily="SFProText" FontSize="12" FontAttributes="Bold" TextColor="#FFFFFF" VerticalOptions="Center" />
                             </StackLayout>
 
                         </StackLayout>
@@ -94,7 +94,7 @@ VerticalOptions="Start"></Label>
 
 
                 <StackLayout Padding="15,20,0,0" WidthRequest="356" HeightRequest="50" HorizontalOptions="Start" VerticalOptions="Start">
-                    <Label Text="Direct Messages" FontFamily="SF Pro Text"
+                    <Label Text="Direct Messages" FontFamily="SFProText"
 FontSize="26"
 TextColor="White"
                            HorizontalOptions="Start"
@@ -133,7 +133,7 @@ VerticalOptions="Start"></Label>
                             <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand" VerticalOptions="Center" Padding="0,0,20,0" Spacing="8">
                                 <Image Source="heart.png" WidthRequest="13.33" HeightRequest="12.23" />
                                 <Label Text="10.8k" 
-                                FontFamily="SF Pro Text" FontSize="12" FontAttributes="Bold" TextColor="#FFFFFF" VerticalOptions="Center" />
+                                FontFamily="SFProText" FontSize="12" FontAttributes="Bold" TextColor="#FFFFFF" VerticalOptions="Center" />
                             </StackLayout>
 
                         </StackLayout>
