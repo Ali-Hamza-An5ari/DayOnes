@@ -83,6 +83,9 @@
 	  <Compile Update="Views\FanPages\FHomePage.xaml.cs">
 	    <DependentUpon>FHomePage.xaml</DependentUpon>
 	  </Compile>
+	  <Compile Update="Views\HostPages\HDMDetailsPage.xaml.cs">
+	    <DependentUpon>HDMDetailsPage.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="Views\HostPages\HHomeUploadedPage.xaml.cs">
 	    <DependentUpon>HHomeUploadedPage.xaml</DependentUpon>
 	  </Compile>
@@ -164,7 +167,7 @@
 	  <MauiXaml Update="Views\FanPages\FSettingsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\HostPages\HDM DetailsPage.xaml">
+	  <MauiXaml Update="Views\HostPages\HDMDetailsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\HostPages\HHomePage.xaml">

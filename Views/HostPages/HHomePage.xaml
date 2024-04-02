@@ -21,8 +21,8 @@
 
         <components:FanTitleBar
              Grid.Row="1"
-        Title="Autographs  Invites"
-/>
+            Title="Autographs  Invites"
+        />
 
         <StackLayout  Grid.Row="2" Padding="15" Spacing="20" WidthRequest="357" HeightRequest="155">
             <!-- UpperHdr -->

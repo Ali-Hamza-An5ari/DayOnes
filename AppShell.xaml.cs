@@ -29,6 +29,24 @@ namespace DayOnes
             //
 
             Routing.RegisterRoute(nameof(HHomePage), typeof(HHomePage));
+            Routing.RegisterRoute(nameof(HHomeUploadedPage), typeof(HHomeUploadedPage));
+            Routing.RegisterRoute(nameof(HDMDetailsPage), typeof(HDMDetailsPage));
+            Routing.RegisterRoute(nameof(HFinalSeeSelfiePage), typeof(HFinalSeeSelfiePage));
+            Routing.RegisterRoute(nameof(HHomeSentCountdownPage), typeof(HHomeSentCountdownPage));
+            Routing.RegisterRoute(nameof(HNewALLPostPage), typeof(HNewALLPostPage));
+            Routing.RegisterRoute(nameof(HNewGrpPostPage), typeof(HNewGrpPostPage));
+            Routing.RegisterRoute(nameof(HNotificationsPage), typeof(HNotificationsPage));
+            Routing.RegisterRoute(nameof(HPageHSigPenColorEditPage), typeof(HPageHSigPenColorEditPage));
+            Routing.RegisterRoute(nameof(HPostDetailsPage), typeof(HPostDetailsPage));
+            Routing.RegisterRoute(nameof(HPOSTURSentMsgsPage), typeof(HPOSTURSentMsgsPage));
+            Routing.RegisterRoute(nameof(HProfilePage), typeof(HProfilePage));
+            Routing.RegisterRoute(nameof(HQuickStartPage), typeof(HQuickStartPage));
+            Routing.RegisterRoute(nameof(HReviewPhotoPage), typeof(HReviewPhotoPage));
+            Routing.RegisterRoute(nameof(HSeeSelfiePage), typeof(HSeeSelfiePage));
+            Routing.RegisterRoute(nameof(HSelfieChooseSigPage), typeof(HSelfieChooseSigPage));
+            Routing.RegisterRoute(nameof(HSettnigsPage), typeof(HSettnigsPage));
+            Routing.RegisterRoute(nameof(HUPLPhotoChooseSigPage), typeof(HUPLPhotoChooseSigPage));
+            Routing.RegisterRoute(nameof(HUPLSeePhotoPage), typeof(HUPLSeePhotoPage));
         }
     }
 }

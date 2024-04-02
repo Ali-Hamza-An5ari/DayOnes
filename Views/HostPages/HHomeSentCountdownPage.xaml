@@ -2,11 +2,46 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="DayOnes.Views.HHomeSentCountdownPage"
-             Title="HHomeSentCountdownPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             BackgroundColor="{StaticResource DefaultBlack}"
+             xmlns:components="clr-namespace:DayOnes.Views.Components"
+             >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+
+        <!--Row 1-->
+        <components:HostSmallHdr Grid.Row="0"/>
+
+
+        <!--Row 2-->
+        <components:FanTitleBar
+             Grid.Row="1"
+            Title="Autographs  Invites"
+        />
+
+        <Frame 
+            Grid.Row="2"
+            HeightRequest="500" 
+            Padding="200"
+            WidthRequest="500"
+            BackgroundColor="{StaticResource DefaultBlack}"
+            VerticalOptions="Center"
+                HorizontalOptions="Center"
+            >
+
+            <Label
+                x:Name="lblCountDown"
+                Text="15"
+                FontFamily="SFProText"
+                TextColor="{StaticResource DefaultWhite}"
+                />
+        </Frame>
+        
+        
+    </Grid>
 </ContentPage>

@@ -1,4 +1,6 @@
-﻿namespace DayOnes
+﻿
+
+namespace DayOnes
 {
     public partial class MainPage : ContentPage
     {

@@ -1,12 +1,119 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="DayOnes.Views.HHomeUploadPage"
-             Title="HHomeUploadPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             x:Class="DayOnes.Views.HHomeUploadedPage"
+             xmlns:components="clr-namespace:DayOnes.Views.Components"
+             BackgroundColor="{StaticResource DefaultBlack}"
+             >
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="200"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <!--Row 1-->
+        <components:HostSmallHdr Grid.Row="0"/>
+
+
+        <!--Row 2-->
+        <components:FanTitleBar
+             Grid.Row="1"
+            Title="Autographs  Invites"
+        />
+        
+        <!--Row 3-->
+        <!-- Outer Frame -->
+        <Frame 
+            Grid.Row="2" 
+            BorderColor="#3DC1F9" 
+            CornerRadius="20" 
+            Padding="0" 
+            HasShadow="False" 
+            BackgroundColor="{StaticResource DefaultBlack}"
+            Margin="10"
+            >
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- Attachment Icon -->
+                <Image 
+                    Grid.Column="0" 
+                    Source="fileattachment.png" 
+                    WidthRequest="28.44" 
+                    HeightRequest="16" 
+                    VerticalOptions="Center" 
+                    />
+
+                <!-- Image Upload Text -->
+                <Label 
+                    Grid.Column="1"  
+                    Text="Image Uploaded" 
+                    FontFamily="SF Pro Text" 
+                    FontSize="20" 
+                    FontAttributes="Bold" 
+                    TextColor="#FFFFFF" VerticalOptions="Center" />
+
+                <components:GradientButton
+                    Grid.Column="2"
+                    Text="Reset"
+                     WidthRequest="100" HeightRequest="60" 
+                    VerticalOptions="Center"
+                    />
+
+            </Grid>
+        </Frame>
+        
+        <!--Row 4-->
+        <Grid Grid.Row="3">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+           
+            <!--Row 1-->
+            <Slider 
+                Grid.Row="0"
+                x:Name="distanceSlider" 
+                MinimumTrackColor="#e451ff" 
+                ThumbColor="#e70971" 
+    
+                Maximum="100" 
+                Minimum="0" 
+                ValueChanged="sliderDistance_ValueChanged" />
+            
+            <!--Row 2-->
+            <Grid HorizontalOptions="Center" VerticalOptions="Start" Grid.Row="1" >
+                <Grid.ColumnDefinitions >
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0" x:Name="label1" Text="2000ft" FontFamily="SF Pro Text" Margin="0,-10,20,0" FontSize="16" TextColor="#FFFFFF" />
+                <Label Grid.Column="1" x:Name="label2" Text="610m" FontFamily="SF Pro Text" Margin="0,-10,20,0" FontSize="16" TextColor="#FFFFFF" />
+            </Grid>
+
+        </Grid>
+        
+        <!--Row 5-->
+
+        <components:GradientButton
+                    Grid.Row="4"
+                    Text="Send"
+            x:Name="btnSend"
+            OnClick="btnSend_Click"
+                     WidthRequest="130" 
+            HeightRequest="80" 
+                    />
+        
+        <!--Row 6-->
+        
+    </Grid>
 </ContentPage>

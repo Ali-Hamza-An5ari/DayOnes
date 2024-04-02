@@ -2,11 +2,59 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="DayOnes.Views.HFinalSeeSelfiePage"
-             Title="HFinalSeeSelfiePage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             
+             xmlns:components="clr-namespace:DayOnes.Views.Components"
+             BackgroundColor="{StaticResource DefaultBlack}"
+             Title="">
+
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="607"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+
+        <!--Row 1-->
+        <components:FanTitleBar
+             Grid.Row="0"
+            Title="Choose Action"
+        />
+        
+        <Grid Grid.Row="1" >
+            <Image Source="singer.png" WidthRequest="390" />
+            <Image Source="sig2.png" WidthRequest="50" HorizontalOptions="Center" VerticalOptions="End" Margin="0,0,10,10" />
+        </Grid>
+        <!--<Image 
+            Grid.Row="1"
+            Source="singer.png"
+            WidthRequest="390"
+            />-->
+
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions >
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+
+            <!--Column 1-->
+            <Image
+                Source="cancelselfie.png"
+                Grid.Column="0"
+                WidthRequest="30"
+                VerticalOptions="Center"
+                />
+
+
+            <!--Column 3-->
+            <Image
+                Source="saveupload.png"
+                Grid.Column="1"
+                WidthRequest="30"
+                VerticalOptions="Center"
+                />
+        </Grid>
+    </Grid>
+
 </ContentPage>
