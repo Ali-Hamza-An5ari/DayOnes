@@ -24,7 +24,7 @@
                 </Entry>
 
                 --><!-- Frame --><!--
-                <Frame Grid.Row="0" BackgroundColor="#000000" CornerRadius="8" Padding="5,0" HasShadow="False">
+                <Frame Grid.Row="0" BackgroundColor="{StaticResource DefaultBlack}" CornerRadius="8" Padding="5,0" HasShadow="False">
                     <Label x:Name="lblName"
                            TextColor="#FFFFFF"
                            FontFamily="SF Pro Text"
@@ -58,7 +58,7 @@
                    />
 
                 <!-- Frame -->
-                <Frame Grid.Row="0" BackgroundColor="#000000" CornerRadius="8" Padding="5,0" HasShadow="False">
+                <Frame Grid.Row="0" BackgroundColor="{StaticResource DefaultBlack}" CornerRadius="8" Padding="5,0" HasShadow="False">
                     <Label x:Name="lblName"
                        
                        TextColor="#FFFFFF"

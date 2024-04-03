@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
             
-    BackgroundColor="#000000"
+    BackgroundColor="{StaticResource DefaultBlack}"
              xmlns:components="clr-namespace:DayOnes.Views.Components"
              x:Class="DayOnes.Views.FProfilePage"
              >
@@ -121,7 +121,7 @@ VerticalTextAlignment="Center"
     Margin="10"
    Padding="0,0,0,0"
     BackgroundColor="Transparent"
-    BorderColor="#9747FF"
+    BorderColor="{StaticResource DefaultPurple}"
             ZIndex="0"
     HeightRequest="52"
     CornerRadius="20">
@@ -181,7 +181,7 @@ TextColor="#979393"
     Margin="10"
     Padding="0,0,0,0"
     BackgroundColor="Transparent"
-    BorderColor="#9747FF"
+    BorderColor="{StaticResource DefaultPurple}"
     HeightRequest="52"
     CornerRadius="20">
                     <Frame.Background>
@@ -239,7 +239,7 @@ TextColor="#979393"
     Margin="10"
     Padding="0,0,0,0"
     BackgroundColor="Transparent"
-    BorderColor="#9747FF"
+    BorderColor="{StaticResource DefaultPurple}"
     HeightRequest="52"
     CornerRadius="20">
                     <Frame.Background>
@@ -299,7 +299,7 @@ TextColor="#979393"
     Margin="10"
     Padding="0,0,0,0"
     BackgroundColor="Transparent"
-    BorderColor="#9747FF"
+    BorderColor="{StaticResource DefaultPurple}"
     HeightRequest="52"
     CornerRadius="20">
                     <Frame.Background>
@@ -361,7 +361,7 @@ TextColor="#979393"
     Margin="10"
    Padding="0,0,0,0"
     BackgroundColor="Transparent"
-    BorderColor="#9747FF"
+    BorderColor="{StaticResource DefaultPurple}"
             ZIndex="0"
     HeightRequest="52"
     CornerRadius="20">
@@ -426,7 +426,7 @@ TextColor="#979393"
     Margin="10"
    Padding="0,0,0,0"
     BackgroundColor="Transparent"
-    BorderColor="#9747FF"
+    BorderColor="{StaticResource DefaultPurple}"
             ZIndex="0"
     HeightRequest="52"
     CornerRadius="20">

@@ -17,7 +17,7 @@
     Margin="10"
     Padding="0,0,0,0"
     BackgroundColor="Transparent"
-    BorderColor="#9747FF"
+    BorderColor="{StaticResource DefaultPurple}"
     HeightRequest="52"
     CornerRadius="20">
             <Frame.Background>
@@ -73,7 +73,7 @@ TextColor="#979393"
     Margin="10"
    Padding="0,0,0,0"
     BackgroundColor="Transparent"
-    BorderColor="#9747FF"
+    BorderColor="{StaticResource DefaultPurple}"
             ZIndex="0"
     HeightRequest="52"
     CornerRadius="20">

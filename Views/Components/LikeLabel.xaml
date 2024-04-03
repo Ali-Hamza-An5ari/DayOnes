@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DayOnes.Views.Components.LikeLabel">
+    <Grid VerticalOptions="Center">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        
+        <!--Column 1-->
+        <Image
+            Grid.Column="0"
+            Source="vectorheart.png"
+            HorizontalOptions="End"
+            VerticalOptions="End"
+            
+            />
+        
+        <!--Column 2-->
+        <Label
+            Grid.Column="1"
+            x:Name="lblCount"
+            TextColor="{StaticResource DefaultWhite}"
+            HorizontalOptions="Start"
+            VerticalOptions="Center"
+            />
+    </Grid>
+</ContentView>

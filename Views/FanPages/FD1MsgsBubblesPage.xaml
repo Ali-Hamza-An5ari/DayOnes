@@ -3,7 +3,7 @@
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"  NavigationPage.HasBackButton="False"
              x:Class="DayOnes.Views.FD1MsgsBubblesPage"
-    BackgroundColor="#000000"
+    BackgroundColor="{StaticResource DefaultBlack}"
              xmlns:components="clr-namespace:DayOnes.Views.Components"
             >
 
@@ -114,7 +114,7 @@ VerticalOptions="Center">
             <!--Row 2-->
             <BoxView 
                     Grid.Row="1"
-                    HeightRequest="1" Color="#9747FF"/>
+                    HeightRequest="1" Color="{StaticResource DefaultPurple}"/>
 
             <!--Row 3-->
 
@@ -162,7 +162,7 @@ VerticalOptions="Center">
                             <Label Text="Your message here" FontFamily="SFProText" FontSize="17" TextColor="#22282B" />
 
                             <!-- Message Time -->
-                            <Label Text="2:00pm" FontFamily="SFProText" FontSize="12" TextColor="#000000" HorizontalOptions="End" />
+                            <Label Text="2:00pm" FontFamily="SFProText" FontSize="12" TextColor="{StaticResource DefaultBlack}" HorizontalOptions="End" />
 
                         </StackLayout>
                     </Frame>
@@ -235,7 +235,7 @@ BackgroundColor="#FFFFFF"
                                 
                                     Grid.Column="0"
                                 x:Name="txtMessage"
-                                    Text="Message" FontFamily="SFProText" FontSize="17" TextColor="#000000"
+                                    Text="Message" FontFamily="SFProText" FontSize="17" TextColor="{StaticResource DefaultBlack}"
                                FontAttributes="None"
                                     />
 

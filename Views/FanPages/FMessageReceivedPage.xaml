@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:Class="DayOnes.Views.FMessageReceivedPage"
-             Background="#000000"
+             Background="{StaticResource DefaultBlack}"
              xmlns:components="clr-namespace:DayOnes.Views.Components"
              >
     
@@ -54,7 +54,7 @@
                         <!-- Custom data template for each item -->
                         <StackLayout Padding="10">
                             <!-- Top line -->
-                            <BoxView  HeightRequest="1" BackgroundColor="#9747FF" Color="#9747FF"  />
+                            <BoxView  HeightRequest="1" BackgroundColor="{StaticResource DefaultPurple}" Color="{StaticResource DefaultPurple}"  />
 
                             <!-- Circle image with text Artist -->
                             <StackLayout Orientation="Horizontal" Margin="0,10,0,0">
@@ -81,7 +81,7 @@
                             </StackLayout>
 
                             <!-- Another line beneath -->
-                            <BoxView  HeightRequest="1" BackgroundColor="#9747FF" Color="#9747FF" Margin="0,10,0,0" />
+                            <BoxView  HeightRequest="1" BackgroundColor="{StaticResource DefaultPurple}" Color="{StaticResource DefaultPurple}" Margin="0,10,0,0" />
 
                             <!-- Description text -->
                             <Label 
@@ -115,11 +115,11 @@
                             FontAttributes="Bold"
                             BackgroundColor="#979393"
                                 Clicked="btnIgnore_Click"
-                            TextColor="#000000" />
+                            TextColor="{StaticResource DefaultBlack}" />
                             </StackLayout>
 
                             <!-- Last line -->
-                            <BoxView  HeightRequest="1" BackgroundColor="#9747FF" Color="#9747FF"  Margin="0,10,0,0" />
+                            <BoxView  HeightRequest="1" BackgroundColor="{StaticResource DefaultPurple}" Color="{StaticResource DefaultPurple}"  Margin="0,10,0,0" />
                         </StackLayout>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>

@@ -34,7 +34,7 @@ SQLite, and ID the variable containing the data. Will need the email as part
 of the data set.
          */
 
-        Shell.Current.GoToAsync(nameof(HFinalSeeSelfiePage));
+        Shell.Current.GoToAsync(nameof(HPostDetailsPage));
     }
 
     private void btnSignup_Click(object sender, EventArgs e)

@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:components="clr-namespace:DayOnes.Views.Components"
-             x:Class="DayOnes.Views.RegFanPage" Background="#000000"
+             x:Class="DayOnes.Views.RegFanPage" Background="{StaticResource DefaultBlack}"
              >
 
     
@@ -21,7 +21,7 @@
     Margin="10"
    Padding="0,0,0,0"
     BackgroundColor="Transparent"
-    BorderColor="#9747FF"
+    BorderColor="{StaticResource DefaultPurple}"
             ZIndex="0"
     HeightRequest="52"
     CornerRadius="20">
@@ -81,7 +81,7 @@ TextColor="#979393"
     Margin="10"
     Padding="0,0,0,0"
     BackgroundColor="Transparent"
-    BorderColor="#9747FF"
+    BorderColor="{StaticResource DefaultPurple}"
     HeightRequest="52"
     CornerRadius="20">
                 <Frame.Background>
@@ -139,7 +139,7 @@ TextColor="#979393"
     Margin="10"
     Padding="0,0,0,0"
     BackgroundColor="Transparent"
-    BorderColor="#9747FF"
+    BorderColor="{StaticResource DefaultPurple}"
     HeightRequest="52"
     CornerRadius="20">
                 <Frame.Background>
@@ -197,7 +197,7 @@ TextColor="#979393"
     Margin="10"
     Padding="0,0,0,0"
     BackgroundColor="Transparent"
-    BorderColor="#9747FF"
+    BorderColor="{StaticResource DefaultPurple}"
     HeightRequest="52"
     CornerRadius="20">
                 <Frame.Background>
@@ -256,7 +256,7 @@ TextColor="#979393"
     Margin="10"
    Padding="0,0,0,0"
     BackgroundColor="Transparent"
-    BorderColor="#9747FF"
+    BorderColor="{StaticResource DefaultPurple}"
             ZIndex="0"
     HeightRequest="52"
     CornerRadius="20">
@@ -318,7 +318,7 @@ TextColor="#979393"
     Margin="10"
    Padding="0,0,0,0"
     BackgroundColor="Transparent"
-    BorderColor="#9747FF"
+    BorderColor="{StaticResource DefaultPurple}"
             ZIndex="0"
     HeightRequest="52"
     CornerRadius="20">
@@ -398,7 +398,7 @@ TextColor="#979393"
             OnColor="White"
             
             
-            BackgroundColor="#000000"
+            BackgroundColor="{StaticResource DefaultBlack}"
             Toggled="OnToggled" />
         </StackLayout>-->
         <HorizontalStackLayout Spacing="10" HorizontalOptions="CenterAndExpand" Margin="10">
@@ -419,11 +419,11 @@ TextColor="#979393"
             OnColor="White"
             
             
-            BackgroundColor="#000000"
+            BackgroundColor="{StaticResource DefaultBlack}"
             Toggled="OnToggled" />
 
         </HorizontalStackLayout>
-            <BoxView HeightRequest="1" WidthRequest="291" Color="#9747FF" Margin="0,0,0,10"/>
+            <BoxView HeightRequest="1" WidthRequest="291" Color="{StaticResource DefaultPurple}" Margin="0,0,0,10"/>
 
             <!--/////////////////-->
         

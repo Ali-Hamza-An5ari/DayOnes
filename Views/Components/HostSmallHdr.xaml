@@ -12,7 +12,7 @@
        HeightRequest="70">
         <Frame.Background>
             <RadialGradientBrush Center="0.0,0.0">
-                <GradientStop Color="#000000"
+                <GradientStop Color="{StaticResource DefaultBlack}"
                           Offset="0.1" />
                 <GradientStop Color="#3A27BC"
                           Offset="1.0" />

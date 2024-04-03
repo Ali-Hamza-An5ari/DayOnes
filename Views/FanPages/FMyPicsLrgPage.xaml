@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="DayOnes.Views.FMyPicsLrgPage"
              xmlns:components="clr-namespace:DayOnes.Views.Components"
-             Background="#000000"
+             Background="{StaticResource DefaultBlack}"
              >
 
     <Grid>
@@ -152,7 +152,7 @@
                 <StackLayout 
                 Grid.Row="3" Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
                     <Label Text="&#xf2ed;"  FontFamily="FAS"  HeightRequest="20" WidthRequest="20" TextColor="#E70971" />
-                    <Button Text="Delete This Photo" FontSize="12" BackgroundColor="#000000" FontFamily="SFProText" TextColor="#FFFFFF" />
+                    <Button Text="Delete This Photo" FontSize="12" BackgroundColor="{StaticResource DefaultBlack}" FontFamily="SFProText" TextColor="#FFFFFF" />
                 </StackLayout>
                 <components:GradientButton 
      Grid.Row="4"

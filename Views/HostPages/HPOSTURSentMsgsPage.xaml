@@ -2,11 +2,158 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="DayOnes.Views.HPOSTURSentMsgsPage"
-             Title="HPOSTURSentMsgsPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             xmlns:components="clr-namespace:DayOnes.Views.Components"
+             BackgroundColor="{StaticResource DefaultBlack}"
+             >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--Row 1-->
+        <components:HostSmallHdr
+            Grid.Row="0"
+            />
+        
+        <!--Row 2-->
+        <Frame 
+            Grid.Row="1"
+            BorderColor="Transparent"
+            Margin="-1"
+            >
+            <Frame.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                    <GradientStop Color="#3A27BC" Offset="0.0" />
+                    <GradientStop Color="{StaticResource DefaultBlack}" Offset="0.5" />
+                    <GradientStop Color="#3DC1F9" Offset="1.0" />
+                </LinearGradientBrush>
+            </Frame.Background>
+
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+
+                <!--Row 1-->
+                <Label 
+                    Grid.Column="0"
+                    Text="All Groups (5.9k)"
+                    TextColor="{StaticResource DefaultWhite}"
+                    FontFamily="SFProText"
+                    />
+
+                <!--Row 2-->
+                <Label
+                    Grid.Column="1"
+                   Text="Posts" 
+                   FontFamily="SFProText"
+                   FontSize="20"
+                   FontAttributes="Bold"
+                   
+                    />
+
+                <!--Row 3-->
+                <components:GradientButton
+                    Grid.Column="2"
+                    Text="Msg All Fans"
+                    Width="80"
+                    
+                    />
+            </Grid>
+        </Frame>
+        
+        <!--Row 3-->
+        <Grid 
+            Grid.Row="2"
+            >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="1*"/>
+
+            </Grid.ColumnDefinitions>
+
+            <Label
+                Grid.Column="0"
+                />
+
+            <components:GradientButton
+                Grid.Column="1"
+                Text="Msg Grp"
+                Width="80"
+                />
+        </Grid>
+        
+        <!--Row 4-->
+        <Image
+            Grid.Row="3"
+            Source="singer.png"
+            WidthRequest="300"
+            />
+        
+        <!--Row 5-->
+        <Label
+            Grid.Row="4"
+            Text="Welcome to my DayOnes group! This exclusive oasis is the best place to interact with me! Your replies are private to me and not seen by the rest of the group. And this is really me, not a PR team! So get ready to follow me on this journey as a personal friend! ❤️"
+            TextColor="{StaticResource DefaultWhite}"
+            BackgroundColor="{StaticResource DefaultBlack}"
+            />
+        
+        <!--Row 6-->
+
+        <Grid
+            Grid.Row="5"
+            
+            >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+
+            <!--Column 1-->
+            <components:GrpNameTag
+                Grid.Column="0"
+                Title="Aurora"
+                />
+
+            
+            <components:GradientButton
+                Grid.Column="1"
+                Text="Msg Grp"
+                Width="80"
+                />
+        </Grid>
+        
+        <!--Row 7-->
+        <Grid
+            Grid.Row="6"
+            
+            >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+
+            <!--Column 1-->
+            <components:LikeLabel
+                Grid.Column="0"
+                Count="30"
+                />
+
+            <!--Column 2-->
+            <components:GradientButton
+                Grid.Column="1"
+                Text="Msg Grp"
+                Width="80"
+                />
+        </Grid>
+    </Grid>
 </ContentPage>

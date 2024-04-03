@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:components="clr-namespace:DayOnes.Views.Components"
-             Background="#000000"
+             Background="{StaticResource DefaultBlack}"
              x:Class="DayOnes.Views.FSettingsPage"
              >
     <Grid>
@@ -44,9 +44,9 @@
                   Margin="20,10,20,0"
                    Padding="5,5,0,5"
         
-        BorderColor="#9747FF"
+        BorderColor="{StaticResource DefaultPurple}"
         CornerRadius="0"
-                Background="#000000">
+                Background="{StaticResource DefaultBlack}">
 
                 <Grid>
                     <Grid.ColumnDefinitions>
@@ -79,9 +79,9 @@ VerticalOptions="CenterAndExpand"
         Padding="10,5"
             Grid.Row="1"
  Margin="20,0,20,0"
-BorderColor="#9747FF"
+BorderColor="{StaticResource DefaultPurple}"
 CornerRadius="0"
-        Background="#000000"
+        Background="{StaticResource DefaultBlack}"
 HasShadow="False">
 
                 <Grid>
@@ -117,7 +117,7 @@ HasShadow="False">
             OnColor="#E615DE"
             
             
-            BackgroundColor="#000000"
+            BackgroundColor="{StaticResource DefaultBlack}"
             Toggled="toggleSoundSwitch_Toggle" />
                         <Label
                         Grid.Row="0"
@@ -147,7 +147,7 @@ HasShadow="False">
             OnColor="#E615DE"
             
             
-            BackgroundColor="#000000"
+            BackgroundColor="{StaticResource DefaultBlack}"
             Toggled="togglePushSwitch_Toggle" />
                         <Label
                         Grid.Row="0"
@@ -162,7 +162,7 @@ HasShadow="False">
             </Frame>
             
             <VerticalStackLayout Grid.Row="2" Margin="20,10,20,0">
-                <BoxView HeightRequest="1"  Color="#9747FF"/>
+                <BoxView HeightRequest="1"  Color="{StaticResource DefaultPurple}"/>
 
                     <Grid Margin="0,5">
                         <Grid.ColumnDefinitions>
@@ -191,14 +191,14 @@ HasShadow="False">
                         </Image>
 
                     </Grid>
-                <BoxView HeightRequest="1"  Color="#9747FF"/>
+                <BoxView HeightRequest="1"  Color="{StaticResource DefaultPurple}"/>
 
             </VerticalStackLayout>
             
             <!--Row 4-->
 
                 <VerticalStackLayout Grid.Row="3" Margin="20,10,20,0">
-                    <BoxView HeightRequest="1"  Color="#9747FF"/>
+                    <BoxView HeightRequest="1"  Color="{StaticResource DefaultPurple}"/>
 
                     <Grid Margin="0,5">
                         <Grid.ColumnDefinitions>
@@ -231,14 +231,14 @@ VerticalOptions="Center"
 HorizontalOptions="End" />
                 </Grid>
                  <!--Notifications--> 
-                <BoxView HeightRequest="1"  Color="#9747FF"/>
+                <BoxView HeightRequest="1"  Color="{StaticResource DefaultPurple}"/>
 
             </VerticalStackLayout>
 
             <!--Row 5-->
 
                 <VerticalStackLayout Grid.Row="4" Margin="20,10,20,0">
-                    <BoxView HeightRequest="1"  Color="#9747FF"/>
+                    <BoxView HeightRequest="1"  Color="{StaticResource DefaultPurple}"/>
 
 
                     <Grid Margin="0,5">
@@ -275,14 +275,14 @@ HorizontalOptions="End" />
                 </Grid>
                 
                 <!-- DayOnes Web -->
-                <BoxView HeightRequest="1"  Color="#9747FF"/>
+                <BoxView HeightRequest="1"  Color="{StaticResource DefaultPurple}"/>
 
             </VerticalStackLayout>
             
             <!--Row 6-->
 
                 <VerticalStackLayout Grid.Row="5" Margin="20,10,20,0">
-                    <BoxView HeightRequest="1"  Color="#9747FF"/>
+                    <BoxView HeightRequest="1"  Color="{StaticResource DefaultPurple}"/>
 
                 <Grid Margin="0,5">
                     <Grid.ColumnDefinitions>
@@ -316,7 +316,7 @@ HorizontalOptions="End" />
         HorizontalOptions="End" />
                 </Grid>
 
-                <BoxView HeightRequest="1"  Color="#9747FF"/>
+                <BoxView HeightRequest="1"  Color="{StaticResource DefaultPurple}"/>
 
                 
             </VerticalStackLayout>

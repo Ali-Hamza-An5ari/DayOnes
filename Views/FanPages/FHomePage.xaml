@@ -4,7 +4,7 @@
              xmlns:components="clr-namespace:DayOnes.Views.Components"
            
              x:Class="DayOnes.Views.FHomePage"
-             Background="#000000"
+             Background="{StaticResource DefaultBlack}"
              >
 
     <Grid>
@@ -30,7 +30,7 @@
 
           
         <!-- NoInvitesYetFrame -->
-        <Frame BorderColor="#9747FF"
+        <Frame BorderColor="{StaticResource DefaultPurple}"
                CornerRadius="30"
                Padding="5,10,5,10"
                

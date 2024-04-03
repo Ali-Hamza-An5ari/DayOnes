@@ -6,4 +6,9 @@ public partial class HUPLSeePhotoPage : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private void btnBack_Click(object sender, EventArgs e)
+    {
+
+    }
 }

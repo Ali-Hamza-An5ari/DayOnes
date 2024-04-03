@@ -28,7 +28,7 @@
             <!-- UpperHdr -->
             <StackLayout  Spacing="16">
                 <!-- Header Frame -->
-                <Frame WidthRequest="357" HeightRequest="135" BackgroundColor="#000000" BorderColor="#3DC1F9" CornerRadius="20" Padding="10,0,10,0">
+                <Frame WidthRequest="357" HeightRequest="135" BackgroundColor="{StaticResource DefaultBlack}" BorderColor="#3DC1F9" CornerRadius="20" Padding="10,0,10,0">
                     <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center" Spacing="10" >
                         <!-- Home HostHeader3 -->
                         <Frame Padding="10" WidthRequest="162" HeightRequest="115" BackgroundColor="#123544" BorderColor="#3DC1F9" CornerRadius="20">
@@ -86,7 +86,7 @@
             </Grid.RowDefinitions>
 
             <!--Row 1-->
-            <Label Grid.Row="0" Text="Choose what to send:" FontFamily="SF Pro Text" FontAttributes="Italic" FontSize="20" TextColor="#9747FF" Margin="20,20,0,0" />
+            <Label Grid.Row="0" Text="Choose what to send:" FontFamily="SF Pro Text" FontAttributes="Italic" FontSize="20" TextColor="{StaticResource DefaultPurple}" Margin="20,20,0,0" />
 
             <!--Row 2-->
             <Frame Grid.Row="1"
@@ -105,7 +105,7 @@
                 </Picker>
             </Frame>
 
-            <!--<Frame  Grid.Row="1"  BorderColor="{StaticResource PickerBorderColor}" Background="#000000">-->
+            <!--<Frame  Grid.Row="1"  BorderColor="{StaticResource PickerBorderColor}" Background="{StaticResource DefaultBlack}">-->
             <!--<Picker x:Name="drpAction" Grid.Row="1" TextColor="{StaticResource PickerTextColor}" SelectedItem="Option 2" >
                 
                 

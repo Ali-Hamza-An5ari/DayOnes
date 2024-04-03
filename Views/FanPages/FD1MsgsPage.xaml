@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:Class="DayOnes.Views.FD1MsgsPage"
-    BackgroundColor="#000000"
+    BackgroundColor="{StaticResource DefaultBlack}"
              xmlns:components="clr-namespace:DayOnes.Views.Components"
              >
 
@@ -29,7 +29,7 @@
                 <Label.Background>
                     <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
                         <GradientStop Color="#3A27BC" Offset="0.0" />
-                        <GradientStop Color="#000000" Offset="0.5" />
+                        <GradientStop Color="{StaticResource DefaultBlack}" Offset="0.5" />
                         <GradientStop Color="#3DC1F9" Offset="1.0" />
                     </LinearGradientBrush>
                 </Label.Background>
@@ -42,7 +42,7 @@
                 <Frame 
                     
                 BackgroundColor="#123544"
-                BorderColor="#9747FF"  
+                BorderColor="{StaticResource DefaultPurple}"  
                 CornerRadius="16" 
                 Padding="10" 
                 HeightRequest="70">

@@ -5,7 +5,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:DayOnes"
     xmlns:views="clr-namespace:DayOnes.Views"
-    BackgroundColor="#000000"
+    BackgroundColor="{StaticResource DefaultBlack}"
     Shell.FlyoutBehavior="Disabled"  >
     <Shell.BackButtonBehavior>
         <BackButtonBehavior IsVisible="False" IsEnabled="False" />

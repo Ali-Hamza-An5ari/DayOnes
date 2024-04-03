@@ -12,7 +12,7 @@
   
    HeightRequest="50"
    TextColor="White"
-   HorizontalTextAlignment="Center"
+   HorizontalTextAlignment="Center"   
    VerticalTextAlignment="Center"
    VerticalOptions="Start"
     >
@@ -20,7 +20,7 @@
             <Label.Background>
                 <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
                     <GradientStop Color="#3A27BC" Offset="0.0" />
-                    <GradientStop Color="#000000" Offset="0.5" />
+                    <GradientStop Color="{StaticResource DefaultBlack}" Offset="0.5" />
                     <GradientStop Color="#3DC1F9" Offset="1.0" />
                 </LinearGradientBrush>
             </Label.Background>

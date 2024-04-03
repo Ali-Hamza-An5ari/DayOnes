@@ -2,11 +2,128 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="DayOnes.Views.HPostDetailsPage"
-             Title="HPostDetailsPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             BackgroundColor="{StaticResource DefaultBlack}"
+             xmlns:components="clr-namespace:DayOnes.Views.Components"
+             >
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <!--Row 1-->
+        <components:HostSmallHdr
+            Grid.Row="0"
+            
+            />
+        
+        <!--Row 2-->
+        <components:FanTitleBar
+            Grid.Row="1"
+            Title="Post Summary"
+            />
+        
+        <!--Row 3-->
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            
+            <!--Column 1-->
+            <components:GradientButton
+                Grid.Column="0"
+                Width="100"
+                HorizontalOptions="StartAndExpand"
+                />
+            
+            <!--Column 2-->
+            <components:GrpNameTag
+                Grid.Column="1"
+                Title="922.Chicago"
+                HorizontalOptions="Center"
+                />
+            
+            <!--Column 3-->
+            <!--Button-->
+            <components:GradientButton
+                Grid.Column="2"
+                Margin="10"
+                 Text="🔙" 
+                 Width="60" 
+                 Height="30" 
+                FontSize="30"
+                 Name="btnBack" 
+                 OnClick="btnBack_Click"
+                
+                />
+            
+        </Grid>
+        
+        <!--Row 4-->
+        <!-- Top line -->
+        <BoxView  
+            Grid.Row="3"
+            HeightRequest="1" 
+            BackgroundColor="{StaticResource DefaultPurple}" 
+            Color="{StaticResource DefaultPurple}"  />
+        
+        <!--Row 5-->
+        <Label
+             Grid.Row="4"
+             Text="Welcome to my DayOnes group! This exclusive oasis is the best place to interact with me! Your replies are private to me and not seen by the rest of the group. And this is really me, not a PR team! So get ready to follow me on this journey as a personal friend! ❤️"
+             TextColor="{StaticResource DefaultWhite}"
+             BackgroundColor="{StaticResource DefaultBlack}"
+             />
+
+        <!--Row 6-->
+        <Grid
+            Grid.Row="5"
+            >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+
+            <!--Column 1-->
+            <components:LikeLabel
+                Grid.Column="0"
+                Count="30"
+                />
+            
+            <!--Column 2-->
+
+            <components:CommentLabel
+                Grid.Column="0"
+                Count="30"
+                />
+        </Grid>
+
+        <!--Row 7-->
+        <BoxView  
+             Grid.Row="6"
+             HeightRequest="1" 
+             BackgroundColor="{StaticResource DefaultPurple}" 
+             Color="{StaticResource DefaultPurple}"  />
+
+        <!--Row 8-->
+        <ScrollView 
+            Grid.Row="7"
+            >
+            
+        </ScrollView>
+        
+        <!--Row 9-->
+
+    </Grid>
 </ContentPage>

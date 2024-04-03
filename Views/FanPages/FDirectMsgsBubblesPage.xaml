@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:Class="DayOnes.Views.FDirectMsgsBubblesPage"
-    BackgroundColor="#000000"
+             BackgroundColor="{StaticResource DefaultBlack}"
              xmlns:components="clr-namespace:DayOnes.Views.Components"
             >
 
@@ -47,21 +47,21 @@
                 <toolkit:AvatarView
                       CornerRadius="75">
                 <Frame 
-        Grid.Column="0"
-        CornerRadius="25"
-        WidthRequest="50"
-        HeightRequest="50"
-        Padding="0"
-        HasShadow="False"
-        HorizontalOptions="Start"
-        VerticalOptions="Center">
+                    Grid.Column="0"
+                    CornerRadius="25"
+                    WidthRequest="50"
+                    HeightRequest="50"
+                    Padding="0"
+                    HasShadow="False"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Center">
                     <Image
-            Source="im2.png"
-            WidthRequest="50"
-            HeightRequest="50"
-            BackgroundColor="Transparent"
-            HorizontalOptions="Start"
-            VerticalOptions="Start" />
+                    Source="im2.png"
+                    WidthRequest="50"
+                    HeightRequest="50"
+                    BackgroundColor="Transparent"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Start" />
                     </Frame>
                 </toolkit:AvatarView>
 
@@ -69,43 +69,42 @@
                 <Label 
                 Grid.Column="1"
                 
-        Text="Baby Doll"
-        FontSize="12"
+                Text="Baby Doll"
+                FontSize="12"
         
                 Margin="10,20"
-        TextColor="White"
+                TextColor="White"
                 />
                 <Frame
-            Grid.Column="2"
-BackgroundColor="#3DC1F9"
-Padding="0,0,10,0"
-WidthRequest="132"
-HeightRequest="20"
-CornerRadius="10"
-HorizontalOptions="Center"
-VerticalOptions="Center">
+                    Grid.Column="2"
+                    BackgroundColor="{StaticResource DefaultCyan}"
+                    Padding="0,0,10,0"
+                    WidthRequest="132"
+                    HeightRequest="20"
+                    CornerRadius="10"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center">
 
                     <Label
-    Text="0310.Chicago"
-    FontFamily="SFProText"
-    FontAttributes="Bold"
-    FontSize="12"
-    TextColor="#FFFFFF"
-    HorizontalOptions="Center"
-    VerticalOptions="Center"/>
+                        Text="0310.Chicago"
+                        FontFamily="SFProText"
+                        FontAttributes="Bold"
+                        FontSize="12"
+                        TextColor="#FFFFFF"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"/>
                 </Frame>
 
                 <!--Button-->
                 <components:GradientButton
                 Grid.Column="3"
                 Margin="10"
-                
-     Text="🔙" 
-     Width="60" 
-     Height="30" 
-                FontSize="18"
-     Name="btnBack" 
-     OnClick="btnBack_Click"
+                 Text="🔙" 
+                 Width="60" 
+                 Height="30" 
+                            FontSize="18"
+                 Name="btnBack" 
+                 OnClick="btnBack_Click"
                 
                 />
             </Grid>
@@ -113,21 +112,21 @@ VerticalOptions="Center">
             <!--Row 2-->
             <BoxView 
                     Grid.Row="1"
-                    HeightRequest="1" WidthRequest="340" Color="#9747FF"/>
+                    HeightRequest="1" WidthRequest="340" Color="{StaticResource DefaultPurple}"/>
 
             <!--Row 3-->
 
             <Label
-                    Grid.Row="2"
-    Text="March 5"
-    FontFamily="SFProText"
-    FontSize="12"
-    LineHeight="14"
-    VerticalTextAlignment="Center"
-    HorizontalTextAlignment="Center"
-    WidthRequest="49"
-    HeightRequest="14"
-    TextColor="#FFFFFF" />
+                Grid.Row="2"
+                Text="March 5"
+                FontFamily="SFProText"
+                FontSize="12"
+                LineHeight="14"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"
+                WidthRequest="49"
+                HeightRequest="14"
+                TextColor="#FFFFFF" />  
 
 
             <!--Row 4-->
@@ -168,7 +167,7 @@ VerticalOptions="Center">
                             <Label Text="Your message here" FontFamily="SFProText" FontSize="17" TextColor="#22282B" />
 
                             <!-- Message Time -->
-                            <Label Text="2:00pm" FontFamily="SFProText" FontSize="12" TextColor="#000000" HorizontalOptions="End" />
+                            <Label Text="2:00pm" FontFamily="SFProText" FontSize="12" TextColor="{StaticResource DefaultBlack}" HorizontalOptions="End" />
 
                         </StackLayout>
                     </Frame>
@@ -239,7 +238,7 @@ BackgroundColor="#FFFFFF"
                             <Entry
                                 x:Name="txtMessage"
                                     Grid.Column="0"
-                                    Text="Message" FontFamily="SFProText" FontSize="17" TextColor="#000000"
+                                    Text="Message" FontFamily="SFProText" FontSize="17" TextColor="{StaticResource DefaultBlack}"
                                FontAttributes="None"
                                     />
 

@@ -2,11 +2,85 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="DayOnes.Views.HReviewPhotoPage"
-             Title="HReviewPhotoPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             xmlns:components="clr-namespace:DayOnes.Views.Components"
+             BackgroundColor="{StaticResource DefaultBlack}"
+             >
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="607"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+
+        <!--Row 1-->
+
+        <!--<Frame Grid.Row="0"
+               BackgroundColor="{StaticResource DefaultBlack}"
+               HorizontalOptions="End"
+               Padding="0"
+               BorderColor="{StaticResource DefaultBlack}"
+               >-->
+            <!--Button-->
+            <components:GradientButton
+               HorizontalOptions="EndAndExpand"
+           Grid.Row="0"
+                Text="🔙" 
+                FontSize="25"
+                Width="90" 
+                Height="40" 
+                Name="btnBack" 
+                OnClick="btnBack_Click"
+           
+           />
+        <!--</Frame>-->
+        
+        <components:FanTitleBar
+             Grid.Row="1"
+            Title="Choose Action"
+        />
+
+        <Image 
+            Grid.Row="2"
+            Source="selfie.png"
+            WidthRequest="390"
+            VerticalOptions="Start"
+            />
+
+        <Grid Grid.Row="3">
+            <Grid.ColumnDefinitions >
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+
+            <!--Column 1-->
+            <Image
+                Source="cancelselfie.png"
+                Grid.Column="0"
+                WidthRequest="30"
+                VerticalOptions="Center"
+                />
+
+
+            <!--Column 1-->
+            <Image
+                Source="chossig.png"
+                Grid.Column="1"
+                WidthRequest="30"
+                VerticalOptions="Center"
+                />
+
+
+            <!--Column 3-->
+            <Image
+                Source="saveupload.png"
+                Grid.Column="2"
+                WidthRequest="30"
+                VerticalOptions="Center"
+                />
+        </Grid>
+    </Grid>
 </ContentPage>

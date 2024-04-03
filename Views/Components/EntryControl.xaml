@@ -8,7 +8,7 @@
         <Frame Margin="10"
            Padding="1"
            BackgroundColor="Transparent"
-           BorderColor="#9747FF"
+           BorderColor="{StaticResource DefaultPurple}"
            CornerRadius="20">
             <Frame.Background>
                 <RadialGradientBrush>
