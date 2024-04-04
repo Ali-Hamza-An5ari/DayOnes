@@ -86,7 +86,7 @@
                         
     CheckedChanged="EmailRadioButton_CheckedChanged"
     x:Name="emailRadioButton"
-                Content="Email" TextColor="#FFFFFF" GroupName="PhotoAction"  
+                Content="Email" TextColor="{StaticResource DefaultWhite}" GroupName="PhotoAction"  
                         
                         />
                     
@@ -118,7 +118,7 @@
                         Content="Your Device Photo Library" 
                         
                     CheckedChanged="DeviceRadioButton_CheckedChanged"
-                        TextColor="#FFFFFF" GroupName="PhotoAction"   />
+                        TextColor="{StaticResource DefaultWhite}" GroupName="PhotoAction"   />
                 
 
                 <!--Rb 3-->
@@ -143,7 +143,7 @@
                         Grid.Column="1"
                         Grid.Row="2"
                     CheckedChanged="TextRadioButton_CheckedChanged"
-                        Content="SMS Text" TextColor="#FFFFFF" GroupName="PhotoAction" 
+                        Content="SMS Text" TextColor="{StaticResource DefaultWhite}" GroupName="PhotoAction" 
                         />
 
                 </Grid>
@@ -152,7 +152,7 @@
                 <StackLayout 
                 Grid.Row="3" Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
                     <Label Text="&#xf2ed;"  FontFamily="FAS"  HeightRequest="20" WidthRequest="20" TextColor="#E70971" />
-                    <Button Text="Delete This Photo" FontSize="12" BackgroundColor="{StaticResource DefaultBlack}" FontFamily="SFProText" TextColor="#FFFFFF" />
+                    <Button Text="Delete This Photo" FontSize="12" BackgroundColor="{StaticResource DefaultBlack}" FontFamily="SFProText" TextColor="{StaticResource DefaultWhite}" />
                 </StackLayout>
                 <components:GradientButton 
      Grid.Row="4"

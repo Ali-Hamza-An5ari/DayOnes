@@ -44,7 +44,7 @@ namespace DayOnes
             Routing.RegisterRoute(nameof(HReviewPhotoPage), typeof(HReviewPhotoPage));
             Routing.RegisterRoute(nameof(HSeeSelfiePage), typeof(HSeeSelfiePage));
             Routing.RegisterRoute(nameof(HSelfieChooseSigPage), typeof(HSelfieChooseSigPage));
-            Routing.RegisterRoute(nameof(HSettnigsPage), typeof(HSettnigsPage));
+            Routing.RegisterRoute(nameof(HSettingsPage), typeof(HSettingsPage));
             Routing.RegisterRoute(nameof(HUPLPhotoChooseSigPage), typeof(HUPLPhotoChooseSigPage));
             Routing.RegisterRoute(nameof(HUPLSeePhotoPage), typeof(HUPLSeePhotoPage));
         }

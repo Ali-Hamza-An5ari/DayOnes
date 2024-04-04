@@ -9,14 +9,16 @@
     <Grid>
         
         <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         
-        <!--<components:HostSmallHdr Grid.Row="0"/>-->
+        <components:HostSmallHdr Grid.Row="0"/>
 
 
         <components:FanTitleBar
@@ -35,7 +37,8 @@
                             <StackLayout HorizontalOptions="Center" VerticalOptions="Center" Spacing="10">
                                 <!-- Interior -->
                                 <StackLayout Padding="5" Spacing="10">
-                                    <BoxView WidthRequest="25" HeightRequest="23.33" />
+                                    <Image WidthRequest="25" HeightRequest="23.33" Source="camera.png"/>
+                                    
                                     <Label Text="Click Selfie" FontFamily="SF Pro Text" FontAttributes="Bold" FontSize="20" TextColor="#FFFFFF" HorizontalTextAlignment="Center" />
                                 </StackLayout>
                             </StackLayout>
@@ -45,7 +48,8 @@
                             <StackLayout HorizontalOptions="Center" VerticalOptions="Center" Spacing="10">
                                 <!-- Interior -->
                                 <StackLayout Padding="5" Spacing="10">
-                                    <BoxView WidthRequest="25" HeightRequest="25" />
+                                    <!--<BoxView WidthRequest="25" HeightRequest="25" />-->
+                                    <Image  WidthRequest="25" HeightRequest="25" Source="pics.png" />
                                     <Label Text="Upload Pic" FontFamily="SF Pro Text" FontAttributes="Bold" FontSize="20" TextColor="#FFFFFF" HorizontalTextAlignment="Center" />
                                 </StackLayout>
                             </StackLayout>
@@ -78,7 +82,8 @@
             <Label x:Name="distanceLabel" Text="0" FontSize="20" />
         </StackLayout>
 
-        <Grid Grid.Row="0">
+        <!--Row 5-->
+        <Grid Grid.Row="4">
             <Grid.RowDefinitions>
                 <RowDefinition/>
                 <RowDefinition/>
@@ -120,5 +125,17 @@
             <!--</Frame>-->
         </Grid>
 
+        <!--Row 6-->
+        <components:GradientButton
+            Grid.Row="5"
+            Text="Send"
+            Width="100"
+            Height="60"
+            />
+        <!--Row 7-->
+        <components:HostTabBar
+            VerticalOptions="End"
+            Grid.Row="6"
+            />
     </Grid>
 </ContentPage>

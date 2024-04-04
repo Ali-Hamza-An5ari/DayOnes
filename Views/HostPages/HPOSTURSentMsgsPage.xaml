@@ -25,7 +25,7 @@
         <Frame 
             Grid.Row="1"
             BorderColor="Transparent"
-            Margin="-1"
+            Margin="0"
             >
             <Frame.Background>
                 <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
@@ -56,6 +56,7 @@
                     Grid.Column="1"
                    Text="Posts" 
                    FontFamily="SFProText"
+                    TextColor="{StaticResource DefaultWhite}"
                    FontSize="20"
                    FontAttributes="Bold"
                    
@@ -65,7 +66,8 @@
                 <components:GradientButton
                     Grid.Column="2"
                     Text="Msg All Fans"
-                    Width="80"
+                    Width="100"
+                    FontSize="10"
                     
                     />
             </Grid>

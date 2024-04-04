@@ -75,7 +75,7 @@
                             FontSize="16"
                             FontAttributes="Bold"
                                 
-                            TextColor="#FFFFFF"
+                            TextColor="{StaticResource DefaultWhite}"
                             VerticalOptions="Center"
                             />
                             </StackLayout>
@@ -89,7 +89,7 @@
                                 FontFamily="SFProText"
                         FontSize="24"
                         FontAttributes="Bold"
-                        TextColor="#FFFFFF"
+                        TextColor="{StaticResource DefaultWhite}"
                         HorizontalOptions="Center"
                         VerticalOptions="Center"
                         Margin="0,10"/>

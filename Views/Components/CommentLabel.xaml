@@ -3,10 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="DayOnes.Views.Components.CommentLabel">
 
-    <Grid VerticalOptions="Center">
+    <Grid VerticalOptions="Center" HorizontalOptions="Center" Margin="5">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
-            <ColumnDefinition/>
+            <ColumnDefinition Width="Auto"/>
         </Grid.ColumnDefinitions>
 
         <!--Column 1-->
@@ -14,17 +14,19 @@
         Grid.Column="0"
         Source="vectorcomment.png"
         HorizontalOptions="End"
-        VerticalOptions="End"
+        VerticalOptions="Center"
         
         />
 
         <!--Column 2-->
         <Label
         Grid.Column="1"
+        FontFamily="SFProText"
+        TextColor="{StaticResource DefaultDarkGrey}"
         x:Name="lblCount"
-        TextColor="{StaticResource DefaultWhite}"
-        HorizontalOptions="Start"
-        VerticalOptions="Center"
+            HorizontalOptions="Start"
+            VerticalOptions="Center"
+            Margin="4"
         />
     </Grid>
 </ContentView>

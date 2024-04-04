@@ -47,7 +47,7 @@
                        FontFamily="SFProText"
                        FontAttributes="Bold"
                        FontSize="32"
-                       TextColor="#FFFFFF"
+                       TextColor="{StaticResource DefaultWhite}"
                        LineBreakMode="TailTruncation"
                        HorizontalOptions="Center"/>
 
@@ -56,7 +56,7 @@
                        FontFamily="SFProText"
                        FontSize="20"
                HorizontalTextAlignment="Center"
-                       TextColor="#FFFFFF"
+                       TextColor="{StaticResource DefaultWhite}"
                        LineBreakMode="WordWrap"
                        HorizontalOptions="Center"/>
             </StackLayout>

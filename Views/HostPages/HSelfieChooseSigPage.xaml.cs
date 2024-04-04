@@ -20,6 +20,10 @@ public partial class HSelfieChooseSigPage : ContentPage, INotifyPropertyChanged
     public HSelfieChooseSigPage()
 	{
 		InitializeComponent();
+        Shell.SetBackButtonBehavior(this, new BackButtonBehavior
+        {
+            IsVisible = false
+        });
         BindingContext = this;
 
         ImageUrls = new List<string>

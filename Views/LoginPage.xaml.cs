@@ -25,16 +25,16 @@ public partial class LoginPage : ContentPage
 
         /*
          Execute AWS API:L1 passing the email & password
-to AWS, and receiving data as to whether the user is a
-Client or Host. Client or Host status should be store in
-SQLite
+        to AWS, and receiving data as to whether the user is a
+        Client or Host. Client or Host status should be store in
+        SQLite
 
         Collect Geolocation data from the iPhone, store it in
-SQLite, and ID the variable containing the data. Will need the email as part
-of the data set.
-         */
+        SQLite, and ID the variable containing the data. Will need the email as part
+        of the data set.
+                 */
 
-        Shell.Current.GoToAsync(nameof(HPostDetailsPage));
+        Shell.Current.GoToAsync(nameof(HProfilePage));
     }
 
     private void btnSignup_Click(object sender, EventArgs e)

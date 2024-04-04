@@ -4,13 +4,15 @@
              x:Class="DayOnes.Views.Components.GradientButton">
     <VerticalStackLayout>
 
-        <Button x:Name="gradientButton" Clicked="OnButtonClicked"
+        <Button 
+            x:Name="btnGradient" 
+            Clicked="OnButtonClicked"
             WidthRequest="223"
             HeightRequest="60"
-                                Padding="25,10"
-           
-                    FontFamily="SFProText"
-            TextColor="#FFFFFF"
+            Padding="10,1"
+            FontFamily="SFProText"
+            TextColor="{StaticResource DefaultWhite}"
+            
                 >
             <Button.Background>
                 <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">

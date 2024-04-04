@@ -9,7 +9,7 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="607"/>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
@@ -24,6 +24,7 @@
             Grid.Row="1"
             Source="singer.png"
             WidthRequest="390"
+            HeightRequest="400"
             />
 
         <Grid Grid.Row="2">
@@ -37,7 +38,7 @@
             <Image
                 Source="cancelselfie.png"
                 Grid.Column="0"
-                WidthRequest="30"
+                WidthRequest="50"
                 VerticalOptions="Center"
                 />
 
@@ -46,7 +47,7 @@
             <Image
                 Source="chossig.png"
                 Grid.Column="1"
-                WidthRequest="30"
+                WidthRequest="60"
                 VerticalOptions="Center"
                 />
 
@@ -55,7 +56,7 @@
             <Image
                 Source="saveupload.png"
                 Grid.Column="2"
-                WidthRequest="30"
+                WidthRequest="50"
                 VerticalOptions="Center"
                 />
         </Grid>

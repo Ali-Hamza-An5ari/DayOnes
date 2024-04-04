@@ -16,6 +16,8 @@
             <Color x:Key="DefaultBlack">#000000</Color>
             <Color x:Key="DefaultWhite">#FFFFFF</Color>
             <Color x:Key="DefaultGrey">#979393</Color>
+            <Color x:Key="DefaultDarkGrey">#808080</Color>
+            <Color x:Key="DefaultLateGrey">#123544</Color>
             <Color x:Key="DefaultPurple">#9747FF</Color> 
             <Color x:Key="DefaultCyan">#3DC1F9</Color>
             <Color x:Key="PickerBorderColor">#7236bf</Color>

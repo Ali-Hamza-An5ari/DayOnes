@@ -33,7 +33,7 @@
         Text="{Binding CountdownText}"
                 FontFamily="SFProText"
                 FontSize="32"
-                TextColor="#FFFFFF"
+                TextColor="{StaticResource DefaultWhite}"
                 LineBreakMode="TailTruncation"
                 HorizontalOptions="Center"/>
 

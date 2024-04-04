@@ -110,10 +110,10 @@
                                WidthRequest="24" HeightRequest="24" />
 
                     <!-- Input Box -->
-                    <!--<Frame BackgroundColor="#FFFFFF" BorderColor="#FFFFFF" CornerRadius="16.5" 
+                    <!--<Frame BackgroundColor="{StaticResource DefaultWhite}" BorderColor="{StaticResource DefaultWhite}" CornerRadius="16.5" 
                        WidthRequest="282" HeightRequest="40">-->
                     <Frame 
-                        BackgroundColor="#FFFFFF"
+                        BackgroundColor="{StaticResource DefaultWhite}"
                         WidthRequest="282" HeightRequest="40"
                         CornerRadius="16.5" 
                         Padding="0,0,0,0"

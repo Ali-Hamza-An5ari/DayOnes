@@ -384,7 +384,7 @@ TextColor="#979393"
             
             FontSize="16"
             LineHeight="40"
-            TextColor="#FFFFFF"
+            TextColor="{StaticResource DefaultWhite}"
             VerticalOptions="Center" />
 
              Toggle Switch 
@@ -407,7 +407,7 @@ TextColor="#979393"
             
             FontSize="16"
            
-            TextColor="#FFFFFF"
+            TextColor="{StaticResource DefaultWhite}"
             VerticalOptions="Center" />
             <Switch
             x:Name="toggleSwitch"
@@ -446,7 +446,7 @@ TextColor="#979393"
 
     FontSize="16"
     
-    TextColor="#FFFFFF"
+    TextColor="{StaticResource DefaultWhite}"
     WidthRequest="220"
           LineBreakMode="TailTruncation"
    

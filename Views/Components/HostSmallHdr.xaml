@@ -6,7 +6,7 @@
 
 
     <!--<ContentView.Content>-->
-    <Frame BorderColor="#3A27BC" HorizontalOptions="FillAndExpand" Padding="0"
+    <Frame BorderColor="Transparent" HorizontalOptions="FillAndExpand" Padding="0"
        HasShadow="True" CornerRadius="0"
        
        HeightRequest="70">

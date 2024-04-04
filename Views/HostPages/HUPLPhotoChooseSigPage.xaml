@@ -10,7 +10,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="548"/>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
@@ -22,7 +22,8 @@
                 Text="🔙" 
                 FontSize="25"
                 Width="90" 
-                Height="40" 
+                Height="60" 
+                
                 Name="btnBack" 
                 OnClick="btnBack_Click"
            
@@ -39,6 +40,7 @@
             Grid.Row="2"
             Source="selfie.png"
             WidthRequest="390"
+            HeightRequest="400"
             VerticalOptions="Start"
             />
 

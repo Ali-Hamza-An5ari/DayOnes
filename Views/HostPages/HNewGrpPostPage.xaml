@@ -9,10 +9,10 @@
 
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
+            <RowDefinition Height="Auto"/>
+            <RowDefinition  Height="Auto"/>
+            <RowDefinition  Height="Auto"/>
+            <RowDefinition  Height="*"/>
         </Grid.RowDefinitions>
 
 
@@ -58,7 +58,7 @@
                 Text="Artist"
                 FontSize="12"
                 FontAttributes="Bold"
-                Margin="10,20"
+                Margin="10,30"
                 TextColor="White"
                 />
 
@@ -73,8 +73,8 @@
                 Margin="10"
                  Text="🔙" 
                  Width="60" 
-                 Height="30" 
-                            FontSize="30"
+                 Height="60" 
+                            FontSize="10"
                  Name="btnBack" 
                  OnClick="btnBack_Click"
                 
@@ -100,19 +100,25 @@
         <!-- Row 3 -->
         <!-- Bottom Bar -->
         <Grid Grid.Row="4" VerticalOptions="End">
-            <Frame BackgroundColor="#123544" BorderColor="Transparent" Padding="0" Margin="0"
+            <Frame BackgroundColor="#3dc1f9" BorderColor="Transparent" Padding="0" Margin="0"
                WidthRequest="390" HeightRequest="44" HorizontalOptions="Center" VerticalOptions="End">
-                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+                <StackLayout 
+                    Orientation="Horizontal" 
+                    HorizontalOptions="Center" 
+                    Margin="2,0, 2, 0"
+                    VerticalOptions="Center">
 
                     <!-- Attachment Icon -->
                     <Image Source="attachment.png"
-                               WidthRequest="24" HeightRequest="24" />
+                               WidthRequest="24" HeightRequest="24"
+                           Margin="0, 0, 0, 0"
+                           />
 
                     <!-- Input Box -->
-                    <!--<Frame BackgroundColor="#FFFFFF" BorderColor="#FFFFFF" CornerRadius="16.5" 
+                    <!--<Frame BackgroundColor="{StaticResource DefaultWhite}" BorderColor="{StaticResource DefaultWhite}" CornerRadius="16.5" 
                        WidthRequest="282" HeightRequest="40">-->
                     <Frame 
-                        BackgroundColor="#FFFFFF"
+                        BackgroundColor="{StaticResource DefaultWhite}"
                         WidthRequest="282" HeightRequest="40"
                         CornerRadius="16.5" 
                         Padding="0,0,0,0"
@@ -121,19 +127,24 @@
                         <Grid 
                                          VerticalOptions="Center">
                             <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
                                 <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="17"/>
                             </Grid.ColumnDefinitions>
 
                             <Entry
                                 x:Name="txtMessage"
-                                    Grid.Column="0"
-                                    Text="Message" FontFamily="SFProText" FontSize="17" TextColor="{StaticResource DefaultBlack}"
-                               FontAttributes="None"
+                                Grid.Column="0"
+                                Text="Message" 
+                                FontFamily="SFProText" 
+                                FontSize="13" 
+                               
+                                TextColor="{StaticResource DefaultBlack}"
+                                FontAttributes="None"
                                     />
 
                             <!-- Stickers Icon -->
                             <Image 
+                                
                                     Grid.Column="1"
                                     HorizontalOptions="End" Source="stickers.png"
                                        WidthRequest="20" HeightRequest="16" />
@@ -143,8 +154,13 @@
 
                     <!-- Record Icon -->
 
-                    <!-- Microphone Icon -->
-                    <Image Source="send.png" WidthRequest="20" HeightRequest="20" VerticalOptions="Center" HorizontalOptions="End">
+                    <!-- Send Icon -->
+                    <Image 
+                        Source="send.png" 
+                        WidthRequest="20" HeightRequest="20" 
+                        Margin="2"
+                        VerticalOptions="Center" 
+                        HorizontalOptions="End">
                         <Image.GestureRecognizers>
                             <TapGestureRecognizer Tapped="sendButton_Tapped" />
                         </Image.GestureRecognizers>

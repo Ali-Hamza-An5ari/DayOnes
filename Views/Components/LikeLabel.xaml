@@ -2,7 +2,8 @@
 <ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="DayOnes.Views.Components.LikeLabel">
-    <Grid VerticalOptions="Center">
+    
+    <Grid VerticalOptions="Center" HorizontalOptions="Center" Margin="5">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition/>
@@ -12,8 +13,10 @@
         <Image
             Grid.Column="0"
             Source="vectorheart.png"
+            WidthRequest="18"
             HorizontalOptions="End"
-            VerticalOptions="End"
+            
+            VerticalOptions="Center"
             
             />
         
@@ -21,9 +24,11 @@
         <Label
             Grid.Column="1"
             x:Name="lblCount"
-            TextColor="{StaticResource DefaultWhite}"
+            FontFamily="SFProText"
+        TextColor="{StaticResource DefaultDarkGrey}"
             HorizontalOptions="Start"
             VerticalOptions="Center"
+            Margin="4"
             />
     </Grid>
 </ContentView>

@@ -24,12 +24,14 @@
             Title="Autographs  Invites"
         />
 
+        <!--Row 3-->
         <Frame 
             Grid.Row="2"
-            HeightRequest="500" 
-            Padding="200"
-            WidthRequest="500"
+            HeightRequest="400" 
+           Padding="120"
+            WidthRequest="300"
             BackgroundColor="{StaticResource DefaultBlack}"
+            BorderColor="Transparent"
             VerticalOptions="Center"
                 HorizontalOptions="Center"
             >
@@ -37,11 +39,17 @@
             <Label
                 x:Name="lblCountDown"
                 Text="15"
+                FontSize="40"
                 FontFamily="SFProText"
                 TextColor="{StaticResource DefaultWhite}"
                 />
         </Frame>
         
-        
+        <!--Row 4-->
+        <components:HostTabBar
+            Grid.Row="3"
+            VerticalOptions="End"
+            />
+
     </Grid>
 </ContentPage>

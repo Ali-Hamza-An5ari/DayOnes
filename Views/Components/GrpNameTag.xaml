@@ -17,7 +17,7 @@
         FontFamily="SFProText"
         FontAttributes="Bold"
         FontSize="12"
-        TextColor="#FFFFFF"
+        TextColor="{StaticResource DefaultWhite}"
         HorizontalOptions="Center"
         VerticalOptions="Center"/>
     </Frame>

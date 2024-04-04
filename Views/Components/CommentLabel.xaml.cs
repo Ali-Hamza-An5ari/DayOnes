@@ -12,7 +12,7 @@ public partial class CommentLabel : ContentView
         set
         {
             SetValue(LabelTextProperty, value);
-            lblCount.Text = $"Likes ({value})";
+            lblCount.Text = $"Comments ({value})";
         }
     }
     public CommentLabel()

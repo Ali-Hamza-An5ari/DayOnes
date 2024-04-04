@@ -1,10 +1,10 @@
 namespace DayOnes.Views.Components;
 
-public partial class FanTabBar : ContentView
+public partial class HostTabBar : ContentView
 {
     public static int CurrentPage1 = 1;
     public static readonly BindableProperty CurrentPageProperty = BindableProperty.Create(
-        nameof(CurrentPage), typeof(int), typeof(FanTitleBar), 0);
+        nameof(CurrentPage), typeof(int), typeof(HostTabBar), 0);
 
     public string CurrentPage
     {
@@ -16,39 +16,11 @@ public partial class FanTabBar : ContentView
         }
     }
 
-    public FanTabBar()
+    public HostTabBar()
     {
         InitializeComponent();
-        //Console.WriteLine(CurrentPage1);
         OnTapped(Temp.currenttabbarpage);
-        //  OnTapped(int.Parse(CurrentPage));
-        //switch (Convert.ToInt32(CurrentPage))
-        //{
-        //    case 1:
-        //        lblHome.TextColor = Color.FromHex("#E70971");
-        //        lblHomeTitle.TextColor = Color.FromHex("#E70971");
-        //        break;
-        //    case 2:
-        //        lblMsgs.TextColor = Color.FromHex("#E70971");
-        //        lblMsgsTitle.TextColor = Color.FromHex("#E70971");
-        //        break;
-        //    case 3:
-        //        lblDM.TextColor = Color.FromHex("#E70971");
-        //        lblDMTitle.TextColor = Color.FromHex("#E70971");
-        //        break;
-        //    case 4:
-        //        lblMyStuff.TextColor = Color.FromHex("#E70971");
-        //        lblMyStuffTitle.TextColor = Color.FromHex("#E70971");
-        //        break;
-        //    case 5:
-        //        lblNotification.TextColor = Color.FromHex("#E70971");
-        //        lblNotificationTitle.TextColor = Color.FromHex("#E70971");
-        //        break;
-        //    default:
-        //        break;
-        //}
     }
-
     private void lblHome_Tapped(object sender, TappedEventArgs e)
     {
         Temp.currenttabbarpage = 1;
@@ -141,22 +113,22 @@ public partial class FanTabBar : ContentView
 
         if (tempCurrentPage == 4)
         {
-            lblMyStuff.Source = "smystuffic";
+            lblNotification.Source = "snotificationic";
             //lblMyStuffTitle.TextColor = Color.FromHex("#E70971");
         }
         else
         {
-            lblMyStuff.Source = "mystuffic";
+            lblNotification.Source = "notificationic";
 
         }
 
         if (tempCurrentPage == 5)
         {
-            lblNotification.Source = "snotificationic";
+            lblSetting.Source = "ssetting";
         }
         else
         {
-            lblNotification.Source = "notificationic";
+            lblSetting.Source = "settings";
 
         }
 

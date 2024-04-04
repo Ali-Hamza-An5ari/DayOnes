@@ -26,7 +26,7 @@
                 --><!-- Frame --><!--
                 <Frame Grid.Row="0" BackgroundColor="{StaticResource DefaultBlack}" CornerRadius="8" Padding="5,0" HasShadow="False">
                     <Label x:Name="lblName"
-                           TextColor="#FFFFFF"
+                           TextColor="{StaticResource DefaultWhite}"
                            FontFamily="SF Pro Text"
                            FontSize="8"
                            FontAttributes="Bold" />
@@ -61,7 +61,7 @@
                 <Frame Grid.Row="0" BackgroundColor="{StaticResource DefaultBlack}" CornerRadius="8" Padding="5,0" HasShadow="False">
                     <Label x:Name="lblName"
                        
-                       TextColor="#FFFFFF"
+                       TextColor="{StaticResource DefaultWhite}"
                        FontFamily="SF Pro Text"
                        FontSize="8"
                        FontAttributes="Bold" />

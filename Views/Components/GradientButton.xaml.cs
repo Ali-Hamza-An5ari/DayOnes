@@ -9,7 +9,7 @@ public partial class GradientButton : ContentView
     public static readonly BindableProperty WidthProperty = BindableProperty.Create(nameof(Width), typeof(double), typeof(GradientButton), double.NaN);
     public static readonly BindableProperty HeightProperty = BindableProperty.Create(nameof(Height), typeof(double), typeof(GradientButton), double.NaN);
     public static readonly BindableProperty NameProperty = BindableProperty.Create(nameof(Name), typeof(string), typeof(GradientButton), string.Empty);
-    public static readonly BindableProperty FontSizeProperty = BindableProperty.Create(nameof(FontSize), typeof(string), typeof(GradientButton), "24");
+    public static readonly BindableProperty FontSizeProperty = BindableProperty.Create(nameof(FontSize), typeof(string), typeof(Button), "24");
     
 
     public event EventHandler<EventArgs> OnClick;
@@ -38,8 +38,8 @@ public partial class GradientButton : ContentView
     }
     public string FontSize
     {
-        get => (string)GetValue(NameProperty);
-        set => SetValue(NameProperty, value);
+        get => (string)GetValue(FontSizeProperty);
+        set => SetValue(FontSizeProperty, value);//btnGradient.FontSize = Convert.ToInt32(value); //SetValue(FontSizeProperty, value);
     }
 
 
@@ -47,12 +47,12 @@ public partial class GradientButton : ContentView
     public GradientButton()
     {
         InitializeComponent();
-        gradientButton.BindingContext = this;
-        gradientButton.SetBinding(Button.TextProperty, new Binding(nameof(Text), source: this));
-        gradientButton.SetBinding(Button.WidthRequestProperty, new Binding(nameof(Width), source: this));
-        gradientButton.SetBinding(Button.HeightRequestProperty, new Binding(nameof(Height), source: this));
-        gradientButton.SetBinding(Button.FontSizeProperty, new Binding(nameof(FontSize), source: this));
-        
+        btnGradient.BindingContext = this;
+        btnGradient.SetBinding(Button.TextProperty, new Binding(nameof(Text), source: this));
+        btnGradient.SetBinding(Button.WidthRequestProperty, new Binding(nameof(Width), source: this));
+        btnGradient.SetBinding(Button.HeightRequestProperty, new Binding(nameof(Height), source: this));
+        btnGradient.SetBinding(Button.FontSizeProperty, new Binding(nameof(FontSize), source: this));
+        btnGradient.FontSize = Convert.ToInt32(this.FontSize);
     }
 
     private void OnButtonClicked(object sender, EventArgs e)

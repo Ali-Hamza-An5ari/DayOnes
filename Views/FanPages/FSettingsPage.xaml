@@ -58,7 +58,7 @@
                     Text="Notifications"
                     FontFamily="SFProText"
                     FontSize="20"
-                    TextColor="#FFFFFF"
+                    TextColor="{StaticResource DefaultWhite}"
                     Opacity="0.9" 
                     VerticalOptions="Center" />
                     <!-- Chevron -->
@@ -97,7 +97,7 @@ HasShadow="False">
                     Text="Please select your preference"
                     
                     FontSize="12"
-                    TextColor="#FFFFFF"
+                    TextColor="{StaticResource DefaultWhite}"
                     Opacity="0.9"
                     VerticalOptions="Center" />
 
@@ -124,7 +124,7 @@ HasShadow="False">
                     Text="Sound"
                     
                     FontSize="12"
-                    TextColor="#FFFFFF"
+                    TextColor="{StaticResource DefaultWhite}"
                     Opacity="0.9"
                     VerticalOptions="Center" />
                     </HorizontalStackLayout>
@@ -154,7 +154,7 @@ HasShadow="False">
                     Text="Push Notifications"
                     FontFamily="SFProText"
                     FontSize="12"
-                    TextColor="#FFFFFF"
+                    TextColor="{StaticResource DefaultWhite}"
                     Opacity="0.9"
                     VerticalOptions="Center" />
                     </StackLayout>
@@ -175,7 +175,7 @@ HasShadow="False">
                     Text="Visual Quick-Start"
                     
                     FontSize="20"
-                    TextColor="#FFFFFF"
+                    TextColor="{StaticResource DefaultWhite}"
                     Opacity="0.9"
                     VerticalOptions="Center" />
 
@@ -211,7 +211,7 @@ HasShadow="False">
                     Text="FAQs"
                     
                     FontSize="20"
-                    TextColor="#FFFFFF"
+                    TextColor="{StaticResource DefaultWhite}"
                     Opacity="0.9"
                     VerticalOptions="Center" >
                             <Label.GestureRecognizers>

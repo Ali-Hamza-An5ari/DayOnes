@@ -64,13 +64,13 @@
                                 </Frame>
                             </toolkit:AvatarView>
 
-                            <Label Text="Artist" FontSize="16" FontAttributes="Bold" TextColor="#FFFFFF" VerticalOptions="Center" />
+                            <Label Text="Artist" FontSize="16" FontAttributes="Bold" TextColor="{StaticResource DefaultWhite}" VerticalOptions="Center" />
                         </StackLayout>
 
                         <!-- Likes Frame -->
                         <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand" VerticalOptions="Center" Padding="0,0,20,0" Spacing="8">
                             <Image Source="heart.png" WidthRequest="13.33" HeightRequest="12.23" />
-                            <Label Text="10.8k" FontSize="12" FontAttributes="Bold" TextColor="#FFFFFF" VerticalOptions="Center" />
+                            <Label Text="10.8k" FontSize="12" FontAttributes="Bold" TextColor="{StaticResource DefaultWhite}" VerticalOptions="Center" />
                         </StackLayout>
 
                     </StackLayout>
