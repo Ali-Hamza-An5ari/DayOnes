@@ -41,6 +41,8 @@ public partial class HPOSTURSentMsgsPage : ContentPage
             LikeCount = "301",
             CommentCount = "22",
         });
+
+        this.listHostPosts.ItemsSource = hostPosts;
     }
 
     private void lblPost_Tap(object sender, TappedEventArgs e)
