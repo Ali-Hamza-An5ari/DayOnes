@@ -138,6 +138,9 @@
 	  <MauiXaml Update="Views\Components\GrpNameTag.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\Components\HostPostContainer.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\Components\HostSmallHdr.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

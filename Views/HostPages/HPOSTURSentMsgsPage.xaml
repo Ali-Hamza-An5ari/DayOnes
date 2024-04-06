@@ -10,9 +10,6 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
@@ -75,96 +72,48 @@
         </Frame>
         
         <!--Row 3-->
-        <Grid 
+        <!--<components:HostPostContainer
             Grid.Row="2"
+     GroupName="aaa"
+     ImageSource="singer.png"
+     PostContent="ss"
+     LikeCount="3"
+     CommentCount="2"
+     
+     />-->
+        <ScrollView
+            Grid.Row="2"
+            HeightRequest="400"
             >
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="2*"/>
-                <ColumnDefinition Width="1*"/>
 
-            </Grid.ColumnDefinitions>
+            <CollectionView 
+                x:Name="listHostPosts">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
 
-            <Label
-                Grid.Column="0"
-                />
+                        <components:HostPostContainer
+                            GroupName="{Binding GroupName}"
+                            ImageSource="{Binding ImageSource}"
+                            PostContent="{Binding PostContent}"
+                            LikeCount="{Binding LikeCount}"
+                            CommentCount="{Binding CommentCount}"
+                            
+                            />
+                    </DataTemplate>
 
-            <components:GradientButton
-                Grid.Column="1"
-                Text="Msg Grp"
-                Width="80"
-                />
-        </Grid>
+                </CollectionView.ItemTemplate>
+                <CollectionView.GestureRecognizers>
+
+                    <TapGestureRecognizer Tapped="btnDM_Click"/>
+                </CollectionView.GestureRecognizers>
+            </CollectionView>
+        </ScrollView>
         
         <!--Row 4-->
-        <Image
-            Grid.Row="3"
-            Source="singer.png"
-            WidthRequest="300"
-            />
+        <components:HostTabBar
+           Grid.Row="3"
+            VerticalOptions="End"
+           />
         
-        <!--Row 5-->
-        <Label
-            Grid.Row="4"
-            Text="Welcome to my DayOnes group! This exclusive oasis is the best place to interact with me! Your replies are private to me and not seen by the rest of the group. And this is really me, not a PR team! So get ready to follow me on this journey as a personal friend! ❤️"
-            TextColor="{StaticResource DefaultWhite}"
-            BackgroundColor="{StaticResource DefaultBlack}"
-            
-                >
-
-            <Label.GestureRecognizers>
-                <TapGestureRecognizer Tapped="lblPost_Tap"/>
-            </Label.GestureRecognizers>
-            </Label>
-
-            <!--Row 6-->
-
-        <Grid
-            Grid.Row="5"
-            
-            >
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="1*"/>
-                <ColumnDefinition Width="1*"/>
-            </Grid.ColumnDefinitions>
-
-            <!--Column 1-->
-            <components:GrpNameTag
-                Grid.Column="0"
-                Title="Aurora"
-                />
-
-            
-            <components:GradientButton
-                Grid.Column="1"
-                Text="Msg Grp"
-                Width="80"
-                OnClick="btnGrp_Click"
-                />
-        </Grid>
-        
-        <!--Row 7-->
-        <Grid
-            Grid.Row="6"
-            
-            >
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="2*"/>
-                <ColumnDefinition Width="1*"/>
-            </Grid.ColumnDefinitions>
-
-            <!--Column 1-->
-            <components:LikeLabel
-                Grid.Column="0"
-                Count="30"
-                />
-
-            <!--Column 2-->
-            <components:GradientButton
-                Grid.Column="1"
-                Text="Msg Grp"
-                Width="80"
-                OnClick="btnGrp_Click"
-                />
-        </Grid>
     </Grid>
 </ContentPage>

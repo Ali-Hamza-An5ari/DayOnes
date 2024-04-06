@@ -1,13 +1,45 @@
+using DayOnes.Models;
+
 namespace DayOnes.Views;
 
 public partial class HPOSTURSentMsgsPage : ContentPage
 {
+    List<HostPost> hostPosts;
 	public HPOSTURSentMsgsPage()
 	{
 		InitializeComponent();
         Shell.SetBackButtonBehavior(this, new BackButtonBehavior
         {
             IsVisible = false
+        });
+
+        hostPosts = new List<HostPost>();
+
+        hostPosts.Add(new()
+        {
+            GroupName = "Chicago",
+            ImageSource = "singer.png",
+            PostContent = "This page summarizes a post to a group. 1. The message sent from the host 2. The summary of the clients in a scrolled list\r\n",
+            LikeCount = "130",
+            CommentCount = "222",
+        });
+
+        hostPosts.Add(new()
+        {
+            GroupName = "Chicago",
+            ImageSource = "singer.png",
+            PostContent = "This page summarizes a post to a group. 1. The message sent from the host 2. The summary of the clients in a scrolled list\r\n",
+            LikeCount = "30",
+            CommentCount = "22",
+        });
+
+        hostPosts.Add(new()
+        {
+            GroupName = "Chicago",
+            ImageSource = "artist2.png",
+            PostContent = "This page summarizes a post to a group. 1. The message sent from the host 2. The summary of the clients in a scrolled list\r\n",
+            LikeCount = "301",
+            CommentCount = "22",
         });
     }
 

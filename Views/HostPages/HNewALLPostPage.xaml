@@ -10,10 +10,10 @@
 
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
 
@@ -69,17 +69,27 @@
                 />
 
             <!--Button-->
-            <components:GradientButton
+            <components:GradientImageButton
+    Grid.Column="3"
+    Margin="10"
+                ImageSource="back.png"
+     Width="60" 
+     Height="50" 
+     Name="btnBack" 
+     OnClick="btnBack_Click"
+    
+    />
+            <!--<components:GradientButton
                 Grid.Column="3"
                 Margin="10"
                  Text="🔙" 
                  Width="60" 
-                 Height="30" 
+                 Height="50" 
                             FontSize="30"
                  Name="btnBack" 
                  OnClick="btnBack_Click"
                 
-                />
+                />-->
         </Grid>
 
         <!--Row 2-->
@@ -101,7 +111,7 @@
         <!-- Row 3 -->
         <!-- Bottom Bar -->
         <Grid Grid.Row="4" VerticalOptions="End">
-            <Frame BackgroundColor="#123544" BorderColor="Transparent" Padding="0" Margin="0"
+            <Frame BackgroundColor="{StaticResource DefaultCyan}" BorderColor="Transparent" Padding="0" Margin="0"
                WidthRequest="390" HeightRequest="44" HorizontalOptions="Center" VerticalOptions="End">
                 <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
 
