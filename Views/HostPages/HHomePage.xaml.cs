@@ -15,4 +15,14 @@ public partial class HHomePage : ContentPage
     {
 
     }
+
+    private void layoutCamera_Tapped(object sender, TappedEventArgs e)
+    {
+        Shell.Current.GoToAsync(nameof(HSeeSelfiePage));
+    }
+
+    private void layoutPics_Tapped(object sender, TappedEventArgs e)
+    {
+        Shell.Current.GoToAsync(nameof(HReviewPhotoPage));
+    }
 }

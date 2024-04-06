@@ -30,13 +30,24 @@
             <!-- UpperHdr -->
             <StackLayout  Spacing="16">
                 <!-- Header Frame -->
-                <Frame WidthRequest="357" HeightRequest="135" BackgroundColor="{StaticResource DefaultBlack}" BorderColor="#3DC1F9" CornerRadius="20" Padding="10,0,10,0">
+                <Frame 
+                    WidthRequest="357" 
+                    HeightRequest="135" 
+                    BackgroundColor="{StaticResource DefaultBlack}" 
+                    BorderColor="#3DC1F9" 
+                    CornerRadius="20" 
+                    
+                    Padding="10,0,10,0">
                     <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center" Spacing="10" >
                         <!-- Home HostHeader3 -->
                         <Frame Padding="10" WidthRequest="162" HeightRequest="115" BackgroundColor="#123544" BorderColor="#3DC1F9" CornerRadius="20">
                             <StackLayout HorizontalOptions="Center" VerticalOptions="Center" Spacing="10">
                                 <!-- Interior -->
                                 <StackLayout Padding="5" Spacing="10">
+                                    <StackLayout.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="layoutCamera_Tapped"/>
+                                    </StackLayout.GestureRecognizers>
+                                    
                                     <Image WidthRequest="25" HeightRequest="23.33" Source="camera.png"/>
                                     
                                     <Label Text="Click Selfie" FontFamily="SF Pro Text" FontAttributes="Bold" FontSize="20" TextColor="#FFFFFF" HorizontalTextAlignment="Center" />
@@ -48,6 +59,11 @@
                             <StackLayout HorizontalOptions="Center" VerticalOptions="Center" Spacing="10">
                                 <!-- Interior -->
                                 <StackLayout Padding="5" Spacing="10">
+
+                                    <StackLayout.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="layoutPics_Tapped"/>
+                                    </StackLayout.GestureRecognizers>
+
                                     <!--<BoxView WidthRequest="25" HeightRequest="25" />-->
                                     <Image  WidthRequest="25" HeightRequest="25" Source="pics.png" />
                                     <Label Text="Upload Pic" FontFamily="SF Pro Text" FontAttributes="Bold" FontSize="20" TextColor="#FFFFFF" HorizontalTextAlignment="Center" />

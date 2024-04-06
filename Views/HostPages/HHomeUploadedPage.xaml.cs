@@ -1,3 +1,5 @@
+using DayOnes.Views.HostPages;
+
 namespace DayOnes.Views;
 
 public partial class HHomeUploadedPage : ContentPage
@@ -19,5 +21,10 @@ public partial class HHomeUploadedPage : ContentPage
     private void btnSend_Click(object sender, EventArgs e)
     {
         Shell.Current.GoToAsync(nameof(HHomeSentCountdownPage));
+    }
+
+    private void btnReset_Click(object sender, EventArgs e)
+    {
+        Shell.Current.GoToAsync(nameof(HHomePage));
     }
 }

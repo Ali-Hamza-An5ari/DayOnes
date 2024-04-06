@@ -54,6 +54,7 @@
                     TextColor="{StaticResource DefaultBlack}"
                     WidthRequest="90"
                     HorizontalOptions="Center"
+                    Clicked="btnCancel_Click"
                     Margin="10,3,10,3"
                     />
                 
@@ -65,40 +66,16 @@
                     HeightRequest="1" 
                 Color="{StaticResource DefaultPurple}"/>
 
-
-            <!--Row 3-->
-            <!--<ScrollView Orientation="Horizontal">
-                <ListView x:Name="imageListView"
-                      ItemsSource="{Binding ImageUrls}"
-                      SelectionMode="Single"
-                      SeparatorVisibility="None"
-                      HorizontalOptions="Start"
-                      VerticalOptions="Center">
-                    <ListView.ItemTemplate>
-                        <DataTemplate>
-                            <ViewCell>
-                                <Frame CornerRadius="5"
-                                   BorderColor="Transparent"
-                                   HasShadow="{Binding IsSelected}"
-                                   Margin="5"
-                                   Padding="5"
-                                   BackgroundColor="White">
-                                    <Image Source="{Binding .}"
-                                       WidthRequest="70"
-                                       HeightRequest="70"
-                                       Aspect="AspectFill" />
-                                </Frame>
-                            </ViewCell>
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
-            </ScrollView>-->
             
             
             <ScrollView 
                 Grid.Row="2"
                 Orientation="Horizontal">
                 <HorizontalStackLayout>
+                    
+                    <HorizontalStackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="layoutSig_Tap"/>
+                    </HorizontalStackLayout.GestureRecognizers>
                     <Image 
                         Source="sig3.png"
                         WidthRequest="70"

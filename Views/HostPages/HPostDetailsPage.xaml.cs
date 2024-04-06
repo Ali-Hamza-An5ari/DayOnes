@@ -1,3 +1,5 @@
+using DayOnes.Models;
+
 namespace DayOnes.Views;
 
 public partial class HPostDetailsPage : ContentPage
@@ -12,28 +14,29 @@ public partial class HPostDetailsPage : ContentPage
             IsVisible = false
         });
 
-        posts.Add(new Post() { SenderName = "Julie", SenderImage="singer.png", Content = "You have Received a gift!",  });
-        posts.Add(new Post() { SenderName = "Steve", SenderImage="singer.png", Content = "You have Received a gift!",  });
-        posts.Add(new Post() { SenderName = "Tom", SenderImage="singer.png", Content = "You have Received a gift!",  });
-        posts.Add(new Post() { SenderName = "Martyn", SenderImage="singer.png", Content = "You have Received a gift!",  });
+        posts.Add(new Post() { ArtistName = "Julie", ArtistImage = "singer.png", PostContent = "You have Received a gift!", IsLiked= true });
+        posts.Add(new Post() { ArtistName = "Steve", ArtistImage = "singer.png", PostContent = "You have Received a gift!", IsLiked = false });
+        posts.Add(new Post() { ArtistName = "Tom", ArtistImage = "singer.png", PostContent = "You have Received a gift!", IsLiked = false });
+        posts.Add(new Post() { ArtistName = "Martyn", ArtistImage = "singer.png", PostContent = "You have Received a gift!", IsLiked = true });
         listPosts.ItemsSource = posts;
     }
 
-    private void btnBack_Click(object sender, EventArgs e)
+    private void btnBack_Click(object Artist, EventArgs e)
     {
 
     }
 
-    private void btnDM_Click(object sender, EventArgs e)
+    private void btnDM_Click(object Artist, EventArgs e)
     {
 
     }
 }
+/*
 class Post
 {
-    public string SenderName { get; set; }
-    public string SenderImage { get; set; }
-    public string Content { get; set; }
+    public string ArtistName { get; set; }
+    public string ArtistImage { get; set; }
+    public string PostContent { get; set; }
     public bool IsLiked { get; set; }
 
-}
+}*/

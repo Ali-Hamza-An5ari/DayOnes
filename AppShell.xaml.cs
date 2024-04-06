@@ -38,6 +38,7 @@ namespace DayOnes
             Routing.RegisterRoute(nameof(HNotificationsPage), typeof(HNotificationsPage));
             Routing.RegisterRoute(nameof(HPageHSigPenColorEditPage), typeof(HPageHSigPenColorEditPage));
             Routing.RegisterRoute(nameof(HPostDetailsPage), typeof(HPostDetailsPage));
+            Routing.RegisterRoute(nameof(HDMDetailsList), typeof(HDMDetailsList));
             Routing.RegisterRoute(nameof(HPOSTURSentMsgsPage), typeof(HPOSTURSentMsgsPage));
             Routing.RegisterRoute(nameof(HProfilePage), typeof(HProfilePage));
             Routing.RegisterRoute(nameof(HQuickStartPage), typeof(HQuickStartPage));
@@ -47,6 +48,7 @@ namespace DayOnes
             Routing.RegisterRoute(nameof(HSettingsPage), typeof(HSettingsPage));
             Routing.RegisterRoute(nameof(HUPLPhotoChooseSigPage), typeof(HUPLPhotoChooseSigPage));
             Routing.RegisterRoute(nameof(HUPLSeePhotoPage), typeof(HUPLSeePhotoPage));
+            Routing.RegisterRoute(nameof(HAssetsNManagementPage), typeof(HAssetsNManagementPage));
         }
     }
 }

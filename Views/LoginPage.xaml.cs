@@ -34,7 +34,7 @@ public partial class LoginPage : ContentPage
         of the data set.
                  */
 
-        Shell.Current.GoToAsync(nameof(HProfilePage));
+        Shell.Current.GoToAsync(nameof(HAssetsNManagementPage));
     }
 
     private void btnSignup_Click(object sender, EventArgs e)

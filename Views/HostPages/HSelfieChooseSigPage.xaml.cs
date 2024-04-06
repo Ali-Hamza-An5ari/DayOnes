@@ -35,6 +35,19 @@ public partial class HSelfieChooseSigPage : ContentPage, INotifyPropertyChanged
                 // Add more image URLs as needed
             };
     }
+
+    private void btnCancel_Click(object sender, EventArgs e)
+    {
+
+        Shell.Current.GoToAsync(nameof(HSeeSelfiePage));
+    }
+
+    private void layoutSig_Tap(object sender, TappedEventArgs e)
+    {
+
+        Shell.Current.GoToAsync(nameof(HFinalSeeSelfiePage));
+
+    }
     //private void HandleItemSelected(object sender, SelectedItemChangedEventArgs e)
     //{
     //    if (e.SelectedItem != null && e.SelectedItem is string selectedImage)

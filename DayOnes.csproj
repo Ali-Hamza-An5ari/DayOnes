@@ -67,7 +67,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Models\" />
 	  <Folder Include="Styles\" />
 	</ItemGroup>
 
@@ -78,6 +77,9 @@
 	<ItemGroup>
 	  <Compile Update="Views\Components\FanSmallHdr .xaml.cs">
 	    <DependentUpon>FanSmallHdr .xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\Components\PostCardAction.xaml.cs">
+	    <DependentUpon>PostCardAction.xaml</DependentUpon>
 	  </Compile>
 	  <Compile Update="Views\FanPages\FHomePage.xaml.cs">
 	    <DependentUpon>FHomePage.xaml</DependentUpon>
@@ -99,6 +101,9 @@
 	  </Compile>
 	  <Compile Update="Views\FanPages\RegFanPage.xaml.cs">
 	    <DependentUpon>RegFanPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\HostPages\HAssetsNManagementPage.xaml.cs">
+	    <DependentUpon>HAssetsNManagementPage.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 
@@ -127,6 +132,9 @@
 	  <MauiXaml Update="Styles\ResourceDictionary.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\Components\GradientImageButton.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\Components\GrpNameTag.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
@@ -139,7 +147,10 @@
 	  <MauiXaml Update="Views\Components\LikeLabel.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\Components\PostCartAction.xaml">
+	  <MauiXaml Update="Views\Components\PostCard.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Components\PostCardAction.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Components\TextBox.xaml">
@@ -179,6 +190,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\FanPages\FSettingsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\HostPages\HDMDetailsList.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\HostPages\HDMDetailsPage.xaml">
@@ -226,7 +240,7 @@
 	  <MauiXaml Update="Views\FanPages\FD1MsgsBubblesPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\NHAssetsNManagementPage.xaml">
+	  <MauiXaml Update="Views\HostPages\HAssetsNManagementPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\FanPages\RegFanPage.xaml">

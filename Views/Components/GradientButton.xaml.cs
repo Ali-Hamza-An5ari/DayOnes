@@ -9,8 +9,19 @@ public partial class GradientButton : ContentView
     public static readonly BindableProperty WidthProperty = BindableProperty.Create(nameof(Width), typeof(double), typeof(GradientButton), double.NaN);
     public static readonly BindableProperty HeightProperty = BindableProperty.Create(nameof(Height), typeof(double), typeof(GradientButton), double.NaN);
     public static readonly BindableProperty NameProperty = BindableProperty.Create(nameof(Name), typeof(string), typeof(GradientButton), string.Empty);
-    public static readonly BindableProperty FontSizeProperty = BindableProperty.Create(nameof(FontSize), typeof(string), typeof(Button), "24");
-    
+
+    //FontSize Property 
+    public static readonly BindableProperty FontSizeProperty =
+        BindableProperty.Create(
+            nameof(FontSize),
+            typeof(string),
+            typeof(GradientButton),
+            propertyChanged: (bindable, oldValue, newValue) =>
+            {
+                var control = (GradientButton)bindable;
+                control.btnGradient.FontSize = Convert.ToDouble(newValue);
+            });
+
 
     public event EventHandler<EventArgs> OnClick;
     public string Text
@@ -39,7 +50,7 @@ public partial class GradientButton : ContentView
     public string FontSize
     {
         get => (string)GetValue(FontSizeProperty);
-        set => SetValue(FontSizeProperty, value);//btnGradient.FontSize = Convert.ToInt32(value); //SetValue(FontSizeProperty, value);
+        set => SetValue(FontSizeProperty, value);
     }
 
 

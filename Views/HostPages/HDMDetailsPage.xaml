@@ -11,18 +11,17 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
-            <RowDefinition/>
-            <RowDefinition/>
+            <RowDefinition Height="250"/>
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
         <!--Row 1-->
         <!--Grid to contain all the fixed top components-->
         <Grid Grid.Row="0">
             <Grid.RowDefinitions>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
+                <RowDefinition  Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
             <!--Row 1-->
@@ -121,8 +120,8 @@
                 LineHeight="14"
                 VerticalTextAlignment="Center"
                 HorizontalTextAlignment="Center"
-                WidthRequest="49"
-                HeightRequest="14"
+                WidthRequest="90"
+                HeightRequest="20"
                 TextColor="{StaticResource DefaultWhite}" />
 
 
@@ -202,7 +201,7 @@
 
         <!-- Row 3 -->
         <!-- Bottom Bar -->
-        <Grid Grid.Row="2" VerticalOptions="End">
+        <Grid Grid.Row="2" VerticalOptions="EndAndExpand">
             <Frame BackgroundColor="{StaticResource DefaultCyan}" BorderColor="Transparent" Padding="0" Margin="0"
                WidthRequest="390" HeightRequest="44" HorizontalOptions="Center" VerticalOptions="End">
                 <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
@@ -215,7 +214,7 @@
                     <!--<Frame BackgroundColor="{StaticResource DefaultWhite}" BorderColor="{StaticResource DefaultWhite}" CornerRadius="16.5" 
                        WidthRequest="282" HeightRequest="40">-->
                     <Frame 
-BackgroundColor="{StaticResource DefaultWhite}"
+                        BackgroundColor="{StaticResource DefaultWhite}"
                                WidthRequest="282" HeightRequest="40"
                              CornerRadius="16.5" 
                            Padding="0,0,0,0"

@@ -48,10 +48,11 @@
             <components:GradientButton
                 Text="Msg Grp"
                 Grid.Column="0"
-                FontSize="3"
+                FontSize="15"
                 
-                Width="150"
+                Width="80"
                 HorizontalOptions="StartAndExpand"
+                VerticalOptions="Center"
                 />
             
             <!--Column 2-->
@@ -67,9 +68,9 @@
                 Grid.Column="2"
                 Margin="10"
                  Text="🔙" 
-                 Width="100" 
+                 Width="90" 
                  Height="60" 
-                FontSize="30"
+                FontSize="25"
                  Name="btnBack" 
                  OnClick="btnBack_Click"
                 
@@ -131,14 +132,19 @@
 
         <ScrollView
             Grid.Row="7"
+            Orientation="Vertical"
+            HeightRequest="165"
             >
-            <CollectionView x:Name="listPosts">
+            <CollectionView 
+                x:Name="listPosts">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
 
-                        <components:PostCartAction
-                            ImageSource="singer.png"
-                            
+                        <components:PostCardAction
+                            ArtistName="{Binding ArtistName}"
+                            ArtistImage="{Binding ArtistImage}"
+                            PostContent="{Binding PostContent}"
+                            IsLiked="{Binding IsLiked}"
                             
                             />
                     </DataTemplate>

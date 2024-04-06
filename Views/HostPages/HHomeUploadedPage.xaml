@@ -68,6 +68,7 @@
                     Grid.Column="2"
                     Text="Reset"
                     FontSize="15"
+                    OnClick="btnReset_Click"
                      WidthRequest="100" HeightRequest="60" 
                     VerticalOptions="Center"
                     />

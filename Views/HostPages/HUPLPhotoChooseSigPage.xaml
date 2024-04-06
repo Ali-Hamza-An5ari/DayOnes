@@ -70,6 +70,7 @@
                     BackgroundColor="{StaticResource DefaultGrey}"
                     TextColor="{StaticResource DefaultBlack}"
                     WidthRequest="90"
+                    Clicked="btnCancel_Click"
                     HorizontalOptions="Center"
                     Margin="10,3,10,3"
                     />
@@ -88,6 +89,9 @@
                 Grid.Row="2"
                 Orientation="Horizontal">
                 <HorizontalStackLayout>
+                    <HorizontalStackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="layoutImage_Tap"/>
+                    </HorizontalStackLayout.GestureRecognizers>
                     <Image 
                         Source="sig3.png"
                         WidthRequest="70"

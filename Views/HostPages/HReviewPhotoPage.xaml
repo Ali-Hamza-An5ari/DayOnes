@@ -62,7 +62,11 @@
                 Grid.Column="0"
                 WidthRequest="50"
                 VerticalOptions="Center"
-                />
+                >
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="imgCancel_Tap"/>
+                </Image.GestureRecognizers>
+            </Image>
 
 
             <!--Column 1-->
@@ -71,8 +75,11 @@
                 Grid.Column="1"
                 WidthRequest="60"
                 VerticalOptions="Center"
-                />
-
+                >
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="imgSig_Tap"/>
+                </Image.GestureRecognizers>
+            </Image>
 
             <!--Column 3-->
             <Image
@@ -80,7 +87,11 @@
                 Grid.Column="2"
                 WidthRequest="50"
                 VerticalOptions="Center"
-                />
+                >
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="imgUpload_Tap"/>
+                </Image.GestureRecognizers>
+            </Image>
         </Grid>
     </Grid>
 </ContentPage>

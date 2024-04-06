@@ -1,14 +1,12 @@
 using DayOnes.Models;
 
-namespace DayOnes.Views;
+namespace DayOnes.Views.HostPages;
 
-public partial class HNotificationsPage : ContentPage
+public partial class HDMDetailsList : ContentPage
 {
-
     private List<Post> posts = new List<Post>(); //This is just a testing data
 
-
-    public HNotificationsPage()
+    public HDMDetailsList()
 	{
 		InitializeComponent();
         Shell.SetBackButtonBehavior(this, new BackButtonBehavior
@@ -21,6 +19,10 @@ public partial class HNotificationsPage : ContentPage
         posts.Add(new Post() { ArtistName = "Tom", ArtistImage = "singer.png", PostContent = "You have Received a gift!", IsPinned = false });
         posts.Add(new Post() { ArtistName = "Martyn", ArtistImage = "singer.png", PostContent = "You have Received a gift!", IsPinned = true });
         listPosts.ItemsSource = posts;
+    }
+
+    private void btnBack_Click(object sender, EventArgs e)
+    {
 
     }
 }

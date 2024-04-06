@@ -15,4 +15,15 @@ public partial class HUPLSeePhotoPage : ContentPage
     {
 
     }
+
+    private void imgCancel_Tap(object sender, TappedEventArgs e)
+    {
+        Shell.Current.GoToAsync(nameof(HUPLPhotoChooseSigPage));
+    }
+
+    private void imgUpload_Tap(object sender, TappedEventArgs e)
+    {
+        Shell.Current.GoToAsync(nameof(HHomeUploadedPage));
+
+    }
 }
