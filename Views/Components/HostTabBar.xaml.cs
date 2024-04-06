@@ -69,7 +69,7 @@ public partial class HostTabBar : ContentView
         Temp.currenttabbarpage = 5;
 
         //lblNotification.TextColor = Color.FromHex("#E70971");
-        Shell.Current.GoToAsync(nameof(FNotificationsPage));
+        Shell.Current.GoToAsync(nameof(HNotificationsPage));
         //  OnTapped(CurrentPage1);
     }
 
@@ -91,12 +91,12 @@ public partial class HostTabBar : ContentView
 
         if (tempCurrentPage == 2)
         {
-            lblMsgs.Source = "smsgsic";
+            lblMsgs.Source = "spostic";
             //lblMsgsTitle.TextColor = Color.FromHex("#E70971");
         }
         else
         {
-            lblMsgs.Source = "msgsic";
+            lblMsgs.Source = "postic";
 
             //lblMsgs.TextColor = Color.FromHex("{StaticResource DefaultWhite}");
             //lblMsgsTitle.TextColor = Color.FromHex("{StaticResource DefaultWhite}");

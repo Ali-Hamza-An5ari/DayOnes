@@ -17,15 +17,18 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        
+
+        <!--Row 1-->
         <components:HostSmallHdr Grid.Row="0"/>
 
 
+        <!--Row 2-->
         <components:FanTitleBar
              Grid.Row="1"
             Title="Autographs  Invites"
         />
 
+        <!--Row 3-->
         <StackLayout  Grid.Row="2" Padding="15" Spacing="20" WidthRequest="357" HeightRequest="155">
             <!-- UpperHdr -->
             <StackLayout  Spacing="16">
