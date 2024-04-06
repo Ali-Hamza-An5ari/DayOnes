@@ -34,13 +34,13 @@
                     WidthRequest="357" 
                     HeightRequest="135" 
                     BackgroundColor="{StaticResource DefaultBlack}" 
-                    BorderColor="#3DC1F9" 
+                    BorderColor="{StaticResource DefaultCyan}" 
                     CornerRadius="20" 
                     
                     Padding="10,0,10,0">
                     <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center" Spacing="10" >
                         <!-- Home HostHeader3 -->
-                        <Frame Padding="10" WidthRequest="162" HeightRequest="115" BackgroundColor="#123544" BorderColor="#3DC1F9" CornerRadius="20">
+                        <Frame Padding="10" WidthRequest="162" HeightRequest="115" BackgroundColor="#123544" BorderColor="{StaticResource DefaultCyan}" CornerRadius="20">
                             <StackLayout HorizontalOptions="Center" VerticalOptions="Center" Spacing="10">
                                 <!-- Interior -->
                                 <StackLayout Padding="5" Spacing="10">
@@ -55,7 +55,7 @@
                             </StackLayout>
                         </Frame>
                         <!-- Home HostHeader3 -->
-                        <Frame Padding="10" WidthRequest="162" HeightRequest="115" BackgroundColor="#123544" BorderColor="#3DC1F9" CornerRadius="20">
+                        <Frame Padding="10" WidthRequest="162" HeightRequest="115" BackgroundColor="#123544" BorderColor="{StaticResource DefaultCyan}" CornerRadius="20">
                             <StackLayout HorizontalOptions="Center" VerticalOptions="Center" Spacing="10">
                                 <!-- Interior -->
                                 <StackLayout Padding="5" Spacing="10">
@@ -112,14 +112,21 @@
             <!--Row 2-->
             <Frame Grid.Row="1"
                    Background="{StaticResource DefaultBlack}" 
-                   BorderColor="{StaticResource PickerBorderColor}" 
+                   BorderColor="{StaticResource DefaultPurple}" 
                    HeightRequest="60"
                    Padding="-10">
-                <Picker x:Name="drpAction" TextColor="{StaticResource PickerTextColor}" SelectedItem="Option 2">
+                <Picker x:Name="drpAction" 
+                        VerticalOptions="Center"
+                        FontFamily="SFProText"
+                        TextColor="{StaticResource DefaultCyan}"
+                        HorizontalOptions="Start"
+                        Margin="0,0,0,0"
+                        FontAttributes="None"
+                        SelectedItem="Invite and Photo">
                     <Picker.ItemsSource>
                         <x:Array Type="{x:Type x:String}">
                             <x:String>Option 1</x:String>
-                            <x:String>Option 2</x:String>
+                            <x:String>Invite and Photo</x:String>
                             <x:String>Option 3</x:String>
                         </x:Array>
                     </Picker.ItemsSource>
