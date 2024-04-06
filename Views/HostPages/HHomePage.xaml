@@ -120,7 +120,8 @@
                         FontFamily="SFProText"
                         TextColor="{StaticResource DefaultCyan}"
                         HorizontalOptions="Start"
-                        Margin="0,0,0,0"
+                        Margin="30,0,0,0"
+                        WidthRequest="200"
                         FontAttributes="None"
                         SelectedItem="Invite and Photo">
                     <Picker.ItemsSource>
@@ -151,12 +152,14 @@
         <!--Row 6-->
         <components:GradientButton
             Grid.Row="5"
+            Margin="0,10,0,0"
             Text="Send"
             Width="100"
             Height="60"
             />
         <!--Row 7-->
         <components:HostTabBar
+            
             VerticalOptions="End"
             Grid.Row="6"
             />
