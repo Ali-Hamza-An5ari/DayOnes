@@ -13,6 +13,12 @@ public partial class HAssetsNManagementPage : ContentPage
 
     private void btnBack_Click(object sender, EventArgs e)
     {
+        Shell.Current.GoToAsync(nameof(HProfilePage));
+    }
 
+    private void btnSigColor_Click(object sender, EventArgs e)
+    {
+
+        Shell.Current.GoToAsync(nameof(HPageHSigPenColorEditPage));
     }
 }

@@ -23,6 +23,12 @@ public partial class HDMDetailsList : ContentPage
 
     private void btnBack_Click(object sender, EventArgs e)
     {
+        Shell.Current.GoToAsync(nameof(HDMDetailsList));
 
+    }
+
+    private void btnDM_Click(object sender, TappedEventArgs e)
+    {
+        Shell.Current.GoToAsync(nameof(HDMDetailsPage));
     }
 }

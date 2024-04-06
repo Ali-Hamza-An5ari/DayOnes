@@ -62,7 +62,7 @@ ii. The URLs for
 
     private void lblQuickStart_Tapped(object sender, TappedEventArgs e)
     {
-        Shell.Current.GoToAsync(nameof(FQuickStartPage));
+        Shell.Current.GoToAsync(nameof(HQuickStartPage));
     }
 
     private void btnLogout_Click(object sender, EventArgs e)

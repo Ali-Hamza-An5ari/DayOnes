@@ -87,6 +87,7 @@
                 Grid.Column="3"
                 Text="Sig Color"
                 Margin="5,0,5,0"
+                OnClick="btnSigColor_Click"
                 />
 
         </Grid>

@@ -68,6 +68,7 @@
                     Text="Msg All Fans"
                     Width="100"
                     FontSize="10"
+                OnClick="btnFans_Click"
                     
                     />
             </Grid>
@@ -107,9 +108,15 @@
             Text="Welcome to my DayOnes group! This exclusive oasis is the best place to interact with me! Your replies are private to me and not seen by the rest of the group. And this is really me, not a PR team! So get ready to follow me on this journey as a personal friend! ❤️"
             TextColor="{StaticResource DefaultWhite}"
             BackgroundColor="{StaticResource DefaultBlack}"
-            />
-        
-        <!--Row 6-->
+            
+                >
+
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="lblPost_Tap"/>
+            </Label.GestureRecognizers>
+            </Label>
+
+            <!--Row 6-->
 
         <Grid
             Grid.Row="5"
@@ -131,6 +138,7 @@
                 Grid.Column="1"
                 Text="Msg Grp"
                 Width="80"
+                OnClick="btnGrp_Click"
                 />
         </Grid>
         
@@ -155,6 +163,7 @@
                 Grid.Column="1"
                 Text="Msg Grp"
                 Width="80"
+                OnClick="btnGrp_Click"
                 />
         </Grid>
     </Grid>

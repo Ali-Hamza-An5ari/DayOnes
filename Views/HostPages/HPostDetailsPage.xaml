@@ -148,8 +148,12 @@
                             
                             />
                     </DataTemplate>
+                    
                 </CollectionView.ItemTemplate>
-                
+                <CollectionView.GestureRecognizers>
+
+                    <TapGestureRecognizer Tapped="btnDM_Click"/>
+                </CollectionView.GestureRecognizers>
             </CollectionView>
             
         </ScrollView>

@@ -1,4 +1,5 @@
 using DayOnes.Models;
+using DayOnes.Views.HostPages;
 
 namespace DayOnes.Views;
 
@@ -24,11 +25,18 @@ public partial class HPostDetailsPage : ContentPage
     private void btnBack_Click(object Artist, EventArgs e)
     {
 
+        Shell.Current.GoToAsync(nameof(HPOSTURSentMsgsPage));
     }
 
     private void btnDM_Click(object Artist, EventArgs e)
     {
 
+        Shell.Current.GoToAsync(nameof(HDMDetailsList));
+    }
+
+    private void btnDM_Click(object sender, TappedEventArgs e)
+    {
+        Shell.Current.GoToAsync(nameof(HDMDetailsList));
     }
 }
 /*
