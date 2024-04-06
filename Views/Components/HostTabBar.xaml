@@ -163,7 +163,7 @@
                             >
 
                             <Image.GestureRecognizers>
-                                <TapGestureRecognizer Tapped="lblNotification_Tapped" />
+                                <TapGestureRecognizer Tapped="lblSetting_Tapped" />
                             </Image.GestureRecognizers>
                         </Image>
                         <!--<Label 

@@ -1,3 +1,5 @@
+using DayOnes.Views.HostPages;
+
 namespace DayOnes.Views.Components;
 
 public partial class HostTabBar : ContentView
@@ -25,7 +27,7 @@ public partial class HostTabBar : ContentView
     {
         Temp.currenttabbarpage = 1;
 
-        Shell.Current.GoToAsync(nameof(FHomePage));
+        Shell.Current.GoToAsync(nameof(HHomePage));
         //lblHome.TextColor = Color.FromHex("#E70971");
         //   OnTapped(CurrentPage1);
 
@@ -35,7 +37,7 @@ public partial class HostTabBar : ContentView
     {
         Temp.currenttabbarpage = 2;
 
-        Shell.Current.GoToAsync(nameof(FD1MsgsPage));
+        Shell.Current.GoToAsync(nameof(HPOSTURSentMsgsPage));
         //lblMsgs.TextColor = Color.FromHex("#E70971");
         //   OnTapped(CurrentPage1);
 
@@ -46,7 +48,7 @@ public partial class HostTabBar : ContentView
 
         //lblDM.TextColor = Color.FromHex("#E70971");
         Temp.currenttabbarpage = 3;
-        Shell.Current.GoToAsync(nameof(FDirectMsgsPage));
+        Shell.Current.GoToAsync(nameof(HDMDetailsList));
 
         //   OnTapped(CurrentPage1);
 
@@ -57,7 +59,7 @@ public partial class HostTabBar : ContentView
         Temp.currenttabbarpage = 4;
 
         //lblMyStuff.TextColor = Color.FromHex("#E70971");
-        Shell.Current.GoToAsync(nameof(FMyCollocationPage));
+        Shell.Current.GoToAsync(nameof(HSettingsPage));
         // OnTapped(CurrentPage1);
 
     }
@@ -132,5 +134,14 @@ public partial class HostTabBar : ContentView
 
         }
 
+    }
+
+    private void lblSetting_Tapped(object sender, TappedEventArgs e)
+    {
+
+        Temp.currenttabbarpage = 4;
+
+        //lblMyStuff.TextColor = Color.FromHex("#E70971");
+        Shell.Current.GoToAsync(nameof(HSettingsPage));
     }
 }

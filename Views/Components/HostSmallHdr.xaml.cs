@@ -6,4 +6,10 @@ public partial class HostSmallHdr : ContentView
 	{
 		InitializeComponent();
 	}
+
+    private void imgProfile_Click(object sender, TappedEventArgs e)
+    {
+
+        Shell.Current.GoToAsync(nameof(HProfilePage));
+    }
 }

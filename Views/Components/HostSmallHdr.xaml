@@ -42,7 +42,7 @@
                       CornerRadius="25"
                     >
                 <toolkit:AvatarView.GestureRecognizers>
-                    <!--<TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>-->
+                    <TapGestureRecognizer Tapped="imgProfile_Click"/>
 
                 </toolkit:AvatarView.GestureRecognizers>
             </toolkit:AvatarView>
