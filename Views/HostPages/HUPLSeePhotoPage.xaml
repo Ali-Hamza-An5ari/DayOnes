@@ -15,13 +15,12 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <components:GradientButton
+        <components:GradientImageButton
             HorizontalOptions="EndAndExpand"
             Grid.Row="0"
-             Text="🔙" 
-             FontSize="25"
-             Width="90" 
-             Height="60" 
+            ImageSource="back.png"
+             Width="30" 
+             Height="30" 
              Name="btnBack" 
              OnClick="btnBack_Click"
     
@@ -41,7 +40,8 @@
                 StrokeThickness="4"
                 StrokeDashOffset="5"
                     StrokeDashArray="1,1"
-                    HeightRequest="80"
+                    HeightRequest="92"
+                    WidthRequest="114"
                 Padding="5,5"
                     Margin="0,0,55,15"
                 HorizontalOptions="End"
@@ -49,7 +49,7 @@
                     
                     
                     >
-                <Image x:Name="imgSig" WidthRequest="70" HorizontalOptions="End" VerticalOptions="End"  />
+                <Image x:Name="imgSig" HorizontalOptions="End" VerticalOptions="End"  />
             </Border>
             
         </Grid>

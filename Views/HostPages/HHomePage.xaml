@@ -80,7 +80,7 @@
         </StackLayout>
 
         <!--Row 4-->
-        <StackLayout Grid.Row="3" Padding="20" >
+        <StackLayout Grid.Row="3" Padding="20" WidthRequest="357" HeightRequest="56" >
             <Label Text="Choose Distance:" FontSize="20" FontFamily="SF Pro Text" TextColor="#FFFFFF"/>
             <Slider 
                 x:Name="distanceSlider" 
@@ -158,7 +158,8 @@
             Grid.Row="5"
             Margin="0,10,0,0"
             Text="Send"
-            Width="100"
+            FontSize="25"
+            Width="223"
             Height="60"
             />
         <!--Row 7-->

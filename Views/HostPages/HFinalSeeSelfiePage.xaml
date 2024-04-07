@@ -23,7 +23,7 @@
         />
         
         <Grid Grid.Row="1" >
-            <Image Source="singer.png" WidthRequest="390" HeightRequest="400" />
+            <Image Source="singer.png" WidthRequest="390" HeightRequest="657" />
 
 
             <Border Stroke="#cc0000"
@@ -31,7 +31,8 @@
                 StrokeThickness="4"
                 StrokeDashOffset="5"
                     StrokeDashArray="1,1"
-                    HeightRequest="80"
+                    HeightRequest="168"
+                    WidthRequest="151"
                 Padding="5,5"
                     Margin="0,0,55,15"
                 HorizontalOptions="End"
@@ -39,7 +40,7 @@
                     
                     
                     >
-                <Image x:Name="imgSig" WidthRequest="70" HorizontalOptions="End" VerticalOptions="End"  />
+                <Image x:Name="imgSig"  HorizontalOptions="End" VerticalOptions="End"  />
             </Border>
         </Grid>
         <!--<Image 

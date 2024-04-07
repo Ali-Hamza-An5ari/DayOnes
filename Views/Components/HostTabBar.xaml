@@ -9,7 +9,7 @@
 
         <Frame BorderColor="{StaticResource DefaultBlack}"
        HasShadow="True"
-       WidthRequest="400"
+       WidthRequest="390"
        HeightRequest="66"
                 VerticalOptions="End" HorizontalOptions="FillAndExpand"
                >

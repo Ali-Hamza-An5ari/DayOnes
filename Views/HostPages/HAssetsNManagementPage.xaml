@@ -71,6 +71,7 @@
                 ImageSource="plus.png"
                 Grid.Column="1"
                 Margin="5,0,5,0"
+                OnClick="btnSigPlus_Click"
                 Width="50"
                 />
 
@@ -78,6 +79,7 @@
             <components:GradientImageButton
                 ImageSource="minus.png"
                 Grid.Column="2"
+                OnClick="btnSigMinus_Click"
                 Margin="5,0,5,0"
                 Width="50"
                 />
@@ -103,11 +105,11 @@
         
         <!--Row 6-->
 
+
         <ScrollView 
                 Grid.Row="5"
-                Orientation="Horizontal"
-                HeightRequest="100"
-            >
+                HeightRequest="120"
+                Orientation="Horizontal">
 
             <CollectionView 
                 x:Name="listSigs">
@@ -130,7 +132,7 @@
                 </CollectionView.ItemTemplate>
             </CollectionView>
         </ScrollView>
-        
+
         <!--Row 7-->
 
         <Grid Grid.Row="6">
@@ -159,6 +161,7 @@
                 ImageSource="plus.png"
                 Grid.Column="1"
                 Margin="5,0,5,0"
+                OnClick="btnPlus_Clicked"
                 Width="50"
                 />
 
@@ -166,6 +169,7 @@
             <components:GradientImageButton
                 ImageSource="minus.png"
                 Grid.Column="2"
+                OnClick="btnMinus_Click"
                 Margin="5,0,5,0"
                 Width="50"
                 />
@@ -189,7 +193,39 @@
         
         <!--Row 9-->
 
+
         <ScrollView 
+                Grid.Row="8"
+                HeightRequest="120"
+            WidthRequest="352"
+                Orientation="Horizontal">
+
+            <!--<Image
+                    Source="sig2.png"
+                    />-->
+
+            <CollectionView 
+                x:Name="listImgs">
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout Orientation="Horizontal" />
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+
+                        <Image
+                                Source="{Binding ImageSource}"
+                            >
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="imgImg_Click"/>
+                            </Image.GestureRecognizers>
+
+                        </Image>
+                    </DataTemplate>
+
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </ScrollView>
+        <!--<ScrollView 
                 Grid.Row="8"
                 Orientation="Horizontal"
             Margin="0,-60,0,0"
@@ -215,7 +251,7 @@
                         WidthRequest="100"
                         />
             </HorizontalStackLayout>
-        </ScrollView>
+        </ScrollView>-->
 
         <!--Row 10-->
         <components:HostTabBar

@@ -24,7 +24,7 @@
             Grid.Row="1"
             Source="singer.png"
             WidthRequest="390"
-            HeightRequest="400"
+            HeightRequest="607"
             />
 
         <Grid Grid.Row="2">

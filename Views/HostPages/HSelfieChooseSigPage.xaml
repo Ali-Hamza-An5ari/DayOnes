@@ -25,7 +25,7 @@
             Grid.Row="1"
             Source="singer.png"
             WidthRequest="390"
-            HeightRequest="400"
+            HeightRequest="548"
             />
 
         <Grid Grid.Row="2">
@@ -71,6 +71,7 @@
             <ScrollView 
                 Grid.Row="2"
                 HeightRequest="120"
+                WidthRequest="390"
                 Orientation="Horizontal">
 
                 <!--<Image
@@ -97,28 +98,6 @@
 
                     </CollectionView.ItemTemplate>
                 </CollectionView>
-                <!--<HorizontalStackLayout>
-                    
-                    <HorizontalStackLayout.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="layoutSig_Tap"/>
-                    </HorizontalStackLayout.GestureRecognizers>
-                    <Image 
-                        Source="sig3.png"
-                        WidthRequest="70"
-                        />
-                    <Image 
-                        Source="sig2.png"
-                        WidthRequest="70"
-                        />
-                    <Image 
-                        Source="sig3.png"
-                        WidthRequest="70"
-                        />
-                    <Image 
-                        Source="sig2.png"
-                        WidthRequest="70"
-                        />
-                </HorizontalStackLayout>-->
             </ScrollView>
         </Grid>
     </Grid>
