@@ -91,13 +91,12 @@
                 </Frame>
 
                 <!--Button-->
-                <components:GradientButton
+                <components:GradientImageButton
                 Grid.Column="3"
                 Margin="10"
-                 Text="🔙" 
-                 Width="60" 
-                 Height="30" 
-                            FontSize="18"
+                 Width="30" 
+                 Height="30"
+                ImageSource="back.png"
                  Name="btnBack" 
                  OnClick="btnBack_Click"
                 
