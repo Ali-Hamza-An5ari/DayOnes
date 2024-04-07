@@ -36,7 +36,7 @@
         />
 
         <!--Row 4-->
-        <ScrollView Grid.Row="3" Orientation="Vertical">
+        <ScrollView Grid.Row="3" Orientation="Vertical" HeightRequest="380">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
@@ -68,7 +68,7 @@
                         Text="Your Signatures"
                         TextColor="{StaticResource DefaultWhite}"
                         FontFamily="SFProText"
-                        FontSize="18"
+                        FontSize="15"
                         Margin="15"
                         WidthRequest="161"
                         HeightRequest="24"
@@ -82,7 +82,7 @@
                         Text="Choose Sig"
                         Width="90"
                         Height="30"
-                        Margin="5,0,5,0"
+                        Margin="15"
                         OnClick="btnSig_Click"
                     />
 
@@ -90,7 +90,8 @@
                     <BoxView  
                         Grid.Row="2"
                         Grid.ColumnSpan="2"
-                        HeightRequest="1" 
+                        HeightRequest="1"  
+                    Color="{StaticResource DefaultPurple}" 
                         BackgroundColor="{StaticResource DefaultPurple}" 
                     />
                 </Grid>
@@ -101,14 +102,25 @@
                     HeightRequest="120"
                     WidthRequest="352"
                     Orientation="Horizontal">
-                    <CollectionView x:Name="listSigs">
+
+                    <CollectionView 
+                x:Name="listSigs">
                         <CollectionView.ItemsLayout>
                             <LinearItemsLayout Orientation="Horizontal" />
                         </CollectionView.ItemsLayout>
                         <CollectionView.ItemTemplate>
                             <DataTemplate>
-                                <Image Source="{Binding ImageSource}" />
+
+                                <Image
+                                Source="{Binding ImageSource}"
+                            >
+                                    <Image.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="imgSig_Click"/>
+                                    </Image.GestureRecognizers>
+
+                                </Image>
                             </DataTemplate>
+
                         </CollectionView.ItemTemplate>
                     </CollectionView>
                 </ScrollView>
@@ -118,7 +130,9 @@
                     Grid.Row="2"
                     HeightRequest="1" 
                     WidthRequest="352"
+                    Margin="0,0,0,4"
                     BackgroundColor="{StaticResource DefaultPurple}" 
+                    Color="{StaticResource DefaultPurple}" 
                 />
 
                 <!--Row 4-->
@@ -168,26 +182,60 @@
                         Text="Choose Pen Color"
                         Width="120"
                         Height="30"
+                        VerticalOptions="Center"
                     />
 
-                    <Grid Grid.Column="1" WidthRequest="231" HeightRequest="116" BackgroundColor="{StaticResource DefaultBlack}">
-                        <!-- Rectangle 28 -->
-                        <BoxView Color="{StaticResource DefaultBlack}" WidthRequest="40" HeightRequest="40" Margin="35,12,0,0" />
+                    <Grid Grid.Column="1"  WidthRequest="231" HeightRequest="116" BackgroundColor="{StaticResource DefaultBlack}">
+                        <!-- grid for colors -->
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
 
-                        <!-- Rectangle 26 -->
-                        <BoxView Color="{StaticResource DefaultWhite}" WidthRequest="40" HeightRequest="40" Margin="155,12,0,0" />
+                            <HorizontalStackLayout
+                                Grid.Row="0"
+                                >
+
+                                <Frame 
+                            BorderColor="{StaticResource DefaultWhite}"
+                            BackgroundColor="{StaticResource DefaultBlack}" 
+                            WidthRequest="30" 
+                            HeightRequest="30" 
+                            CornerRadius="0"
+                            
+                            Margin="20,12,0,5" />
+
+                                <!-- Rectangle 26 -->
+                                <Frame 
+                            BackgroundColor="{StaticResource DefaultWhite}" 
+                            WidthRequest="30" HeightRequest="30" 
+                            CornerRadius="0"
+                            Margin="55,12,0,5" />
+                            </HorizontalStackLayout>
+                            
+                            <!--ROw 2-->
+                        </Grid>
 
                         <!-- Rectangle 29 -->
-                        <BoxView Color="#AF3DFF" WidthRequest="40" HeightRequest="40" Margin="10,64,0,0" />
+                        <Frame 
+                            BackgroundColor="#AF3DFF" 
+                            WidthRequest="30" 
+                            HeightRequest="30" 
+                            CornerRadius="0"
+                            Margin="10,75,10,0" />
 
                         <!-- Rectangle 30 -->
-                        <BoxView Color="#55FFE1" WidthRequest="40" HeightRequest="40" Margin="67,64,0,0" />
+                        <Frame BackgroundColor="#55FFE1"
+                            CornerRadius="0" WidthRequest="30" HeightRequest="30" Margin="67,64,0,0" />
 
                         <!-- Rectangle 31 -->
-                        <BoxView Color="#FF3B94" WidthRequest="40" HeightRequest="40" Margin="124,64,0,0" />
+                        <Frame BackgroundColor="#FF3B94"
+                            CornerRadius="0" WidthRequest="30" HeightRequest="30" Margin="124,64,0,0" />
 
                         <!-- Rectangle 32 -->
-                        <BoxView Color="#A6FD29" WidthRequest="40" HeightRequest="40" Margin="181,64,0,0" />
+                        <Frame BackgroundColor="#A6FD29"
+                            CornerRadius="0" WidthRequest="30" HeightRequest="30" Margin="181,64,0,0" />
                     </Grid>
                 </Grid>
             </Grid>
