@@ -55,6 +55,16 @@ public partial class HPageHSigPenColorEditPage : ContentPage
         // Convert the Color object to a hexadecimal string
         SelectedColorHex = backgroundColor.ToHex();
 
+        //SelectedColorHex is obtained from the color boxes.
+        //The app should call the .net7 C# class to change all
+        //pixels to a color
+    }
 
+    private void btnSave_Click(object sender, EventArgs e)
+    {
+        //Here developer can get Image from imgEdit.Source in a format which needed to be saved
+        /*a.Saves the signature in the list of signatures in memory
+        b.Execute API: AddPriSig passing the Username to save the modified
+        picture at AWS*/
     }
 }

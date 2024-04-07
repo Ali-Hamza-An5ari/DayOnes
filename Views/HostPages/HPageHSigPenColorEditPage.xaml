@@ -113,7 +113,7 @@
 
                                 <Image
                                 Source="{Binding ImageSource}"
-                            >
+                                >
                                     <Image.GestureRecognizers>
                                         <TapGestureRecognizer Tapped="imgSig_Click"/>
                                     </Image.GestureRecognizers>
@@ -148,6 +148,7 @@
                         Width="120"
                         Height="30"
                         VerticalOptions="Center"
+                        OnClick="btnSave_Click"
                     />
 
                     <!--Row 2-->
@@ -209,14 +210,23 @@
                             HeightRequest="40" 
                             CornerRadius="0"
                             
-                            Margin="20,12,0,5" />
+                            Margin="20,12,0,5"    >
+                                    <Frame.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="frmColor_Tapped" />
+                                    </Frame.GestureRecognizers>
 
-                                <!-- Rectangle 26 -->
+                                </Frame>
+
                                 <Frame 
                             BackgroundColor="{StaticResource DefaultWhite}" 
                             WidthRequest="40" HeightRequest="40" 
                             CornerRadius="0"
-                            Margin="55,12,0,5" />
+                            Margin="55,12,0,5"     >
+                                    <Frame.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="frmColor_Tapped" />
+                                    </Frame.GestureRecognizers>
+
+                                </Frame>
                             </HorizontalStackLayout>
                             
                             <!--ROw 2-->
@@ -241,20 +251,35 @@
                             CornerRadius="0" 
                                        WidthRequest="40" 
                                        HeightRequest="40" 
-                                       Margin="0,5,10,0" />
+                                       Margin="0,5,10,0"     >
+                                    <Frame.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="frmColor_Tapped" />
+                                    </Frame.GestureRecognizers>
+
+                                </Frame>
 
                                 <Frame 
                                     BackgroundColor="#FF3B94"
                             CornerRadius="0" WidthRequest="40" 
                                        HeightRequest="40" 
-                                    Margin="0,5,10,0" />
+                                    Margin="0,5,10,0"     >
+                                    <Frame.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="frmColor_Tapped" />
+                                    </Frame.GestureRecognizers>
+
+                                </Frame>
 
                                 <Frame 
                                     BackgroundColor="#A6FD29"
                             CornerRadius="0" 
                                     WidthRequest="40" 
-                                    HeightRequest="40" Margin="0,5, 0,0" />
-                            
+                                    HeightRequest="40" Margin="0,5, 0,0"    >
+                                    <Frame.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="frmColor_Tapped" />
+                                    </Frame.GestureRecognizers>
+
+                                </Frame>
+
                             </HorizontalStackLayout>
                         </Grid>
 
