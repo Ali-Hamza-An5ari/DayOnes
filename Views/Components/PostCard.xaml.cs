@@ -56,6 +56,10 @@ public partial class PostCard : ContentView
 
     #endregion
 
+
+    public event EventHandler<EventArgs> PinTapped;
+    public event EventHandler<EventArgs> FanTapped;
+
     #region Properties
 
 
@@ -82,6 +86,18 @@ public partial class PostCard : ContentView
 
     #endregion
 
+
+    private void OnPinTapped(object sender, EventArgs e)
+    {
+        PinTapped?.Invoke(sender, e);
+    }
+
+
+    private void OnFanTapped(object sender, EventArgs e)
+    {
+        FanTapped?.Invoke(sender, e);
+    }
+
     public PostCard()
 	{
 		InitializeComponent();
@@ -90,4 +106,5 @@ public partial class PostCard : ContentView
         else
             this.imgPin.Source = "pin.png";
     }
+
 }

@@ -31,6 +31,7 @@ public partial class HReviewPhotoPage : ContentPage
 
     private void imgUpload_Tap(object sender, TappedEventArgs e)
     {
+        //Execute API: SendPictoUpload
         Shell.Current.GoToAsync(nameof(HHomeUploadedPage));
 
     }

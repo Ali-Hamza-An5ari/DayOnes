@@ -9,6 +9,10 @@ public partial class HUPLSeePhotoPage : ContentPage
         {
             IsVisible = false
         });
+
+        this.imgSig.Source = HUPLPhotoChooseSigPage.SelectedSigID.ImageSource;
+        string sigID = HUPLPhotoChooseSigPage.SelectedSigID.ID;
+        //Invoke API: Get AllSigs100
     }
 
     private void btnBack_Click(object sender, EventArgs e)

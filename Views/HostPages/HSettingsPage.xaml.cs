@@ -65,8 +65,11 @@ ii. The URLs for
         Shell.Current.GoToAsync(nameof(HQuickStartPage));
     }
 
-    private void btnLogout_Click(object sender, EventArgs e)
+    private async void btnLogout_Click(object sender, EventArgs e)
     {
+
+        var res = await DisplayAlert("Confirmation", "Do you want to quit?", "Yes", "No");
+        
         /* a.Launch a iOS Alert pop-up asking of the user really wants to quit the app
 i.Yes – exit the app
 ii.No - close the Alert Box *

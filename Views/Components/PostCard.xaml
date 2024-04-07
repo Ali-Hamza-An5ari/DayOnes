@@ -36,7 +36,17 @@
                  >
                     <Frame CornerRadius="25" WidthRequest="50" HeightRequest="50" Padding="0" HasShadow="False"
                         HorizontalOptions="Start" VerticalOptions="Center">
-                        <Image x:Name="imgProfile" Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+                        <Image 
+                            x:Name="imgProfile" 
+                            Aspect="AspectFill" 
+                            HorizontalOptions="FillAndExpand" 
+                            VerticalOptions="FillAndExpand" >
+
+
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnFanTapped"></TapGestureRecognizer>
+                            </Image.GestureRecognizers>
+                        </Image>
                     </Frame>
                 </toolkit:AvatarView>
 
@@ -58,7 +68,12 @@
                     x:Name="imgPin"
                     Width="30"
                     HorizontalOptions="End"
-                    />
+                    >
+
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnPinTapped"></TapGestureRecognizer>
+                    </Image.GestureRecognizers>
+                </Image>
             </Grid>
 
             <!--Row 2-->

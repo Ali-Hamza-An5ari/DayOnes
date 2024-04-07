@@ -53,7 +53,7 @@ public partial class HHomeSentCountdownPage : ContentPage
             }
             //btnInvites.IsEnabled = true;
             isCountdownRunning = false;
-            DisplayAlert("Invites Sent...", "Your Invites have been sent!", "OK");
+            await DisplayAlert("Invites Sent...", "Your Invites have been sent!", "OK");
 
 
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsButtonEnabled)));

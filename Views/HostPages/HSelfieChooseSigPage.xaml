@@ -70,8 +70,34 @@
             
             <ScrollView 
                 Grid.Row="2"
+                HeightRequest="120"
                 Orientation="Horizontal">
-                <HorizontalStackLayout>
+
+                <!--<Image
+                    Source="sig2.png"
+                    />-->
+
+                <CollectionView 
+                x:Name="listSigs">
+                    <CollectionView.ItemsLayout>
+                        <LinearItemsLayout Orientation="Horizontal" />
+                    </CollectionView.ItemsLayout>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+
+                            <Image
+                                Source="{Binding ImageSource}"
+                            >
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="imgSig_Click"/>
+                                </Image.GestureRecognizers>
+
+                            </Image>
+                        </DataTemplate>
+
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+                <!--<HorizontalStackLayout>
                     
                     <HorizontalStackLayout.GestureRecognizers>
                         <TapGestureRecognizer Tapped="layoutSig_Tap"/>
@@ -92,7 +118,7 @@
                         Source="sig2.png"
                         WidthRequest="70"
                         />
-                </HorizontalStackLayout>
+                </HorizontalStackLayout>-->
             </ScrollView>
         </Grid>
     </Grid>

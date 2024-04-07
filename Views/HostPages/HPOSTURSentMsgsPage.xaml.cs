@@ -1,9 +1,12 @@
 using DayOnes.Models;
+using DayOnes.Views.Components;
 
 namespace DayOnes.Views;
 
 public partial class HPOSTURSentMsgsPage : ContentPage
 {
+    //This is Persisted GroupName.
+    public static string GroupName = "";
     List<HostPost> hostPosts;
 	public HPOSTURSentMsgsPage()
 	{
@@ -13,6 +16,11 @@ public partial class HPOSTURSentMsgsPage : ContentPage
             IsVisible = false
         });
 
+       /* Invoke AWS API: GetHostPosts
+        a.Pass the Username.The API will return a lot of
+        data*/
+
+        //this is test data. the original will be fetched from API
         hostPosts = new List<HostPost>();
 
         hostPosts.Add(new()
@@ -47,7 +55,7 @@ public partial class HPOSTURSentMsgsPage : ContentPage
 
     private void lblPost_Tap(object sender, TappedEventArgs e)
     {
-        Shell.Current.GoToAsync(nameof(HPostDetailsPage));
+        //Shell.Current.GoToAsync(nameof(HPostDetailsPage));
     }
 
     private void btnGrp_Click(object sender, EventArgs e)
@@ -58,5 +66,17 @@ public partial class HPOSTURSentMsgsPage : ContentPage
     private void btnFans_Click(object sender, EventArgs e)
     {
         Shell.Current.GoToAsync(nameof(HNewALLPostPage));
+    }
+
+    private void HostPost_Tapped(object sender, TappedEventArgs e)
+    {
+        HostPostContainer tappedPost = (HostPostContainer)sender;
+
+        
+        HostPostContainer selectedItem = (HostPostContainer)tappedPost.BindingContext;
+
+        
+        GroupName = selectedItem.GroupName;
+        Shell.Current.GoToAsync(nameof(HPostDetailsPage));
     }
 }

@@ -23,13 +23,110 @@
         </Grid.RowDefinitions>
         
         <!--Row 1-->
-        <components:HostSmallHdr/>
+        <components:HostSmallHdr
+            Grid.Row="0"
+            />
+        
         <!--Row 2-->
+        <components:FanTitleBar
+            Grid.Row="1"
+            />
+        
         <!--Row 3-->
+        <components:GradientImageButton
+            Grid.Row="2"
+            ImageSource="back.png"
+            Width="60"
+            Height="60"
+            VerticalOptions="Center"
+            HorizontalOptions="End"
+            Margin="0,10,20,10"
+            />
+        
         <!--Row 4-->
+        <Grid
+            Grid.Row="3"
+            VerticalOptions="Center"
+            WidthRequest="200"
+            >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            
+            <!--Column 1-->
+            <Label 
+                Grid.Column="0"
+                Grid.Row="0"
+                Text="Your Signatures"
+                TextColor="{StaticResource DefaultWhite}"
+                FontFamily="SFProText"
+                FontSize="18"
+                Margin="5,0,5,0"
+                VerticalOptions="Center"
+                FontAttributes="Bold"
+                />
+            
+            <!--Column 2-->
+
+            <components:GradientButton
+                Grid.Column="1"
+                Grid.Row="0"
+                Text="Choose Sig"
+                Margin="5,0,5,0"
+                OnClick="btnSig_Click"
+                />
+
+            <!--Row 2-->
+            <BoxView  
+                Grid.Row="1"
+                Grid.ColumnSpan="2"
+                HeightRequest="1" 
+                BackgroundColor="{StaticResource DefaultPurple}" 
+                Color="{StaticResource DefaultPurple}"  />
+
+        </Grid>
+        
         <!--Row 5-->
+        <ScrollView 
+         Grid.Row="4"
+         Orientation="Horizontal"
+         HeightRequest="100"
+     >
+            <HorizontalStackLayout>
+                <Image 
+                 Source="sig3.png"
+                 WidthRequest="70"
+                 />
+                <Image 
+                 Source="sig2.png"
+                 WidthRequest="70"
+                 />
+                <Image 
+                 Source="sig3.png"
+                 WidthRequest="70"
+                 />
+                <Image 
+                 Source="sig2.png"
+                 WidthRequest="70"
+                 />
+            </HorizontalStackLayout>
+        </ScrollView>
+
         <!--Row 6-->
+        <BoxView  
+                Grid.Row="5"
+                HeightRequest="1" 
+                BackgroundColor="{StaticResource DefaultPurple}" 
+                Color="{StaticResource DefaultPurple}"  />
+        
         <!--Row 7-->
+        
         <!--Row 8-->
         <!--Row 9-->
         <!--Row 10-->

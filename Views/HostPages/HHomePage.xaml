@@ -79,7 +79,7 @@
             </StackLayout>
         </StackLayout>
 
-
+        <!--Row 4-->
         <StackLayout Grid.Row="3" Padding="20" >
             <Label Text="Choose Distance:" FontSize="20" FontFamily="SF Pro Text" TextColor="#FFFFFF"/>
             <Slider 
@@ -121,6 +121,7 @@
                 <Picker x:Name="drpAction" 
                         VerticalOptions="Center"
                         FontFamily="SFProText"
+                        SelectedIndexChanged="drpAction_Change"
                         TextColor="{StaticResource DefaultCyan}"
                         HorizontalOptions="Start"
                         Margin="30,0,0,0"

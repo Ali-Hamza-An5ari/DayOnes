@@ -56,6 +56,8 @@
                             ArtistImage="{Binding ArtistImage}"
                             PostContent="{Binding PostContent}"
                             IsPinned="{Binding IsPinned}"
+                            PinTapped="imgPin_Tapped"
+                            FanTapped="imgFan_Tapped"
                             
                             />
                     </DataTemplate>

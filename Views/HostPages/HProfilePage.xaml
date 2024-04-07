@@ -492,9 +492,10 @@ TextColor="#979393"
                     HorizontalOptions="CenterAndExpand" Margin="0,10,0,0">
                         
                         <components:GradientButton 
-                            x:Name="gradientButton" 
+                            x:Name="btnSave" 
                                  Text="Save" 
                                  FontSize="20"
+                                OnClick="btnSave_Click"
 
                                 HeightRequest="80"
                                 WidthRequest="150"/>

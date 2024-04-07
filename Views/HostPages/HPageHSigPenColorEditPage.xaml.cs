@@ -10,4 +10,9 @@ public partial class HPageHSigPenColorEditPage : ContentPage
             IsVisible = false
         });
     }
+
+    private void btnSig_Click(object sender, EventArgs e)
+    {
+
+    }
 }

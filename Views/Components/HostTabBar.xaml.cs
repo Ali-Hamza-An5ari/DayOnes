@@ -35,7 +35,7 @@ public partial class HostTabBar : ContentView
 
     private void lblMsgs_Tapped(object sender, TappedEventArgs e)
     {
-        Temp.currenttabbarpage = 2;
+        Temp.currenttabbarpage = 2;     
 
         Shell.Current.GoToAsync(nameof(HPOSTURSentMsgsPage));
         //lblMsgs.TextColor = Color.FromHex("#E70971");

@@ -98,7 +98,12 @@
                             LikeCount="{Binding LikeCount}"
                             CommentCount="{Binding CommentCount}"
                             
-                            />
+                            >
+
+                            <components:HostPostContainer.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="HostPost_Tapped" />
+                            </components:HostPostContainer.GestureRecognizers>
+                        </components:HostPostContainer>
                     </DataTemplate>
 
                 </CollectionView.ItemTemplate>
