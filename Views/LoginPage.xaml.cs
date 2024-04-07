@@ -34,7 +34,7 @@ public partial class LoginPage : ContentPage
         of the data set.
                  */
 
-        Shell.Current.GoToAsync(nameof(HHomePage));
+        Shell.Current.GoToAsync(nameof(HPageHSigPenColorEditPage));
     }
 
     private void btnSignup_Click(object sender, EventArgs e)

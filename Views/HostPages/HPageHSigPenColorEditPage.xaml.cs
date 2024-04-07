@@ -15,4 +15,9 @@ public partial class HPageHSigPenColorEditPage : ContentPage
     {
 
     }
+
+    private void imgSig_Click(object sender, TappedEventArgs e)
+    {
+
+    }
 }
