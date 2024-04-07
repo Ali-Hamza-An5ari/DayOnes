@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="DayOnes.Views.Components.HostTabBar">
@@ -9,7 +9,7 @@
 
         <Frame BorderColor="{StaticResource DefaultBlack}"
        HasShadow="True"
-       WidthRequest="390"
+       
        HeightRequest="66"
                 VerticalOptions="End" HorizontalOptions="FillAndExpand"
                >
@@ -22,7 +22,7 @@
                 </LinearGradientBrush>
             </Frame.Background>
 
-            <Grid VerticalOptions="Center" HorizontalOptions="Center" Padding="3,0,0,0">
+            <Grid VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Padding="3,0,0,0">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>

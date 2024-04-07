@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="DayOnes.Views.HPOSTURSentMsgsPage"
@@ -9,8 +9,8 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
         <!--Row 1-->
@@ -19,7 +19,7 @@
             />
         
         <!--Row 2-->
-        <Frame 
+        <Frame CornerRadius="0"
             Grid.Row="1"
             BorderColor="Transparent"
             Margin="0"
@@ -83,7 +83,7 @@
      />-->
         <ScrollView
             Grid.Row="2"
-            HeightRequest="400"
+            
             >
 
             <CollectionView 
@@ -116,7 +116,7 @@
         
         <!--Row 4-->
         <components:HostTabBar
-           Grid.Row="3"
+           Grid.Row="3"  HorizontalOptions="CenterAndExpand"
             VerticalOptions="End"
            />
         
