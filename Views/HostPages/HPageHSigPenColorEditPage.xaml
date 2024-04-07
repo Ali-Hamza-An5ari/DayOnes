@@ -158,7 +158,12 @@
                         BorderColor="{StaticResource DefaultPurple}"
                         BackgroundColor="{StaticResource DefaultBlack}"
                         VerticalOptions="Center"
-                    />
+                    >
+                        <Image 
+                            x:Name="imgEdit"
+                            />
+
+                    </Frame>
                 </Grid>
 
                 <!--Row 5-->
@@ -223,9 +228,15 @@
                             WidthRequest="40" 
                             HeightRequest="40" 
                             CornerRadius="0"
-                            Margin="10,5,10,0" />
+                            Margin="10,5,10,0" 
+                                    >
+                                    <Frame.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="frmColor_Tapped" />
+                                    </Frame.GestureRecognizers>
 
-                                
+                                </Frame>
+
+
                                 <Frame BackgroundColor="#55FFE1"
                             CornerRadius="0" 
                                        WidthRequest="40" 

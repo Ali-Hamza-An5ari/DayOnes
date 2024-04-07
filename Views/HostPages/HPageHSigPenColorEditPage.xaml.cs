@@ -6,6 +6,7 @@ public partial class HPageHSigPenColorEditPage : ContentPage
 {
     private List<SigImage> sigs;
     public static SigImage SelectedSigID = new SigImage();
+    public static string SelectedColorHex = "";
     public HPageHSigPenColorEditPage()
 	{
 		InitializeComponent();
@@ -37,8 +38,23 @@ public partial class HPageHSigPenColorEditPage : ContentPage
         // Access the BindingContext of the tapped Image to get the selected item
         SigImage selectedItem = (SigImage)tappedImage.BindingContext;
 
+        this.imgEdit.Source = selectedItem.ImageSource;
         // Now you can access the ID field of the selected item and store it in SelectedSigID
         //Passing whole image with has its ID as well.
         SelectedSigID = selectedItem;
+    }
+
+    private void frmColor_Tapped(object sender, TappedEventArgs e)
+    {
+
+        Frame tappedFrame = (Frame)sender;
+        
+        // Get the background color of the tapped Frame as a Color object
+        Color backgroundColor = tappedFrame.BackgroundColor;
+
+        // Convert the Color object to a hexadecimal string
+        SelectedColorHex = backgroundColor.ToHex();
+
+
     }
 }
