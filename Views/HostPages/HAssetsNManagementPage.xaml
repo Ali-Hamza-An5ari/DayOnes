@@ -119,14 +119,16 @@
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
 
-                        <Image
+                        <toolkit:AvatarView>
+                            <Image
                                 Source="{Binding ImageSource}"
                             >
-                            <Image.GestureRecognizers>
-                                <TapGestureRecognizer Tapped="imgSig_Click"/>
-                            </Image.GestureRecognizers>
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="imgSig_Click"/>
+                                </Image.GestureRecognizers>
 
-                        </Image>
+                            </Image>
+                        </toolkit:AvatarView>
                     </DataTemplate>
 
                 </CollectionView.ItemTemplate>

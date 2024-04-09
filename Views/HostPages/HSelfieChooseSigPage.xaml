@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="DayOnes.Views.HSelfieChooseSigPage"
              xmlns:components="clr-namespace:DayOnes.Views.Components"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              BackgroundColor="{StaticResource DefaultBlack}"
              Title="">
 
@@ -85,7 +86,7 @@
                     </CollectionView.ItemsLayout>
                     <CollectionView.ItemTemplate>
                         <DataTemplate>
-
+                            <toolkit:AvatarView>
                             <Image
                                 Source="{Binding ImageSource}"
                             >
@@ -93,7 +94,8 @@
                                     <TapGestureRecognizer Tapped="imgSig_Click"/>
                                 </Image.GestureRecognizers>
 
-                            </Image>
+                                </Image>
+                            </toolkit:AvatarView>
                         </DataTemplate>
 
                     </CollectionView.ItemTemplate>

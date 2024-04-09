@@ -111,6 +111,7 @@
                         <CollectionView.ItemTemplate>
                             <DataTemplate>
 
+                                <toolkit:AvatarView>
                                 <Image
                                 Source="{Binding ImageSource}"
                                 >
@@ -118,7 +119,8 @@
                                         <TapGestureRecognizer Tapped="imgSig_Click"/>
                                     </Image.GestureRecognizers>
 
-                                </Image>
+                                    </Image>
+                                </toolkit:AvatarView>
                             </DataTemplate>
 
                         </CollectionView.ItemTemplate>
