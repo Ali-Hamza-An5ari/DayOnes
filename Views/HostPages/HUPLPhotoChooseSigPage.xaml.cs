@@ -18,6 +18,8 @@ public partial class HUPLPhotoChooseSigPage : ContentPage
         sigs.Add(new() { ID = "2", ImageSource = "sig3.png", Name = "Sig2" });
         sigs.Add(new() { ID = "3", ImageSource = "sig2.png", Name = "Sig3" });
         sigs.Add(new() { ID = "4", ImageSource = "sig3.png", Name = "Sig4" });
+        sigs.Add(new() { ID = "5", ImageSource = "sig2.png", Name = "Sig5" });
+        sigs.Add(new() { ID = "6", ImageSource = "sig3.png", Name = "Sig6" });
 
         this.listSigs.ItemsSource = sigs;
     }

@@ -40,7 +40,7 @@
             Grid.Row="2"
             Source="selfie.png"
             WidthRequest="390"
-            HeightRequest="400"
+            HeightRequest="548"
             VerticalOptions="Start"
             />
 
@@ -88,6 +88,7 @@
 
             <ScrollView 
                 Grid.Row="2"
+                Margin="5,5,0,0"
                 HeightRequest="120"
                 Orientation="Horizontal">
 
@@ -103,7 +104,13 @@
                     <CollectionView.ItemTemplate>
                         <DataTemplate>
 
-                            <toolkit:AvatarView>
+                            <toolkit:AvatarView
+                                CornerRadius="0"
+                                BackgroundColor="Transparent"
+                                BorderColor="Transparent"
+                                WidthRequest="85"
+                                HeightRequest="90"
+                                >
                             <Image
                                 Source="{Binding ImageSource}"
                             >
