@@ -12,33 +12,43 @@
 
             <components:FanSmallHdr/>
 
-            <Label 
-            Grid.Row="0"
-            Grid.Column="0"
-            Text="DayOnes Chats"
-           FontFamily="SFProText"
-           FontSize="20"
-           FontAttributes="Bold"
-           WidthRequest="600"
-           HeightRequest="50"
-           TextColor="White"
-           HorizontalTextAlignment="Center"
-           VerticalTextAlignment="Center"
-           VerticalOptions="Start"
+            <components:FanTitleBar
+                Grid.Row="0"
+                Title="DayOnes Chats"
+                />
+
+            <ScrollView
+            Grid.Row="7"
+            Orientation="Vertical"
             >
-                <Label.Background>
-                    <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
-                        <GradientStop Color="#3A27BC" Offset="0.0" />
-                        <GradientStop Color="{StaticResource DefaultBlack}" Offset="0.5" />
-                        <GradientStop Color="#3DC1F9" Offset="1.0" />
-                    </LinearGradientBrush>
-                </Label.Background>
-            </Label>
+                <CollectionView 
+                x:Name="listChats">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
 
+                            <components:ArtistChatCard
+                            ArtistName="{Binding ArtistName}"
+                            ArtistImage="{Binding ArtistImage}"
+                            LikeCount="{Binding LikeCount}"
+                            IsLiked="{Binding IsLiked}"
+                            
+                            >
+                                <components:ArtistChatCard.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="chat_Tapped"/>
+                                </components:ArtistChatCard.GestureRecognizers>
 
-            <StackLayout Padding="20,20,20,0" HeightRequest="50" HorizontalOptions="FillAndExpand" VerticalOptions="Start">
+                            </components:ArtistChatCard>
+                        </DataTemplate>
 
-                <!-- D1 Chat Artist -->
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+
+            </ScrollView>
+
+            <!--<StackLayout Padding="20,20,20,0" HeightRequest="50" HorizontalOptions="FillAndExpand" VerticalOptions="Start">
+
+                
+                --><!-- D1 Chat Artist --><!--
                 <Frame 
                     
                 BackgroundColor="#123544"
@@ -51,11 +61,11 @@
                     </Frame.GestureRecognizers>
                     <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Center">
 
-                        <!-- Fan Picture and Name -->
+                        --><!-- Fan Picture and Name --><!--
                         <StackLayout Orientation="Horizontal" HorizontalOptions="Start" VerticalOptions="Center">
 
 
-                            <!--<Image Source="im1.jpg" WidthRequest="40" HeightRequest="40" Aspect="AspectFill" />-->
+                            --><!--<Image Source="im1.jpg" WidthRequest="40" HeightRequest="40" Aspect="AspectFill" />--><!--
 
                             <toolkit:AvatarView
                       CornerRadius="75">
@@ -67,19 +77,19 @@
                             <Label Text="Artist" FontSize="16" FontAttributes="Bold" TextColor="{StaticResource DefaultWhite}" VerticalOptions="Center" />
                         </StackLayout>
 
-                        <!-- Likes Frame -->
+                        --><!-- Likes Frame --><!--
                         <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand" VerticalOptions="Center" Padding="0,0,20,0" Spacing="8">
                             <Image Source="heart.png" WidthRequest="13.33" HeightRequest="12.23" />
                             <Label Text="10.8k" FontSize="12" FontAttributes="Bold" TextColor="{StaticResource DefaultWhite}" VerticalOptions="Center" />
                         </StackLayout>
 
                     </StackLayout>
-                    <!--<Frame.GestureRecognizers>
+                    --><!--<Frame.GestureRecognizers>
                         <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"></TapGestureRecognizer>
-                    </Frame.GestureRecognizers>-->
+                    </Frame.GestureRecognizers>--><!--
                 </Frame>
 
-            </StackLayout>
+            </StackLayout>-->
         </VerticalStackLayout>
 
         <components:FanTabBar

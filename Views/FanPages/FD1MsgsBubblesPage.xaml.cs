@@ -2,6 +2,7 @@ namespace DayOnes.Views;
 
 public partial class FD1MsgsBubblesPage : ContentPage
 {
+    public static string ChatPostID = "";
 	public FD1MsgsBubblesPage()
 	{
 		InitializeComponent();
@@ -9,7 +10,7 @@ public partial class FD1MsgsBubblesPage : ContentPage
         {
             IsVisible = false
         });
-
+        ChatPostID = FD1MsgsPage.ChatPostID;
         /* Invoke AWS API: GetHostPost
 a. Pass the ChatPostID. The API will return a lot
 of data
@@ -23,6 +24,8 @@ of data
 
     private void sendButton_Tapped(object sender, TappedEventArgs e)
     {
+        //ChatPostID is already defined
+
         var message = this.txtMessage.Text;
         /*
          collect the message passing it and the
