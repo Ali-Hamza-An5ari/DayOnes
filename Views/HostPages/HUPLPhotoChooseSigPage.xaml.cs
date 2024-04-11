@@ -1,4 +1,5 @@
 using DayOnes.Models;
+using DayOnes.Views.HostPages;
 
 namespace DayOnes.Views;
 
@@ -13,6 +14,10 @@ public partial class HUPLPhotoChooseSigPage : ContentPage
         {
             IsVisible = false
         });
+
+        //Set Uploaded image in the image shown
+        this.imgUploaded.Source = HHomePage.UploadedImageResource;
+
         sigs = new List<SigImage>();
         sigs.Add(new() { ID = "1", ImageSource = "sig2.png", Name = "Sig1" });
         sigs.Add(new() { ID = "2", ImageSource = "sig3.png", Name = "Sig2" });

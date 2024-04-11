@@ -1,4 +1,5 @@
 using DayOnes.Models;
+using DayOnes.Views.HostPages;
 using System.ComponentModel;
 
 namespace DayOnes.Views;
@@ -14,6 +15,10 @@ public partial class HSelfieChooseSigPage : ContentPage, INotifyPropertyChanged
         {
             IsVisible = false
         });
+
+        //Setting the selfie image 
+        this.imgCaptured.Source = HHomePage.CapturedImageResource;
+
         BindingContext = this;
 
         sigs = new List<SigImage>();
@@ -23,6 +28,8 @@ public partial class HSelfieChooseSigPage : ContentPage, INotifyPropertyChanged
         sigs.Add(new() { ID = "4", ImageSource = "sig3.png", Name = "Sig4" });
 
         this.listSigs.ItemsSource = sigs;
+
+        
     }
 
     private void btnCancel_Click(object sender, EventArgs e)

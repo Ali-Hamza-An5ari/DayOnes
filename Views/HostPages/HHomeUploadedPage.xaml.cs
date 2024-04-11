@@ -5,6 +5,7 @@ namespace DayOnes.Views;
 public partial class HHomeUploadedPage : ContentPage
 {
     private double distance = 0;
+    public static string ImageName = "";
 	public HHomeUploadedPage()
 	{
 		InitializeComponent();
@@ -39,6 +40,43 @@ public partial class HHomeUploadedPage : ContentPage
 
     private void btnReset_Click(object sender, EventArgs e)
     {
+
+        /*the upload area is cleared by invoking the API:
+        CLRUpload.*/
+
+        ImageName = "";
+        lblImageName.Text = "";
+
         Shell.Current.GoToAsync(nameof(HHomePage));
+    }
+
+    private async void imgAttach_Click(object sender, TappedEventArgs e)
+    {
+
+        if (MediaPicker.Default.IsCaptureSupported)
+        {
+            //TAKE PHOTO OR CAPTURE PHOTO
+            // FileResult myPhoto = await MediaPicker.Default.CapturePhotoAsync();
+
+            //LOAD PHOTO
+            FileResult myPhoto = await MediaPicker.Default.PickPhotoAsync();
+            if (myPhoto != null)
+            {
+                //save the image captured in the application.
+                string localFilePath = Path.Combine(FileSystem.CacheDirectory, myPhoto.FileName);
+                using Stream sourceStream = await myPhoto.OpenReadAsync();
+
+                using FileStream localFileStream = File.OpenWrite(localFilePath);
+                await sourceStream.CopyToAsync(localFileStream);
+
+                ImageName = localFilePath;
+                lblImageName.Text = ImageName;
+                //await Shell.Current.DisplayAlert("Success", "Image uploaded successfully", "Ok");
+            }
+        }
+        else
+        {
+            await Shell.Current.DisplayAlert("OOPS", "You device isn't supported", "Ok");
+        }
     }
 }

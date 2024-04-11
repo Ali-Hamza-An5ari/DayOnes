@@ -35,7 +35,7 @@
            
            />
         <!--</Frame>-->
-        
+            
         <components:FanTitleBar
              Grid.Row="1"
             Title="Choose Action"
@@ -43,7 +43,7 @@
 
         <Image 
             Grid.Row="2"
-            Source="selfie.png"
+            x:Name="imgUploaded"
             WidthRequest="390"
             VerticalOptions="Start"
             />

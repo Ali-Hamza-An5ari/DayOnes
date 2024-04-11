@@ -11,6 +11,7 @@ public partial class HReviewPhotoPage : ContentPage
         {
             IsVisible = false
         });
+        imgUploaded.Source = HHomePage.UploadedImageResource;
     }
 
     private void btnBack_Click(object sender, EventArgs e)

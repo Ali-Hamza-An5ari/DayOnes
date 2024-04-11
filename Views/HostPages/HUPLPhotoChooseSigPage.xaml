@@ -38,7 +38,7 @@
         <!--Row 3-->
         <Image 
             Grid.Row="2"
-            Source="selfie.png"
+            x:Name="imgUploaded"
             WidthRequest="390"
             HeightRequest="548"
             VerticalOptions="Start"

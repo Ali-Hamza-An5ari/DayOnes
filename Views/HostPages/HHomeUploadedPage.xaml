@@ -53,12 +53,17 @@
                     WidthRequest="28.44" 
                     HeightRequest="16" 
                     VerticalOptions="Center" 
-                    />
+                    >
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="imgAttach_Click"/>
+                    </Image.GestureRecognizers>
+
+                </Image>
 
                 <!-- Image Upload Text -->
                 <Label 
                     Grid.Column="1"  
-                    Text="Image Uploaded" 
+                    x:Name="lblImageName"
                     FontFamily="SF Pro Text" 
                     FontSize="20" 
                     FontAttributes="Bold" 
@@ -121,6 +126,7 @@
         <components:HostTabBar
             Grid.Row="5"
             VerticalOptions="End"
+            HorizontalOptions="FillAndExpand"
             />
     </Grid>
 </ContentPage>

@@ -11,6 +11,7 @@ public partial class HSeeSelfiePage : ContentPage
         {
             IsVisible = false
         });
+        this.imgCaptured.Source = HHomePage.CapturedImageResource;
     }
 
     private void imgCancel_Tap(object sender, TappedEventArgs e)

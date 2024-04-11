@@ -24,7 +24,7 @@
 
         <Image 
             Grid.Row="1"
-            Source="singer.png"
+            x:Name="imgCaptured"
             WidthRequest="390"
             HeightRequest="350"
             />

@@ -23,7 +23,7 @@
         />
         
         <Grid Grid.Row="1" >
-            <Image Source="singer.png" WidthRequest="390" HeightRequest="657" />
+            <Image x:Name="imgCaptured" WidthRequest="390" HeightRequest="657" />
 
 
             <Border Stroke="#cc0000"

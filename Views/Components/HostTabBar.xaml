@@ -5,9 +5,96 @@
 
     <!--A Custom tabbar to be manually render on pages-->
 
-    <VerticalStackLayout>
+    <Frame BorderColor="{StaticResource DefaultBlack}"
+       HasShadow="True"
+           CornerRadius="0"
+       VerticalOptions="End" HorizontalOptions="FillAndExpand">
 
-        <Frame BorderColor="{StaticResource DefaultBlack}"
+        <Frame.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                <GradientStop Color="#3DC1F9" Offset="0.0" />
+                <GradientStop Color="{StaticResource DefaultBlack}" Offset="0.5" />
+                <GradientStop Color="#3A27BC" Offset="1.0" />
+            </LinearGradientBrush>
+        </Frame.Background>
+
+        <Grid VerticalOptions="CenterAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <!-- Menu Grid -->
+            <Grid Grid.Row="0" HorizontalOptions="FillAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <!-- Menu 1 -->
+                <Image Grid.Column="0"
+                   x:Name="lblHome"
+                   Source="homeic.png"
+                   WidthRequest="66"
+                   HeightRequest="46.72">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="lblHome_Tapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <!-- Menu 2 -->
+                <Image Grid.Column="1"
+                   x:Name="lblMsgs"
+                   Source="msgsic.png"
+                   WidthRequest="72"
+                   HeightRequest="48">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="lblMsgs_Tapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <!-- Menu 3 -->
+                <Image Grid.Column="2"
+                   x:Name="lblDM"
+                   Source="dmic.png"
+                   WidthRequest="54"
+                   HeightRequest="50">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="lblDM_Tapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <!-- Menu 4 -->
+                <Image Grid.Column="3"
+                   x:Name="lblNotification"
+                   Source="notificationic.png"
+                   WidthRequest="66"
+                   HeightRequest="49.72">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="lblNotification_Tapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <!-- Menu 5 -->
+                <Image Grid.Column="4"
+                   x:Name="lblSetting"
+                   Source="settings.png"
+                   WidthRequest="66"
+                   HeightRequest="49.72">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="lblSetting_Tapped" />
+                    </Image.GestureRecognizers>
+                </Image>
+            </Grid>
+        </Grid>
+    </Frame>
+
+    <!--<VerticalStackLayout>-->
+
+        <!--<Frame BorderColor="{StaticResource DefaultBlack}"
        HasShadow="True"
        WidthRequest="390"
        HeightRequest="66"
@@ -31,7 +118,7 @@
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
 
-                <!--Col 1-->
+                --><!--Col 1--><!--
 
                 <Grid 
                     
@@ -44,7 +131,7 @@
                         <ColumnDefinition Width="70"/>
                     </Grid.ColumnDefinitions>
 
-                    <!--Menu 1-->
+                    --><!--Menu 1--><!--
                     <VerticalStackLayout 
                         Grid.Column="0"
                         >
@@ -60,26 +147,10 @@
                             </Image.GestureRecognizers>
                         </Image>
 
-                        <!--<Label 
-                            
-      x:Name="lblHomeTitle"
-                               Text="Home"
-       FontFamily="SFProText"
-       FontSize="12"
-       FontAttributes="None"
-       TextColor="#FFFFFF"
-       HorizontalOptions="Start"
-       VerticalOptions="Center"
-       LineBreakMode="TailTruncation"
-       LineHeight="40"
-       TextDecorations="None"
-       TextTransform="None"
-                               />-->
-
                     </VerticalStackLayout>
 
 
-                    <!--Menu 2-->
+                    --><!--Menu 2--><!--
 
                     <VerticalStackLayout 
                         Grid.Column="1"
@@ -96,25 +167,9 @@
                                 <TapGestureRecognizer Tapped="lblMsgs_Tapped" />
                             </Image.GestureRecognizers>
                         </Image>
-
-                        <!--<Label 
-                            
-                        x:Name="lblMsgsTitle"
-                               Text="Msgs"
-       FontFamily="SF Pro Text"
-       FontSize="12"
-       FontAttributes="None"
-       TextColor="#FFFFFF"
-       HorizontalOptions="Start"
-       VerticalOptions="Center"
-       LineBreakMode="TailTruncation"
-       LineHeight="40"
-       TextDecorations="None"
-       TextTransform="None"
-                               />-->
                     </VerticalStackLayout>
 
-                    <!--Menu 3-->
+                    --><!--Menu 3--><!--
 
 
                     <VerticalStackLayout 
@@ -133,7 +188,7 @@
                         </Image>
                     </VerticalStackLayout>
 
-                    <!--Menu 4-->
+                    --><!--Menu 4--><!--
 
                     <VerticalStackLayout 
                         Grid.Column="3"
@@ -150,52 +205,27 @@
                         </Image>
                     </VerticalStackLayout>
 
-                    <!--Menu 5-->
+                    --><!--Menu 5--><!--
 
                     <VerticalStackLayout 
                         Grid.Column="4"
                         >
-                        <Image 
+                    <Image 
                             x:Name="lblSetting"
                             Source="settings.png"  WidthRequest="66"
                            HeightRequest="49.72" 
                             
                             >
 
-                            <Image.GestureRecognizers>
-                                <TapGestureRecognizer Tapped="lblSetting_Tapped" />
-                            </Image.GestureRecognizers>
-                        </Image>
-                        <!--<Label 
-                        x:Name="lblNotification"
-                            HorizontalOptions="Center"
-                        Text="&#xf0f3;" TextColor="White" FontSize="30"
-                            FontFamily="FAS">
-
-                            <Label.GestureRecognizers>
-                                <TapGestureRecognizer Tapped="lblNotification_Tapped" />
-                            </Label.GestureRecognizers>
-                        </Label>
-                        <Label 
-                            
-                        x:Name="lblNotificationTitle"
-                               Text="Notification"
-       FontFamily="SFProText"
-       FontSize="12"
-       FontAttributes="None"
-       TextColor="#FFFFFF"
-       HorizontalOptions="Start"
-       VerticalOptions="Center"
-       LineBreakMode="TailTruncation"
-       LineHeight="40"
-       TextDecorations="None"
-       TextTransform="None"
-                               />-->
-                    </VerticalStackLayout>
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="lblSetting_Tapped" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                </VerticalStackLayout>
 
                 </Grid>
             </Grid>
-        </Frame>
+        </Frame>-->
 
-    </VerticalStackLayout>
+    <!--</VerticalStackLayout>-->
 </ContentView>

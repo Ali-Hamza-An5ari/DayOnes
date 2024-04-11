@@ -1,3 +1,5 @@
+using DayOnes.Views.HostPages;
+
 namespace DayOnes.Views;
 
 public partial class HUPLSeePhotoPage : ContentPage
@@ -9,6 +11,9 @@ public partial class HUPLSeePhotoPage : ContentPage
         {
             IsVisible = false
         });
+
+        //Set Uploaded image in the image shown
+        this.imgUploaded.Source = HHomePage.UploadedImageResource;
 
         this.imgSig.Source = HUPLPhotoChooseSigPage.SelectedSigID.ImageSource;
         string sigID = HUPLPhotoChooseSigPage.SelectedSigID.ID;
