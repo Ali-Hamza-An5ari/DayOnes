@@ -5,16 +5,12 @@
              xmlns:components="clr-namespace:DayOnes.Views.Components"
              BackgroundColor="{StaticResource DefaultBlack}"
              >
-    <Grid>
+    <Grid >
 
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="200"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
         <!--Row 1-->
@@ -27,10 +23,20 @@
             Title="Autographs  Invites"
         />
         
-        <!--Row 3-->
+        <Grid
+            Grid.Row="2"
+            >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        
+        <!--Row 1-->
         <!-- Outer Frame -->
         <Frame 
-            Grid.Row="2" 
+            Grid.Row="0" 
             BorderColor="#3DC1F9" 
             CornerRadius="20" 
             VerticalOptions="Center"
@@ -81,14 +87,37 @@
             </Grid>
         </Frame>
         
-        <!--Row 4-->
-        <Grid Grid.Row="3">
+        <!--Row 2-->
+
+            <StackLayout Grid.Row="1" Padding="20" WidthRequest="357" HeightRequest="56" >
+                <Slider 
+                x:Name="distanceSlider" 
+                MinimumTrackColor="{StaticResource DefaultLightPurple}" 
+                ThumbColor="{StaticResource DefaultPink}" 
+                
+                
+                MaximumTrackColor="{StaticResource DefaultCyan}"
+                Margin="0,10,0,10"
+                Maximum="2000" 
+                Minimum="10" 
+                ValueChanged="sliderDistance_ValueChanged" />
+                <Grid HorizontalOptions="Center" VerticalOptions="Start" >
+                    <Grid.ColumnDefinitions >
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column="0" x:Name="lblFtDistance" FontFamily="SFProText" Margin="0,-10,20,0" FontSize="16" TextColor="#FFFFFF" />
+                    <Label Grid.Column="1" x:Name="lblMeterDistance"  FontFamily="SFProText" Margin="0,-10,20,0" FontSize="16" TextColor="#FFFFFF" />
+                </Grid>
+
+            </StackLayout>
+            <!--<Grid Grid.Row="1">
             <Grid.RowDefinitions>
                 <RowDefinition/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
            
-            <!--Row 1-->
+            --><!--Row 1--><!--
             <Slider 
                 Grid.Row="0"
                  x:Name="distanceSlider" 
@@ -101,7 +130,7 @@
                  Minimum="10" 
                  ValueChanged="sliderDistance_ValueChanged" />
             
-            <!--Row 2-->
+            --><!--Row 2--><!--
             <Grid
                 Grid.Row="1"
                 HorizontalOptions="Center" 
@@ -114,22 +143,24 @@
                 <Label Grid.Column="1" x:Name="lblMeterDistance"  FontFamily="SFProText" Margin="0,-10,20,0" FontSize="16" TextColor="#FFFFFF" />
             </Grid>
 
-        </Grid>
+        </Grid>-->
         
-        <!--Row 5-->
+            
+        <!--Row 3-->
 
         <components:GradientButton
-                    Grid.Row="4"
+                    Grid.Row="2"
                     Text="Send"
             x:Name="btnSend"
             OnClick="btnSend_Click"
                      WidthRequest="130" 
             HeightRequest="80" 
                     />
+        </Grid>
         
-        <!--Row 6-->
+        <!--Row 3-->
         <components:HostTabBar
-            Grid.Row="5"
+            Grid.Row="2"
             VerticalOptions="End"
             HorizontalOptions="FillAndExpand"
             />

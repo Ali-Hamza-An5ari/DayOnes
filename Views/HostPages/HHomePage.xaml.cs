@@ -21,7 +21,7 @@ public partial class HHomePage : ContentPage
             IsVisible = false
         });
 
-        lblFtDistance.Text = $"{distance} ft";
+        lblFtDistance.Text = $"{Math.Round(distance, 2)} ft";
         lblMeterDistance.Text = $"{Math.Round(distance * FT_TO_METER,2)} m";
 
     }
@@ -29,7 +29,7 @@ public partial class HHomePage : ContentPage
     private void sliderDistance_ValueChanged(object sender, ValueChangedEventArgs e)
     {
         distance = e.NewValue;
-        lblFtDistance.Text = $"{distance} ft";
+        lblFtDistance.Text = $"{Math.Round(distance,2)} ft";
         lblMeterDistance.Text = $"{Math.Round(distance * FT_TO_METER, 2)} m";
     }
 

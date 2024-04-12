@@ -97,12 +97,11 @@ VerticalOptions="Center">
                 </Frame>
 
                 <!--Button-->
-                <components:GradientButton
+                <components:GradientImageButton
                 Grid.Column="3"
                 Margin="10"
                     HorizontalOptions="EndAndExpand"
-                
-     Text="🔙" 
+               ImageSource="back.png"
      Width="60" 
      Height="40" 
      Name="btnBack" 

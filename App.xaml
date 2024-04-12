@@ -21,7 +21,9 @@
             <Color x:Key="DefaultLateGrey">#123544</Color>
             <Color x:Key="DefaultPurple">#9747FF</Color>
             <Color x:Key="DefaultLightPurple">#e451ff</Color>
-            <Color x:Key="DefaultPink">#e70971</Color> 
+            <Color x:Key="DefaultDimPurple">#8337FF</Color>
+            <Color x:Key="DefaultPink">#e70971</Color>
+            <Color x:Key="DefaultLightPink">#E615DE</Color> 
             <Color x:Key="DefaultCyan">#3DC1F9</Color>
             <Color x:Key="PickerBorderColor">#7236bf</Color>
         </ResourceDictionary>

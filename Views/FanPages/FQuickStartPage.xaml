@@ -87,15 +87,13 @@
             </Frame>
         </StackLayout>
 
-        <components:GradientButton
-                       
-                      Margin="8,90,0,0"
-                        Width="120"
+        <components:GradientImageButton      
+            Margin="8,90,0,0"
+            Width="120"
             Height="50"
-            FontSize="16"
-Text="Back" 
-Name="btnBack" 
-OnClick="btnBack_Click"
+            ImageSource="back.png"
+            Name="btnBack" 
+            OnClick="btnBack_Click"
                         />
         
     </VerticalStackLayout>

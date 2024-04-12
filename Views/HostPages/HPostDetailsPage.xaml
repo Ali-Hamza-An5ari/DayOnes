@@ -66,9 +66,9 @@
             <!--Button-->
             <components:GradientImageButton
                 Grid.Column="2"
+                Width="60" 
+                Height="50" 
                 Margin="10"
-                 Width="30" 
-                 Height="30"
                 ImageSource="back.png"
                  Name="btnBack" 
                  OnClick="btnBack_Click"

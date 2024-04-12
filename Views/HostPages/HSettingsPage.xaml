@@ -109,17 +109,14 @@ HasShadow="False">
 
                             <!-- Toggle Switch -->
                             <Switch
-            x:Name="toggleSoundSwitch"
-                            Margin="0,0,5,0"
-           
-            HorizontalOptions="Center"
-            VerticalOptions="Center"
-            ThumbColor="#E615DE"
-            OnColor="#E615DE"
-            
-            
-            BackgroundColor="{StaticResource DefaultBlack}"
-            Toggled="toggleSoundSwitch_Toggle" />
+                                x:Name="toggleSoundSwitch"
+                                Margin="0,0,5,0"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"
+                                ThumbColor="{StaticResource DefaultLightPink}"
+                                OnColor="{StaticResource DefaultDimPurple}"
+                                BackgroundColor="{StaticResource DefaultBlack}"
+                                Toggled="toggleSoundSwitch_Toggle" />
                             <Label
                         Grid.Row="0"
                     Text="Sound"
@@ -139,17 +136,15 @@ HasShadow="False">
 
                             <!-- Toggle Switch -->
                             <Switch
-            x:Name="togglePushSwitch"
-                            Margin="0,0,5,0"
+                                x:Name="togglePushSwitch"
+                                Margin="0,0,5,0"
           
-            HorizontalOptions="Center"
-            VerticalOptions="Center"
-            ThumbColor="#E615DE"
-            OnColor="#E615DE"
-            
-            
-            BackgroundColor="{StaticResource DefaultBlack}"
-            Toggled="togglePushSwitch_Toggle" />
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"
+                                ThumbColor="{StaticResource DefaultLightPink}"
+                                OnColor="{StaticResource DefaultDimPurple}"
+                                BackgroundColor="{StaticResource DefaultBlack}"
+                                Toggled="togglePushSwitch_Toggle" />
                             <Label
                         Grid.Row="0"
                     Text="Push Notifications"
@@ -324,6 +319,7 @@ HorizontalOptions="End" />
             </Grid>
 
             <components:GradientButton
+                VerticalOptions="End"
             x:Name="btnLogout"
             Text="Logout"
             FontSize="30"

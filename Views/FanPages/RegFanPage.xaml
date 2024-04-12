@@ -394,7 +394,7 @@ TextColor="#979393"
            
             HorizontalOptions="End"
             VerticalOptions="Center"
-            ThumbColor="#E615DE"
+            ThumbColor="{StaticResource DefaultLightPink}"
             OnColor="White"
             
             
@@ -415,7 +415,7 @@ TextColor="#979393"
            
             HorizontalOptions="End"
             VerticalOptions="Center"
-            ThumbColor="#E615DE"
+            ThumbColor="{StaticResource DefaultLightPink}"
             OnColor="White"
             
             

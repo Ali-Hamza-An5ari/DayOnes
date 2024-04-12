@@ -113,8 +113,8 @@ HasShadow="False">
            
             HorizontalOptions="Center"
             VerticalOptions="Center"
-            ThumbColor="#E615DE"
-            OnColor="#E615DE"
+            ThumbColor="{StaticResource DefaultLightPink}"
+            OnColor="{StaticResource DefaultLightPink}"
             
             
             BackgroundColor="{StaticResource DefaultBlack}"
@@ -143,8 +143,8 @@ HasShadow="False">
           
             HorizontalOptions="Center"
             VerticalOptions="Center"
-            ThumbColor="#E615DE"
-            OnColor="#E615DE"
+            ThumbColor="{StaticResource DefaultLightPink}"
+            OnColor="{StaticResource DefaultLightPink}"
             
             
             BackgroundColor="{StaticResource DefaultBlack}"
