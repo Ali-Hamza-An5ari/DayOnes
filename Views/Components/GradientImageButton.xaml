@@ -16,7 +16,7 @@
                 >
             <ImageButton.Background>
                 <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-                    <GradientStop Color="#E70971" Offset="0.0" />
+                    <GradientStop Color="{StaticResource DefaultPink}" Offset="0.0" />
                     <GradientStop Color="#6B1C56" Offset="1.0" />
                 </LinearGradientBrush>
             </ImageButton.Background>

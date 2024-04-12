@@ -151,7 +151,7 @@
                     </BoxView>
 
                     <!-- Message Bubble Frame -->
-                    <Frame BackgroundColor="{StaticResource DefaultWhite}" BorderColor="#E70971" CornerRadius="24" Padding="10" HasShadow="False">
+                    <Frame BackgroundColor="{StaticResource DefaultWhite}" BorderColor="{StaticResource DefaultPink}" CornerRadius="24" Padding="10" HasShadow="False">
                         <StackLayout>
 
                             <!-- Message Text -->
@@ -179,7 +179,7 @@
                     </BoxView>
 
                     <!-- Message Bubble Frame -->
-                    <Frame BackgroundColor="#8337FF" BorderColor="#E70971" CornerRadius="24" Padding="10" HasShadow="False">
+                    <Frame BackgroundColor="#8337FF" BorderColor="{StaticResource DefaultPink}" CornerRadius="24" Padding="10" HasShadow="False">
                         <StackLayout>
 
                             <!-- Message Text -->

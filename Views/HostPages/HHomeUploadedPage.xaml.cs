@@ -4,21 +4,28 @@ namespace DayOnes.Views;
 
 public partial class HHomeUploadedPage : ContentPage
 {
-    private double distance = 0;
+    private double distance = 10;
     public static string ImageName = "";
-	public HHomeUploadedPage()
+    private const double FT_TO_METER = 0.3048;
+
+    public HHomeUploadedPage()
 	{
 		InitializeComponent();
         Shell.SetBackButtonBehavior(this, new BackButtonBehavior
         {
             IsVisible = false
         });
-        
+
+        lblFtDistance.Text = $"{distance} ft";
+        lblMeterDistance.Text = $"{Math.Ceiling(distance * FT_TO_METER).ToString("0.00")} m";
+
     }
 
     private void sliderDistance_ValueChanged(object sender, ValueChangedEventArgs e)
     {
         distance = e.NewValue;
+        lblFtDistance.Text = $"{distance} ft";
+        lblMeterDistance.Text = $"{Math.Ceiling(distance * FT_TO_METER).ToString("0.00")} m";
     }
 
     private void btnSend_Click(object sender, EventArgs e)

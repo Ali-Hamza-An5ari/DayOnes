@@ -25,24 +25,24 @@ public partial class FanTabBar : ContentView
         //switch (Convert.ToInt32(CurrentPage))
         //{
         //    case 1:
-        //        lblHome.TextColor = Color.FromHex("#E70971");
-        //        lblHomeTitle.TextColor = Color.FromHex("#E70971");
+        //        lblHome.TextColor = Color.FromHex("{StaticResource DefaultPink}");
+        //        lblHomeTitle.TextColor = Color.FromHex("{StaticResource DefaultPink}");
         //        break;
         //    case 2:
-        //        lblMsgs.TextColor = Color.FromHex("#E70971");
-        //        lblMsgsTitle.TextColor = Color.FromHex("#E70971");
+        //        lblMsgs.TextColor = Color.FromHex("{StaticResource DefaultPink}");
+        //        lblMsgsTitle.TextColor = Color.FromHex("{StaticResource DefaultPink}");
         //        break;
         //    case 3:
-        //        lblDM.TextColor = Color.FromHex("#E70971");
-        //        lblDMTitle.TextColor = Color.FromHex("#E70971");
+        //        lblDM.TextColor = Color.FromHex("{StaticResource DefaultPink}");
+        //        lblDMTitle.TextColor = Color.FromHex("{StaticResource DefaultPink}");
         //        break;
         //    case 4:
-        //        lblMyStuff.TextColor = Color.FromHex("#E70971");
-        //        lblMyStuffTitle.TextColor = Color.FromHex("#E70971");
+        //        lblMyStuff.TextColor = Color.FromHex("{StaticResource DefaultPink}");
+        //        lblMyStuffTitle.TextColor = Color.FromHex("{StaticResource DefaultPink}");
         //        break;
         //    case 5:
-        //        lblNotification.TextColor = Color.FromHex("#E70971");
-        //        lblNotificationTitle.TextColor = Color.FromHex("#E70971");
+        //        lblNotification.TextColor = Color.FromHex("{StaticResource DefaultPink}");
+        //        lblNotificationTitle.TextColor = Color.FromHex("{StaticResource DefaultPink}");
         //        break;
         //    default:
         //        break;
@@ -54,7 +54,7 @@ public partial class FanTabBar : ContentView
         Temp.currenttabbarpage = 1;
 
         Shell.Current.GoToAsync(nameof(FHomePage));
-        //lblHome.TextColor = Color.FromHex("#E70971");
+        //lblHome.TextColor = Color.FromHex("{StaticResource DefaultPink}");
         //   OnTapped(CurrentPage1);
 
     }
@@ -64,7 +64,7 @@ public partial class FanTabBar : ContentView
         Temp.currenttabbarpage = 2;
 
         Shell.Current.GoToAsync(nameof(FD1MsgsPage));
-        //lblMsgs.TextColor = Color.FromHex("#E70971");
+        //lblMsgs.TextColor = Color.FromHex("{StaticResource DefaultPink}");
         //   OnTapped(CurrentPage1);
 
     }
@@ -72,7 +72,7 @@ public partial class FanTabBar : ContentView
     private void lblDM_Tapped(object sender, TappedEventArgs e)
     {
 
-        //lblDM.TextColor = Color.FromHex("#E70971");
+        //lblDM.TextColor = Color.FromHex("{StaticResource DefaultPink}");
         Temp.currenttabbarpage = 3;
         Shell.Current.GoToAsync(nameof(FDirectMsgsPage));
 
@@ -84,7 +84,7 @@ public partial class FanTabBar : ContentView
     {
         Temp.currenttabbarpage = 4;
 
-        //lblMyStuff.TextColor = Color.FromHex("#E70971");
+        //lblMyStuff.TextColor = Color.FromHex("{StaticResource DefaultPink}");
         Shell.Current.GoToAsync(nameof(FMyCollocationPage));
         // OnTapped(CurrentPage1);
 
@@ -94,7 +94,7 @@ public partial class FanTabBar : ContentView
     {
         Temp.currenttabbarpage = 5;
 
-        //lblNotification.TextColor = Color.FromHex("#E70971");
+        //lblNotification.TextColor = Color.FromHex("{StaticResource DefaultPink}");
         Shell.Current.GoToAsync(nameof(FNotificationsPage));
         //  OnTapped(CurrentPage1);
     }
@@ -105,7 +105,7 @@ public partial class FanTabBar : ContentView
         if (tempCurrentPage == 1)
         {
             lblHome.Source = "shomeic";
-            //lblHomeTitle.TextColor = Color.FromHex("#E70971");
+            //lblHomeTitle.TextColor = Color.FromHex("{StaticResource DefaultPink}");
         }
         else
         {
@@ -118,7 +118,7 @@ public partial class FanTabBar : ContentView
         if (tempCurrentPage == 2)
         {
             lblMsgs.Source = "smsgsic";
-            //lblMsgsTitle.TextColor = Color.FromHex("#E70971");
+            //lblMsgsTitle.TextColor = Color.FromHex("{StaticResource DefaultPink}");
         }
         else
         {
@@ -131,7 +131,7 @@ public partial class FanTabBar : ContentView
         if (tempCurrentPage == 3)
         {
             lblDM.Source = "sdmic";
-            //lblDMTitle.TextColor = Color.FromHex("#E70971");
+            //lblDMTitle.TextColor = Color.FromHex("{StaticResource DefaultPink}");
         }
         else
         {
@@ -142,7 +142,7 @@ public partial class FanTabBar : ContentView
         if (tempCurrentPage == 4)
         {
             lblMyStuff.Source = "smystuffic";
-            //lblMyStuffTitle.TextColor = Color.FromHex("#E70971");
+            //lblMyStuffTitle.TextColor = Color.FromHex("{StaticResource DefaultPink}");
         }
         else
         {

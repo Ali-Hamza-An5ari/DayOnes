@@ -101,7 +101,7 @@
                             
                         x:Name="lblMsgsTitle"
                                Text="Msgs"
-       FontFamily="SF Pro Text"
+       FontFamily="SFProText"
        FontSize="12"
        FontAttributes="None"
        TextColor="#FFFFFF"

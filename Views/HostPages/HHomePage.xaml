@@ -53,7 +53,7 @@
                                     
                                     <Image WidthRequest="25" HeightRequest="23.33" Source="camera.png"/>
                                     
-                                    <Label Text="Click Selfie" FontFamily="SF Pro Text" FontAttributes="Bold" FontSize="20" TextColor="#FFFFFF" HorizontalTextAlignment="Center" />
+                                    <Label Text="Click Selfie" FontFamily="SFProText" FontAttributes="Bold" FontSize="20" TextColor="#FFFFFF" HorizontalTextAlignment="Center" />
                                 </StackLayout>
                             </StackLayout>
                         </Frame>
@@ -69,7 +69,7 @@
 
                                     <!--<BoxView WidthRequest="25" HeightRequest="25" />-->
                                     <Image  WidthRequest="25" HeightRequest="25" Source="pics.png" />
-                                    <Label Text="Upload Pic" FontFamily="SF Pro Text" FontAttributes="Bold" FontSize="20" TextColor="#FFFFFF" HorizontalTextAlignment="Center" />
+                                    <Label Text="Upload Pic" FontFamily="SFProText" FontAttributes="Bold" FontSize="20" TextColor="#FFFFFF" HorizontalTextAlignment="Center" />
                                 </StackLayout>
                             </StackLayout>
                         </Frame>
@@ -81,58 +81,70 @@
 
         <!--Row 4-->
         <StackLayout Grid.Row="3" Padding="20" WidthRequest="357" HeightRequest="56" >
-            <Label Text="Choose Distance:" FontSize="20" FontFamily="SF Pro Text" TextColor="#FFFFFF"/>
             <Slider 
                 x:Name="distanceSlider" 
-                MinimumTrackColor="#e451ff" 
-                ThumbColor="#e70971" 
+                MinimumTrackColor="{StaticResource DefaultLightPurple}" 
+                ThumbColor="{StaticResource DefaultPink}" 
                 
-                Maximum="100" 
-                Minimum="0" 
+                MaximumTrackColor="{StaticResource DefaultCyan}"
+                Margin="0,10,0,10"
+                Maximum="2000" 
+                Minimum="10" 
                 ValueChanged="sliderDistance_ValueChanged" />
             <Grid HorizontalOptions="Center" VerticalOptions="Start" >
                 <Grid.ColumnDefinitions >
                     <ColumnDefinition Width="Auto" />
                     <ColumnDefinition Width="Auto" />
                 </Grid.ColumnDefinitions>
-                <Label Grid.Column="0" x:Name="label1" Text="2000ft" FontFamily="SF Pro Text" Margin="0,-10,20,0" FontSize="16" TextColor="#FFFFFF" />
-                <Label Grid.Column="1" x:Name="label2" Text="610m" FontFamily="SF Pro Text" Margin="0,-10,20,0" FontSize="16" TextColor="#FFFFFF" />
+                <Label Grid.Column="0" x:Name="lblFtDistance" FontFamily="SFProText" Margin="0,-10,20,0" FontSize="16" TextColor="#FFFFFF" />
+                <Label Grid.Column="1" x:Name="lblMeterDistance"  FontFamily="SFProText" Margin="0,-10,20,0" FontSize="16" TextColor="#FFFFFF" />
             </Grid>
-            <Label x:Name="distanceLabel" Text="0" FontSize="20" />
+            
         </StackLayout>
 
         <!--Row 5-->
-        <Grid Grid.Row="4">
+        <Grid Grid.Row="4"
+              Margin="0,30,0,0"
+              WidthRequest="308"
+              HeightRequest="261"
+              >
             <Grid.RowDefinitions>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
             <!--Row 1-->
-            <Label Grid.Row="0" Text="Choose what to send:" FontFamily="SF Pro Text" FontAttributes="Italic" FontSize="20" TextColor="{StaticResource DefaultPurple}" Margin="20,20,0,0" />
+            <Label Grid.Row="0" 
+                   Text="Choose what to send:" 
+                   FontFamily="SFProText" FontAttributes="Italic" FontSize="20" 
+                   TextColor="{StaticResource DefaultPurple}" Margin="20,30,0,5" />
 
             <!--Row 2-->
             <Frame Grid.Row="1"
                    Background="{StaticResource DefaultBlack}" 
                    BorderColor="{StaticResource DefaultPurple}" 
                    HeightRequest="60"
-                   Padding="-10">
+                   Padding="10">
+
+                
                 <Picker x:Name="drpAction" 
                         VerticalOptions="Center"
                         FontFamily="SFProText"
                         SelectedIndexChanged="drpAction_Change"
                         TextColor="{StaticResource DefaultCyan}"
+                        
                         HorizontalOptions="Start"
                         Margin="30,0,0,0"
                         WidthRequest="200"
                         FontAttributes="None"
+                        BackgroundColor="{StaticResource DefaultBlack}"
                         SelectedItem="Invite and Photo">
                     <Picker.ItemsSource>
-                        <x:Array Type="{x:Type x:String}">
-                            <x:String>Option 1</x:String>
+                        <x:Array  Type="{x:Type x:String}">
                             <x:String>Invite and Photo</x:String>
-                            <x:String>Option 3</x:String>
+                            <x:String>Invite Only</x:String>
+                            <x:String>Photo Only</x:String>
                         </x:Array>
                     </Picker.ItemsSource>
                 </Picker>

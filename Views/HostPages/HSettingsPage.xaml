@@ -227,7 +227,7 @@ FontFamily="FAS"
 HeightRequest="20"
                 
 WidthRequest="20"
-TextColor="#E70971"
+TextColor="{StaticResource DefaultPink}"
 VerticalOptions="Center"
 HorizontalOptions="End" />
                     </Grid>
@@ -270,7 +270,7 @@ HorizontalOptions="End" />
         HeightRequest="20"
                        
         WidthRequest="20"
-        TextColor="#E70971"
+        TextColor="{StaticResource DefaultPink}"
         VerticalOptions="Center"
         HorizontalOptions="End" />
                     </Grid>
@@ -312,7 +312,7 @@ HorizontalOptions="End" />
         FontFamily="FAS"
         HeightRequest="20"
         WidthRequest="20"
-        TextColor="#E70971"
+        TextColor="{StaticResource DefaultPink}"
         VerticalOptions="Center"
         HorizontalOptions="End" />
                     </Grid>

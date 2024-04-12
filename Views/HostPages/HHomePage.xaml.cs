@@ -1,23 +1,36 @@
+using System.Collections.ObjectModel;
+
 namespace DayOnes.Views.HostPages;
 
 public partial class HHomePage : ContentPage
 {
-    private double distance = 0;
+    private double distance = 10;
     private string option = "";
     public static string CapturedImageResource = "";
     public static string UploadedImageResource = "";
-	public HHomePage()
+   // public ObservableCollection<PickerItem> PickerItems { get; set; }
+
+
+    private const double FT_TO_METER = 0.3048;
+
+    public HHomePage()
 	{
 		InitializeComponent();
         Shell.SetBackButtonBehavior(this, new BackButtonBehavior
         {
             IsVisible = false
         });
+
+        lblFtDistance.Text = $"{distance} ft";
+        lblMeterDistance.Text = $"{Math.Round(distance * FT_TO_METER,2)} m";
+
     }
 
     private void sliderDistance_ValueChanged(object sender, ValueChangedEventArgs e)
     {
         distance = e.NewValue;
+        lblFtDistance.Text = $"{distance} ft";
+        lblMeterDistance.Text = $"{Math.Round(distance * FT_TO_METER, 2)} m";
     }
 
     private async void layoutCamera_Tapped(object sender, TappedEventArgs e)
@@ -85,5 +98,6 @@ public partial class HHomePage : ContentPage
     private void drpAction_Change(object sender, EventArgs e)
     {
         this.option = drpAction.SelectedItem as string;
+
     }
 }

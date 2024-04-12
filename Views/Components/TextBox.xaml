@@ -17,7 +17,7 @@
                    PlaceholderColor="#979393"
                    BackgroundColor="Transparent"
                    TextColor="#979393"
-                   FontFamily="SF Pro Text"
+                   FontFamily="SFProText"
                    FontSize="20"
                    Margin="10,0,0,0"
                    >
@@ -27,7 +27,7 @@
                 <Frame Grid.Row="0" BackgroundColor="{StaticResource DefaultBlack}" CornerRadius="8" Padding="5,0" HasShadow="False">
                     <Label x:Name="lblName"
                            TextColor="{StaticResource DefaultWhite}"
-                           FontFamily="SF Pro Text"
+                           FontFamily="SFProText"
                            FontSize="8"
                            FontAttributes="Bold" />
                 </Frame>
@@ -52,7 +52,7 @@
                    PlaceholderColor="#979393"
                    BackgroundColor="Transparent"
                    TextColor="#979393"
-                   FontFamily="SF Pro Text"
+                   FontFamily="SFProText"
                    FontSize="20"
                    Margin="10,0,0,0"
                    />
@@ -62,7 +62,7 @@
                     <Label x:Name="lblName"
                        
                        TextColor="{StaticResource DefaultWhite}"
-                       FontFamily="SF Pro Text"
+                       FontFamily="SFProText"
                        FontSize="8"
                        FontAttributes="Bold" />
                 </Frame>

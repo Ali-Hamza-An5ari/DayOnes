@@ -151,7 +151,7 @@
                 <!-- Delete button -->
                 <StackLayout 
                 Grid.Row="3" Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
-                    <Label Text="&#xf2ed;"  FontFamily="FAS"  HeightRequest="20" WidthRequest="20" TextColor="#E70971" />
+                    <Label Text="&#xf2ed;"  FontFamily="FAS"  HeightRequest="20" WidthRequest="20" TextColor="{StaticResource DefaultPink}" />
                     <Button Text="Delete This Photo" FontSize="12" BackgroundColor="{StaticResource DefaultBlack}" FontFamily="SFProText" TextColor="{StaticResource DefaultWhite}" />
                 </StackLayout>
                 <components:GradientButton 
