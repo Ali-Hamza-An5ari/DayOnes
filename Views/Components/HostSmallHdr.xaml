@@ -25,14 +25,20 @@
 
             <!--Column 2-->
             <Image
-            Grid.Column="1" HorizontalOptions="CenterAndExpand"
-                    Grid.Row="0"
-            Source="d1logo3.png"
-                    
-            
-                    HeightRequest="50"
-            BackgroundColor="Transparent"
-                    />
+                Grid.Column="1" 
+                HorizontalOptions="CenterAndExpand"
+                Grid.Row="0"
+                Source="d1logo3.png"
+                HeightRequest="50"
+                BackgroundColor="Transparent"
+                    >
+                <Image.Shadow>
+                    <Shadow Brush="{StaticResource DefaultPink}"
+                Offset="0,0"
+                Radius="20"
+                Opacity="0.8" />
+                </Image.Shadow>
+            </Image>
 
             <!--Column 3-->
             <toolkit:AvatarView  Grid.Column="2" HorizontalOptions="EndAndExpand"

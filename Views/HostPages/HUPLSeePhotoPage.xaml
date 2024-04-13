@@ -35,7 +35,7 @@
 
         <Grid Grid.Row="2" >
             <Image 
-            x:Name="imgUploaded" WidthRequest="390" HeightRequest="400" />
+            x:Name="imgUploaded" WidthRequest="349" HeightRequest="379" />
 
             <Border Stroke="#cc0000"
                     BackgroundColor="Transparent"

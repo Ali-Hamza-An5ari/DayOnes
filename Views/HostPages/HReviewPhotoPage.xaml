@@ -46,6 +46,7 @@
             Grid.Row="2"
             x:Name="imgUploaded"
             WidthRequest="390"
+            HeightRequest="379"
             VerticalOptions="Start"
             />
 

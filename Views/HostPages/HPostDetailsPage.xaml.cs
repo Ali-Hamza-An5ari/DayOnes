@@ -1,4 +1,5 @@
 using DayOnes.Models;
+using DayOnes.Views.Components;
 using DayOnes.Views.HostPages;
 
 namespace DayOnes.Views;
@@ -62,10 +63,10 @@ public partial class HPostDetailsPage : ContentPage
     private void btnDM_Click(object sender, TappedEventArgs e)
     {
 
-        Post tappedPost = (Post)sender;
+        PostCardAction tappedPost = (PostCardAction)sender;
 
 
-        Post selectedItem = (Post)tappedPost;
+        Post selectedItem = (Post)tappedPost.BindingContext;
 
 
         GroupName = selectedItem.ArtistName; //Any unique ID

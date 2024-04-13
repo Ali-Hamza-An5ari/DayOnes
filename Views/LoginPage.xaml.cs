@@ -1,3 +1,4 @@
+using DayOnes.Models;
 using DayOnes.Views.HostPages;
 
 namespace DayOnes.Views;
@@ -23,6 +24,8 @@ public partial class LoginPage : ContentPage
         var email = this.txtEmail.Text;
         var password = this.txtPassword.Text;
 
+        //Based on this type we decide whether the user is a host or fan
+        UserTypeEnum type = UserTypeEnum.Host;
         /*
          1. Collected registration data
 2. Execute AWS API:L1 passing the Username & Password
@@ -39,7 +42,10 @@ SQLite, and ID the variable containing the data. Will need the Username as part
 of the data set.
                  */
 
-        Shell.Current.GoToAsync(nameof(HHomePage)); ;
+        if(type == UserTypeEnum.Host)
+            Shell.Current.GoToAsync(nameof(HHomePage));
+        else
+            Shell.Current.GoToAsync(nameof(FHomePage));
     }
 
     private void btnSignup_Click(object sender, EventArgs e)

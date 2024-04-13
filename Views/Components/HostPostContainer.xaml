@@ -53,7 +53,7 @@
             x:Name="lblPost"
             TextColor="{StaticResource DefaultWhite}"
             BackgroundColor="{StaticResource DefaultBlack}"
-            
+            Margin="30,0,20,0"
                 >
 
             <Label.GestureRecognizers>
@@ -64,7 +64,7 @@
         <!--Row 4-->
         <Grid
             Grid.Row="3"
-            
+            HorizontalOptions="Center"
             >
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="2*"/>
@@ -75,6 +75,7 @@
             <components:LikeLabel
                 Grid.Column="0"
                 x:Name="lblLike"
+                Margin="0,0,20,0"
                 />
 
             <!--Column 2-->

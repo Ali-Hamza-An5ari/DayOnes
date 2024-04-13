@@ -73,7 +73,7 @@ public partial class HPOSTURSentMsgsPage : ContentPage
         HostPostContainer tappedPost = (HostPostContainer)sender;
 
         
-        HostPostContainer selectedItem = (HostPostContainer)tappedPost.BindingContext;
+        HostPost selectedItem = (HostPost)tappedPost.BindingContext;
 
         
         GroupName = selectedItem.GroupName;

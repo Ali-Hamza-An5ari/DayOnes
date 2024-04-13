@@ -21,7 +21,7 @@
         <!--Row 2-->
         <components:FanTitleBar
              Grid.Row="1"
-            Title="Autographs  Invites"
+            Title="Autographs &amp; Invites"
         />
 
         <!--Row 3-->

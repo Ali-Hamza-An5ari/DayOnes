@@ -33,15 +33,16 @@
         <!--Row 2-->
         <components:FanTitleBar
              Grid.Row="1"
-            Title="Choose Action"
+            Title="Add a Signature"
         />
 
         <!--Row 3-->
         <Image 
             Grid.Row="2"
             x:Name="imgUploaded"
-            WidthRequest="390"
-            HeightRequest="548"
+            WidthRequest="349"
+            HeightRequest="379"
+            HorizontalOptions="Center"
             VerticalOptions="Start"
             />
 
@@ -56,13 +57,13 @@
             <!--Row 1-->
             <HorizontalStackLayout
                 Grid.Row="0"
-                HorizontalOptions="CenterAndExpand"
                 VerticalOptions="CenterAndExpand"
                 >
                 <Label 
                     Text="Choose Signature" 
                     TextColor="{StaticResource DefaultWhite}" 
                     VerticalOptions="Center"
+                    HorizontalOptions="Start"
                     Margin="10,0,10,0"
                     />
 
@@ -72,8 +73,8 @@
                     TextColor="{StaticResource DefaultBlack}"
                     WidthRequest="90"
                     Clicked="btnCancel_Click"
-                    HorizontalOptions="Center"
-                    Margin="10,3,10,3"
+                    HorizontalOptions="End"
+                    Margin="100,3,10,3"
                     />
 
             </HorizontalStackLayout>

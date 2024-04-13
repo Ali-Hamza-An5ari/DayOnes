@@ -112,6 +112,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="Views\Components\ChatMessageContainer.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\Components\ArtistChatCard.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
