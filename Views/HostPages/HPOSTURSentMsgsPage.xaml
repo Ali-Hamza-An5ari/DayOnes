@@ -99,7 +99,7 @@
                             PostContent="{Binding PostContent}"
                             LikeCount="{Binding LikeCount}"
                             CommentCount="{Binding CommentCount}"
-                            
+                            BtnTapped="btnMsgGrp_Click"
                             >
 
                             <components:HostPostContainer.GestureRecognizers>

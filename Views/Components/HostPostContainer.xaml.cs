@@ -97,71 +97,13 @@ public partial class HostPostContainer : ContentView
         set => SetValue(CommentCountProperty, value);
     }
 
-    /*
-        public static readonly BindableProperty GroupNameProperty = BindableProperty.Create(
-            nameof(GroupName), typeof(string), typeof(HostPostContainer), string.Empty);
-        public static readonly BindableProperty ImageSourceProperty = BindableProperty.Create(
-           nameof(ImageSource), typeof(string), typeof(HostPostContainer), string.Empty);
-        public static readonly BindableProperty PostContentProperty = BindableProperty.Create(
-           nameof(PostContent), typeof(string), typeof(HostPostContainer), string.Empty);
-        public static readonly BindableProperty LikeCountProperty = BindableProperty.Create(
-           nameof(LikeCount), typeof(string), typeof(HostPostContainer), string.Empty);
-        public static readonly BindableProperty CommentCountProperty = BindableProperty.Create(
-           nameof(CommentCount), typeof(string), typeof(HostPostContainer), string.Empty);
+    public event EventHandler<EventArgs> BtnTapped;
 
-        public string GroupName
-        {
-            get => (string)GetValue(GroupNameProperty);
-            set
-            {
-                SetValue(GroupNameProperty, value);
-                lblGroupName.Title = value as string;
-            }
-        }
+    private void OnBtnTapped(object sender, EventArgs e)
+    {
+        BtnTapped?.Invoke(sender, e);
+    }
 
-
-        public string ImageSource
-        {
-            get => (string)GetValue(ImageSourceProperty);
-            set
-            {
-                SetValue(ImageSourceProperty, value);
-                imgMain.Source = value as string;
-            }
-        }
-
-
-        public string PostContent
-        {
-            get => (string)GetValue(PostContentProperty);
-            set
-            {
-                SetValue(PostContentProperty, value);
-                lblPost.Text = value as string;
-            }
-        }
-
-
-        public string LikeCount
-        {
-            get => (string)GetValue(LikeCountProperty);
-            set
-            {
-                SetValue(LikeCountProperty, value);
-                lblLike.Count = value as string;
-            }
-        }
-
-
-        public string CommentCount
-        {
-            get => (string)GetValue(CommentCountProperty);
-            set
-            {
-                SetValue(CommentCountProperty, value);
-                lblComment.Count = value as string;
-            }
-        }*/
     public HostPostContainer()
 	{
 		InitializeComponent();

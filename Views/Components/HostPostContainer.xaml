@@ -34,7 +34,7 @@
             <components:GradientButton
                 Grid.Column="1"
                 Text="Msg Grp"
-                OnClick="btnMsg_Click"
+                OnClick="OnBtnTapped"
                 Width="80"
                 />
         </Grid>

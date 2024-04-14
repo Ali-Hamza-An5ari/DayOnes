@@ -78,6 +78,7 @@
                 <components:GradientButton
                     Grid.Column="2"
                     Text="Reset"
+                    Margin="0,15,0,0"
                     FontSize="15"
                     OnClick="btnReset_Click"
                      WidthRequest="100" HeightRequest="60" 

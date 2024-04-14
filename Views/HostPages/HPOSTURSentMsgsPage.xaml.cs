@@ -80,4 +80,22 @@ public partial class HPOSTURSentMsgsPage : ContentPage
         GroupName = selectedItem.GroupName;
         Shell.Current.GoToAsync(nameof(HPostDetailsPage));
     }
+
+    private void btnMsgGrp_Click(object sender, EventArgs e)
+    {
+
+        Button tappedButton = (Button)sender;
+
+        // Get the parent Frame of the button
+        VerticalStackLayout parentFrame = (VerticalStackLayout)tappedButton.Parent;
+
+        // Access the BindingContext of the Frame to get the Post data
+        //Post selectedItem = (Post)parentFrame.BindingContext;
+
+        HostPost selectedItem = (HostPost)parentFrame.BindingContext;
+
+
+        GroupName = selectedItem.GroupName;
+        Shell.Current.GoToAsync(nameof(HNewGrpPostPage));
+    }
 }
