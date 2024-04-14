@@ -15,7 +15,8 @@ public partial class HPOSTURSentMsgsPage : ContentPage
         {
             IsVisible = false
         });
-
+        HostTabBar.CurrentPage1 = 2;
+        Temp.currenttabbarpage = 2;
        /* Invoke AWS API: GetHostPosts
         a.Pass the Username.The API will return a lot of
         data*/
