@@ -81,12 +81,3 @@ public partial class HPostDetailsPage : ContentPage
         Shell.Current.GoToAsync(nameof(HDMDetailsList));
     }
 }
-/*
-class Post
-{
-    public string ArtistName { get; set; }
-    public string ArtistImage { get; set; }
-    public string PostContent { get; set; }
-    public bool IsLiked { get; set; }
-
-}*/

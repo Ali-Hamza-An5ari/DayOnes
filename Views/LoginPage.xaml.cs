@@ -43,7 +43,7 @@ of the data set.
                  */
 
         if(type == UserTypeEnum.Host)
-            Shell.Current.GoToAsync(nameof(HPostDetailsPage));
+            Shell.Current.GoToAsync(nameof(HHomePage));
         else
             Shell.Current.GoToAsync(nameof(FHomePage));
     }

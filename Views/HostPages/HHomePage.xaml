@@ -128,8 +128,16 @@
                    CornerRadius="0"
                    Padding="10">
 
-                
-                <Picker x:Name="drpAction" 
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+
+                    <Picker 
+                        Grid.Column="0"
+                        x:Name="drpAction" 
                         VerticalOptions="Center"
                         FontFamily="SFProText"
                         SelectedIndexChanged="drpAction_Change"
@@ -141,14 +149,22 @@
                         FontAttributes="None"
                         BackgroundColor="{StaticResource DefaultBlack}"
                         SelectedItem="Invite &amp; Photo">
-                    <Picker.ItemsSource>
-                        <x:Array  Type="{x:Type x:String}">
-                            <x:String>Invite &amp; Photo</x:String>
-                            <x:String>Invite Only</x:String>
-                            <x:String>Photo Only</x:String>
-                        </x:Array>
-                    </Picker.ItemsSource>
-                </Picker>
+                        <Picker.ItemsSource>
+                            <x:Array  Type="{x:Type x:String}">
+                                <x:String>Invite &amp; Photo</x:String>
+                                <x:String>Invite Only</x:String>
+                                <x:String>Photo Only</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+
+                    <Image
+                        Grid.Column="1"
+                    Source="dropdown.png"
+                    />
+
+                </Grid>
+
             </Frame>
 
         </Grid>
