@@ -60,16 +60,24 @@ public partial class HPostDetailsPage : ContentPage
         Shell.Current.GoToAsync(nameof(HNewGrpPostPage));
     }
 
-    private void btnDM_Click(object sender, TappedEventArgs e)
+    
+
+    private void btnDM_Click(object sender, EventArgs e)
     {
 
-        PostCardAction tappedPost = (PostCardAction)sender;
+        // Cast the sender to a Button
+        Button tappedButton = (Button)sender;
 
+        // Get the parent Frame of the button
+        VerticalStackLayout parentFrame = (VerticalStackLayout)tappedButton.Parent;
 
-        Post selectedItem = (Post)tappedPost.BindingContext;
+        // Access the BindingContext of the Frame to get the Post data
+        Post selectedItem = (Post)parentFrame.BindingContext;
 
+        // Now you can use the data from selectedItem as needed
+        GroupName = selectedItem.ArtistName; // Assuming ArtistName is a property of the Post class
 
-        GroupName = selectedItem.ArtistName; //Any unique ID
+        // Navigate to another page or perform other actions using the post data
         Shell.Current.GoToAsync(nameof(HDMDetailsList));
     }
 }

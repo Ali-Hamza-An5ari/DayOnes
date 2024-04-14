@@ -84,7 +84,14 @@ public partial class PostCardAction : ContentView
 
     #endregion
 
-   
+    public event EventHandler<EventArgs> BtnTapped;
+
+    private void OnBtnTapped(object sender, EventArgs e)
+    {
+        BtnTapped?.Invoke(sender, e);
+    }
+
+
     public PostCardAction()
 	{
 		InitializeComponent();
