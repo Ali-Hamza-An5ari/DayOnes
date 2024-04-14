@@ -1,4 +1,5 @@
 using DayOnes.Models;
+using DayOnes.Views.HostPages;
 
 namespace DayOnes.Views;
 
@@ -66,5 +67,10 @@ public partial class HPageHSigPenColorEditPage : ContentPage
         /*a.Saves the signature in the list of signatures in memory
         b.Execute API: AddPriSig passing the Username to save the modified
         picture at AWS*/
+    }
+
+    private void btnBack_Click(object sender, EventArgs e)
+    {
+        Shell.Current.GoToAsync(nameof(HAssetsNManagementPage));
     }
 }

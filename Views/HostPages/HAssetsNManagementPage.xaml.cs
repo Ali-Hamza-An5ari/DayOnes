@@ -23,12 +23,14 @@ public partial class HAssetsNManagementPage : ContentPage
         sigs.Add(new() { ID = "2", ImageSource = "sig3.png", Name = "Sig2" });
         sigs.Add(new() { ID = "3", ImageSource = "sig2.png", Name = "Sig3" });
         sigs.Add(new() { ID = "4", ImageSource = "sig3.png", Name = "Sig4" });
+        sigs.Add(new() { ID = "5", ImageSource = "sig2.png", Name = "Sig1" });
+        sigs.Add(new() { ID = "6", ImageSource = "sig3.png", Name = "Sig2" });
 
         this.listSigs.ItemsSource = sigs;
 
 
         imgs = new List<SigImage>();
-        imgs.Add(new() { ID = "1", ImageSource = "artist1.png", Name = "Sig1" });
+        imgs.Add(new() { ID = "1", ImageSource = "singer.png", Name = "Sig1" });
         imgs.Add(new() { ID = "2", ImageSource = "artis2.png", Name = "Sig2" });
         imgs.Add(new() { ID = "3", ImageSource = "artist3.png", Name = "Sig3" });
         imgs.Add(new() { ID = "4", ImageSource = "artist1.png", Name = "Sig4" });

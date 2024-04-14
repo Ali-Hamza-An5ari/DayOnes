@@ -32,6 +32,7 @@
             Height="50"
             VerticalOptions="Center"
             HorizontalOptions="End"
+            OnClick="btnBack_Click"
             Margin="0,10,20,10"
         />
 
@@ -111,13 +112,19 @@
                         <CollectionView.ItemTemplate>
                             <DataTemplate>
 
-                                <toolkit:AvatarView>
-                                <Image
-                                Source="{Binding ImageSource}"
+                                <toolkit:AvatarView
+                                CornerRadius="0"
+                                BackgroundColor="Transparent"
+                                BorderColor="Transparent"
+                                WidthRequest="85"
+                                HeightRequest="90"
                                 >
-                                    <Image.GestureRecognizers>
-                                        <TapGestureRecognizer Tapped="imgSig_Click"/>
-                                    </Image.GestureRecognizers>
+                                    <Image
+                                Source="{Binding ImageSource}"
+                            >
+                                        <Image.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="imgSig_Click"/>
+                                        </Image.GestureRecognizers>
 
                                     </Image>
                                 </toolkit:AvatarView>
