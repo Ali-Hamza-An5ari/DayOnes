@@ -30,7 +30,7 @@
         <!--Row 2-->
         <components:FanTitleBar
             Grid.Row="1"
-            Title="Private Direct Messages"
+            Title="Your Items"
             />
 
         <!--Row 3-->
@@ -226,6 +226,7 @@
                                 BackgroundColor="Transparent"
                                 BorderColor="Transparent"
                             WidthRequest="126"
+                            HeightRequest="168"
                                 >
                             <Image
                                 Source="{Binding ImageSource}"
@@ -241,33 +242,6 @@
                 </CollectionView.ItemTemplate>
             </CollectionView>
         </ScrollView>
-        <!--<ScrollView 
-                Grid.Row="8"
-                Orientation="Horizontal"
-            Margin="0,-60,0,0"
-                HeightRequest="140"
-            BackgroundColor="{StaticResource DefaultBlack}"
-            VerticalOptions="Center"
-            >
-            <HorizontalStackLayout>
-                <Image 
-                        Source="artist1.png"
-                        WidthRequest="100"
-                        />
-                <Image 
-                        Source="artist2.png"
-                        WidthRequest="100"
-                        />
-                <Image 
-                        Source="singer.png"
-                        WidthRequest="100"
-                        />
-                <Image 
-                        Source="artist1.png"
-                        WidthRequest="100"
-                        />
-            </HorizontalStackLayout>
-        </ScrollView>-->
 
         <!--Row 10-->
         <components:HostTabBar

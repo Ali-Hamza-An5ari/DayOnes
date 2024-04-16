@@ -9,7 +9,12 @@
         Margin="10,40"
         Spacing="40"
         HorizontalOptions="FillAndExpand" >
-        <Image  WidthRequest="57" HeightRequest="80" Source="d1logo3.png"/>
+        <Image  WidthRequest="57" HeightRequest="80" Source="d1logo3.png">
+
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer Tapped="imgLogo_Tapped"></TapGestureRecognizer>
+            </Image.GestureRecognizers>
+        </Image>
 
         <StackLayout>
 

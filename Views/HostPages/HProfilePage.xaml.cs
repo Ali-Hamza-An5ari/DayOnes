@@ -22,13 +22,37 @@ public partial class HProfilePage : ContentPage
         v. 50px circular Profile pic*/
     }
 
-    private void btnAddChange_Click(object sender, EventArgs e)
+    private async void btnAddChange_Click(object sender, EventArgs e)
     {
-       /* the app should open up the device photo library
-        (simulated in Figma).When they choose a photo, the picture should
-        change to what the user chose, formatted to a 50px round formatted
-        photo.
-        */
+
+        if (MediaPicker.Default.IsCaptureSupported)
+        {
+
+            //LOAD PHOTO
+            FileResult myPhoto = await MediaPicker.Default.PickPhotoAsync();
+            if (myPhoto != null)
+            {
+                //save the image captured in the application.
+                string localFilePath = Path.Combine(FileSystem.CacheDirectory, myPhoto.FileName);
+                using Stream sourceStream = await myPhoto.OpenReadAsync();
+
+                this.imgProfile.Source = localFilePath;
+                
+
+                using FileStream localFileStream = File.OpenWrite(localFilePath);
+                await sourceStream.CopyToAsync(localFileStream);
+                //await Shell.Current.DisplayAlert("Success", "Image uploaded successfully", "Ok");
+            }
+        }
+        else
+        {
+            await Shell.Current.DisplayAlert("OOPS", "You device isn't supported", "Ok");
+        }
+        /* the app should open up the device photo library
+         (simulated in Figma).When they choose a photo, the picture should
+         change to what the user chose, formatted to a 50px round formatted
+         photo.
+         */
     }
 
     private void btnCancel_Click(object sender, EventArgs e)

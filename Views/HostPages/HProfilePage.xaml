@@ -81,7 +81,7 @@
                                     Source="im2.png"
                                     HeightRequest="70"
                                     WidthRequest="70"
-            
+                                    x:Name="imgProfile"
                                     Aspect="AspectFill"
                                     BackgroundColor="Transparent"
                                      />

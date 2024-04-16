@@ -69,8 +69,6 @@ public partial class HHomePage : ContentPage
 
         if (MediaPicker.Default.IsCaptureSupported)
         {
-            //TAKE PHOTO OR CAPTURE PHOTO
-            // FileResult myPhoto = await MediaPicker.Default.CapturePhotoAsync();
 
             //LOAD PHOTO
             FileResult myPhoto = await MediaPicker.Default.PickPhotoAsync();

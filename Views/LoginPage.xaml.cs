@@ -42,9 +42,6 @@ SQLite, and ID the variable containing the data. Will need the Username as part
 of the data set.
                  */
 
-        if(type == UserTypeEnum.Host)
-            Shell.Current.GoToAsync(nameof(HHomePage));
-        else
             Shell.Current.GoToAsync(nameof(FHomePage));
     }
 
@@ -52,5 +49,11 @@ of the data set.
     {
 
         Shell.Current.GoToAsync(nameof(RegFanPage));
+    }
+
+    private void imgLogo_Tapped(object sender, TappedEventArgs e)
+    {
+        Shell.Current.GoToAsync(nameof(HHomePage));
+
     }
 }

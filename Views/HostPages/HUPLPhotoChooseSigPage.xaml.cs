@@ -31,7 +31,7 @@ public partial class HUPLPhotoChooseSigPage : ContentPage
 
     private void btnBack_Click(object sender, EventArgs e)
     {
-
+        Shell.Current.GoToAsync(nameof(HReviewPhotoPage));
     }
 
     private void btnCancel_Click(object sender, EventArgs e)
