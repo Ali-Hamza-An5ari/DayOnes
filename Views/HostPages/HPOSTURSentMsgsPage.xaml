@@ -47,6 +47,7 @@
                     Margin="0,0,0,15"
                     TextColor="{StaticResource DefaultWhite}"
                     FontFamily="SFProText"
+                    VerticalOptions="Center"
                     />
 
                 <!--Row 2-->
@@ -57,6 +58,7 @@
                     TextColor="{StaticResource DefaultWhite}"
                    FontSize="20"
                    FontAttributes="Bold"
+                    VerticalOptions="Center"
                    
                     />
 
