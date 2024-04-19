@@ -14,7 +14,7 @@ public partial class FanSmallHdr : ContentView
 
     private async void TapGestureRecognizer_Tapped(object sender, TappedEventArgs e)
     {
-        await Shell.Current.GoToAsync(nameof(FSettingsPage));
+        await Shell.Current.GoToAsync(nameof(FProfilePage));
     }
 
     private void profileImage_Clicked(object sender, EventArgs e)
