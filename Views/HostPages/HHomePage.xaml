@@ -132,23 +132,38 @@
 
             <toolkit:Expander Grid.Row="1" x:Name="expandedtab">
                 <toolkit:Expander.Header>
-                    <Frame Grid.Row="1"
-       Background="{StaticResource DefaultBlack}" 
-       BorderColor="{StaticResource DefaultPurple}" 
-       HeightRequest="60"
-       CornerRadius="0"
+            <Frame Grid.Row="1"
+                   Background="{StaticResource DefaultBlack}" 
+                   BorderColor="{StaticResource DefaultPurple}" 
+                   HeightRequest="60"
+                   CornerRadius="0"
        Padding="10,10,20,10">
                         <Grid ColumnDefinitions="Auto,*">
                             <Label x:Name="selecteditemaa" Text="" Margin="10"></Label>
+                        
+                        HorizontalOptions="Start"
+                        Margin="30,0,0,0"
+                        WidthRequest="200"
+                        FontAttributes="None"
+                        BackgroundColor="{StaticResource DefaultBlack}"
+                        SelectedItem="Invite &amp; Photo">
+                        <Picker.ItemsSource>
+                            <x:Array  Type="{x:Type x:String}">
+                                <x:String>Invite &amp; Photo</x:String>
+                                <x:String>Invite Only</x:String>
+                                <x:String>Photo Only</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
 
-                            <Image
-                                Grid.Column="1"
+                    <Image
+                        Grid.Column="1"
                                 x:Name="imageproperty"
-Source="dropdown.png"
+                    Source="dropdown.png"
     HorizontalOptions="EndAndExpand"
-/>
+                    />
                         </Grid>
-                       
+
                     </Frame>
                 </toolkit:Expander.Header>
                 <Frame Grid.Row="1"
@@ -169,7 +184,7 @@ Padding="0,10">
                             <DataTemplate>
                                 <Grid Padding="10" BackgroundColor="Transparent">
                                     <Label Text="{Binding Text}" TextColor="White"/>
-                                </Grid>
+                </Grid>
                             </DataTemplate>
                         </CollectionView.ItemTemplate>
                     </CollectionView>
@@ -178,7 +193,7 @@ Padding="0,10">
 
 
 
-                </Frame>
+            </Frame>
             </toolkit:Expander>
 
             <!--Row 2-->

@@ -72,7 +72,7 @@ ii. The URLs for
         var res = await DisplayAlert("Confirmation", "Do you want to quit?", "Yes", "No");
         if(res)
             await Navigation.PopToRootAsync();
-
+        
         /* a.Launch a iOS Alert pop-up asking of the user really wants to quit the app
 i.Yes – exit the app
 ii.No - close the Alert Box *

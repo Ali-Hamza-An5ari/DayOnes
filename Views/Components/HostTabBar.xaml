@@ -21,15 +21,18 @@
         </Frame.Background>
 
         <Grid VerticalOptions="CenterAndExpand">
-            <!--<Grid.RowDefinitions>
+            <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>-->
+            </Grid.RowDefinitions>
 
             <!-- Menu Grid -->
             <Grid Grid.Row="0" >
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="*"/>
@@ -40,11 +43,9 @@
                 <Image Grid.Column="0"
                    x:Name="lblHome"
                    Source="homeic.png"
-                       Aspect="AspectFit"
-                       HorizontalOptions="Center"
-                       VerticalOptions="Center"
-                        WidthRequest="72"
-                        HeightRequest="48">
+                       Margin="-20,0,0,0"
+                   WidthRequest="72"
+                   HeightRequest="46.72">
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer Tapped="lblHome_Tapped" />
                     </Image.GestureRecognizers>
@@ -57,8 +58,8 @@
                       Aspect="AspectFit"
  HorizontalOptions="Center"
  VerticalOptions="Center"
-  WidthRequest="72"
-  HeightRequest="48">
+                   WidthRequest="72"
+                   HeightRequest="48">
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer Tapped="lblMsgs_Tapped" />
                     </Image.GestureRecognizers>
@@ -68,11 +69,8 @@
                 <Image Grid.Column="2"
                    x:Name="lblDM"
                    Source="dmic.png"
-                       Aspect="AspectFit"
- HorizontalOptions="Center"
- VerticalOptions="Center"
-  WidthRequest="72"
-  HeightRequest="48">
+                   WidthRequest="68"
+                   HeightRequest="50">
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer Tapped="lblDM_Tapped" />
                     </Image.GestureRecognizers>
@@ -82,11 +80,8 @@
                 <Image Grid.Column="3"
                    x:Name="lblNotification"
                    Source="notificationic.png"
-                        Aspect="AspectFit"
- HorizontalOptions="Center"
- VerticalOptions="Center"
-  WidthRequest="72"
-  HeightRequest="48">
+                   WidthRequest="78"
+                   HeightRequest="49.72">
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer Tapped="lblNotification_Tapped" />
                     </Image.GestureRecognizers>
@@ -95,11 +90,9 @@
                 <!-- Menu 5 -->
                 <Image Grid.Column="4"
                    x:Name="lblSetting"
-                        Aspect="AspectFit"
- HorizontalOptions="Center"
- VerticalOptions="Center"
-  WidthRequest="72"
-  HeightRequest="48">
+                   Source="settings.png"
+                   WidthRequest="72"
+                   HeightRequest="54">
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer Tapped="lblSetting_Tapped" />
                     </Image.GestureRecognizers>
